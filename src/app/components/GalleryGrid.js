@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FiX, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import Image from 'next/image';
 
 const GalleryGrid = ({ images }) => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -109,10 +110,15 @@ const GalleryGrid = ({ images }) => {
             className="relative max-w-4xl max-h-[80vh] w-full h-full flex items-center justify-center"
             onClick={(e) => e.stopPropagation()}
           >
-            <img
+            <Image
               src={selectedImage.src}
               alt={selectedImage.title}
               className="max-w-full max-h-full object-contain"
+              width={1200}
+              height={800}
+              sizes="(max-width: 768px) 100vw, 80vw"
+              priority
+              style={{ width: 'auto', height: 'auto' }}
             />
             <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent text-white">
               <h3 className="text-xl font-medium">{selectedImage.title}</h3>

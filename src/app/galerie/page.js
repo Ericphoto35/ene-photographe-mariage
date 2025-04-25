@@ -138,7 +138,7 @@ export default function GalleryPage() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="max-w-2xl mx-auto text-gray-600"
           >
-            Découvrez une sélection de mes photographies de mariage, capturant l'amour, l'émotion et la beauté de ces journées spéciales.
+            Découvrez une sélection de mes photographies de mariage, capturant l&apos;amour, l&apos;émotion et la beauté de ces journées spéciales.
           </motion.p>
         </div>
 

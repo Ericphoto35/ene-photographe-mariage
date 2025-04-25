@@ -75,7 +75,7 @@ export default function ContactPage() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="max-w-2xl mx-auto text-gray-600"
           >
-            Je serais ravi de discuter de votre projet de mariage. N'hésitez pas à me contacter pour toute question ou pour vérifier ma disponibilité.
+            Je serais ravi de discuter de votre projet de mariage. N&apos;hésitez pas à me contacter pour toute question ou pour vérifier ma disponibilité.
           </motion.p>
         </div>
 
@@ -152,7 +152,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <label htmlFor="eventDate" className="block text-sm font-medium text-gray-700 mb-1">
-                      Date de l'événement
+                      Date de l&apos;événement
                     </label>
                     <input
                       type="date"
@@ -168,7 +168,7 @@ export default function ContactPage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="eventLocation" className="block text-sm font-medium text-gray-700 mb-1">
-                      Lieu de l'événement
+                      Lieu de l&apos;événement
                     </label>
                     <input
                       type="text"
@@ -181,7 +181,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <label htmlFor="eventType" className="block text-sm font-medium text-gray-700 mb-1">
-                      Type d'événement
+                      Type d&apos;événement
                     </label>
                     <select
                       id="eventType"
@@ -273,7 +273,7 @@ export default function ContactPage() {
                   <h3 className="font-medium mb-1">Basé à</h3>
                   <p className="text-gray-600">
                     Paris, France<br />
-                    Disponible pour des déplacements en France et à l'international
+                    Disponible pour des déplacements en France et à l&apos;international
                   </p>
                 </div>
               </div>
@@ -302,10 +302,10 @@ export default function ContactPage() {
             <div className="mt-10 bg-gray-50 p-6 rounded-lg">
               <h3 className="text-lg font-medium mb-2">Horaires de réponse</h3>
               <p className="text-gray-600 mb-4">
-                Je m'efforce de répondre à toutes les demandes dans un délai de 24 à 48 heures.
+                Je m&apos;efforce de répondre à toutes les demandes dans un délai de 24 à 48 heures.
               </p>
               <p className="text-gray-600">
-                Pour les demandes urgentes, n'hésitez pas à me contacter par téléphone.
+                Pour les demandes urgentes, n&apos;hésitez pas à me contacter par téléphone.
               </p>
             </div>
           </motion.div>
@@ -338,14 +338,14 @@ export default function ContactPage() {
             <div>
               <h3 className="font-medium mb-2">Vous déplacez-vous en dehors de Paris?</h3>
               <p className="text-gray-600">
-                Absolument! Je me déplace dans toute la France et à l'international pour capturer votre mariage. Des frais de déplacement peuvent s'appliquer selon la destination.
+                Absolument! Je me déplace dans toute la France et à l&apos;international pour capturer votre mariage. Des frais de déplacement peuvent s&apos;appliquer selon la destination.
               </p>
             </div>
             
             <div>
               <h3 className="font-medium mb-2">Quel est le délai de livraison des photos?</h3>
               <p className="text-gray-600">
-                Le délai de livraison varie entre 2 et 4 semaines selon la formule choisie. Une sélection de photos "aperçu" vous est généralement envoyée dans la semaine suivant votre mariage.
+                Le délai de livraison varie entre 2 et 4 semaines selon la formule choisie. Une sélection de photos &quot;aperçu&quot; vous est généralement envoyée dans la semaine suivant votre mariage.
               </p>
             </div>
           </div>

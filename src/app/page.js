@@ -31,11 +31,11 @@ export default function Home() {
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-serif font-light">Capturer l'essence de vos moments précieux</h2>
+              <h2 className="text-3xl md:text-4xl font-serif font-light">Capturer l&apos;essence de vos moments précieux</h2>
               <div className="h-1 w-20 bg-gray-300"></div>
               <p className="text-gray-600">
                 Bienvenue dans mon univers photographique où chaque image raconte une histoire unique. 
-                Spécialisé dans la photographie de mariage, je m'engage à immortaliser les émotions et 
+                Spécialisé dans la photographie de mariage, je m&apos;engage à immortaliser les émotions et 
                 les instants qui font de votre journée un moment inoubliable.
               </p>
               <p className="text-gray-600">
@@ -98,7 +98,7 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-serif mb-4">Pourquoi Me Choisir</h2>
             <div className="h-px w-24 bg-gray-400 mx-auto mb-6"></div>
             <p className="max-w-2xl mx-auto text-gray-600">
-              Je m'engage à offrir une expérience exceptionnelle à chaque couple, avec une attention particulière aux détails et aux moments qui comptent.  
+              Je m&apos;engage à offrir une expérience exceptionnelle à chaque couple, avec une attention particulière aux détails et aux moments qui comptent.  
             </p>
           </div>
 
@@ -119,7 +119,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-medium mb-3">Passion & Dévouement</h3>
               <p className="text-gray-600 text-sm">
-                Un engagement total pour capturer l'essence de votre journée avec attention, discrétion et professionnalisme.
+                Un engagement total pour capturer l&apos;essence de votre journée avec attention, discrétion et professionnalisme.
               </p>
             </div>
 
@@ -163,7 +163,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-600 italic">
-                "ENE a su capturer l'essence même de notre journée. Chaque photo raconte une histoire et nous permet de revivre ces moments magiques. Un talent exceptionnel!"  
+                &quot;ENE a su capturer l&apos;essence même de notre journée. Chaque photo raconte une histoire et nous permet de revivre ces moments magiques. Un talent exceptionnel!&quot;  
               </p>
             </div>
 
@@ -176,7 +176,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-600 italic">
-                "Nous sommes enchantés par les photos de notre mariage. ENE a su se faire discret tout en capturant tous les moments importants. Le résultat est simplement magnifique!"  
+                &quot;Nous sommes enchantés par les photos de notre mariage. ENE a su se faire discret tout en capturant tous les moments importants. Le résultat est simplement magnifique!&quot;  
               </p>
             </div>
 
@@ -189,7 +189,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-600 italic">
-                "Un grand merci pour ces souvenirs incroyables! Votre professionnalisme et votre créativité ont fait toute la différence. Nous recommandons ENE sans hésitation."  
+                &quot;Un grand merci pour ces souvenirs incroyables! Votre professionnalisme et votre créativité ont fait toute la différence. Nous recommandons ENE sans hésitation.&quot;  
               </p>
             </div>
           </div>

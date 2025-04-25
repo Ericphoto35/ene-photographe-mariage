@@ -108,7 +108,7 @@ export default function ServicesPage() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="max-w-2xl mx-auto text-gray-600"
           >
-            Découvrez mes formules personnalisables pour capturer les moments précieux de votre mariage. Chaque prestation est conçue pour s'adapter à vos besoins spécifiques.
+            Découvrez mes formules personnalisables pour capturer les moments précieux de votre mariage. Chaque prestation est conçue pour s&apos;adapter à vos besoins spécifiques.
           </motion.p>
         </div>
 
@@ -170,11 +170,11 @@ export default function ServicesPage() {
             <h3 className="text-lg font-medium mb-2">Informations importantes</h3>
             <p className="text-gray-600 mb-2">
               Tous les tarifs indiqués sont à titre indicatif et peuvent varier en fonction de vos besoins spécifiques, 
-              de la saison et de la localisation de votre mariage. N'hésitez pas à me contacter pour obtenir un devis personnalisé.
+              de la saison et de la localisation de votre mariage. N&apos;hésitez pas à me contacter pour obtenir un devis personnalisé.
             </p>
             <p className="text-gray-600">
-              Pour les mariages en dehors de la région parisienne, des frais de déplacement peuvent s'appliquer. 
-              Les mariages à l'international sont également possibles avec des conditions spécifiques.
+              Pour les mariages en dehors de la région parisienne, des frais de déplacement peuvent s&apos;appliquer. 
+              Les mariages à l&apos;international sont également possibles avec des conditions spécifiques.
             </p>
           </div>
         </motion.div>
@@ -344,23 +344,23 @@ export default function ServicesPage() {
           >
             <div className="space-y-6">
               <div>
-                <h3 className="text-lg font-medium mb-2">Combien de temps à l'avance dois-je réserver?</h3>
+                <h3 className="text-lg font-medium mb-2">Combien de temps à l&apos;avance dois-je réserver?</h3>
                 <p className="text-gray-600">
-                  Je recommande de réserver au moins 9 à 12 mois à l'avance, surtout pour les dates populaires en haute saison (mai à septembre). 
-                  Cependant, n'hésitez pas à me contacter même pour des dates plus proches, je pourrais avoir des disponibilités.
+                  Je recommande de réserver au moins 9 à 12 mois à l&apos;avance, surtout pour les dates populaires en haute saison (mai à septembre). 
+                  Cependant, n&apos;hésitez pas à me contacter même pour des dates plus proches, je pourrais avoir des disponibilités.
                 </p>
               </div>
               <div>
                 <h3 className="text-lg font-medium mb-2">Comment se déroule la réservation?</h3>
                 <p className="text-gray-600">
                   Après notre première consultation, je vous envoie un contrat détaillé. La réservation est confirmée à la signature du contrat 
-                  et au versement d'un acompte de 30%.
+                  et au versement d&apos;un acompte de 30%.
                 </p>
               </div>
               <div>
                 <h3 className="text-lg font-medium mb-2">Proposez-vous des albums photo?</h3>
                 <p className="text-gray-600">
-                  Oui, je propose une gamme d'albums photo de haute qualité, fabriqués à la main avec des matériaux premium. 
+                  Oui, je propose une gamme d&apos;albums photo de haute qualité, fabriqués à la main avec des matériaux premium. 
                   Chaque album est personnalisé selon vos préférences en termes de taille, de couverture et de mise en page.
                 </p>
               </div>
@@ -374,17 +374,17 @@ export default function ServicesPage() {
                 </p>
               </div>
               <div>
-                <h3 className="text-lg font-medium mb-2">Vous déplacez-vous pour des mariages à l'étranger?</h3>
+                <h3 className="text-lg font-medium mb-2">Vous déplacez-vous pour des mariages à l&apos;étranger?</h3>
                 <p className="text-gray-600">
-                  Absolument! J'adore voyager et photographier des mariages dans de nouveaux endroits. Des frais supplémentaires pour le voyage 
-                  et l'hébergement s'appliquent, mais je serais ravi de vous accompagner où que vous choisissiez de célébrer votre union.
+                  Absolument! J&apos;adore voyager et photographier des mariages dans de nouveaux endroits. Des frais supplémentaires pour le voyage 
+                  et l&apos;hébergement s&apos;appliquent, mais je serais ravi de vous accompagner où que vous choisissiez de célébrer votre union.
                 </p>
               </div>
               <div>
                 <h3 className="text-lg font-medium mb-2">Quel est votre style photographique?</h3>
                 <p className="text-gray-600">
                   Mon style combine photojournalisme documentaire et portraits élégants. Je privilégie les images naturelles, lumineuses et intemporelles, 
-                  capturant l'authenticité des émotions et la beauté des moments spontanés.
+                  capturant l&apos;authenticité des émotions et la beauté des moments spontanés.
                 </p>
               </div>
             </div>

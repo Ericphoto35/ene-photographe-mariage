@@ -66,11 +66,11 @@ export default function AboutPage() {
             </p>
             <p className="text-gray-600">
               Basé en France, je voyage à travers le pays et à l'international pour documenter des mariages uniques. 
-              Ma philosophie est simple : capturer l'essence de votre journée spéciale avec discrétion, sensibilité et créativité.
+              Ma philosophie est simple : capturer l&apos;essence de votre journée spéciale avec discrétion, sensibilité et créativité.
             </p>
             <p className="text-gray-600">
               Chaque couple a une histoire unique, et je m'engage à la raconter à travers mes photographies. 
-              Je crois en la création d'images intemporelles qui vous permettront de revivre ces moments précieux pour les années à venir.
+              Je crois en la création d&apos;images intemporelles qui vous permettront de revivre ces moments précieux pour les années à venir.
             </p>
             <div className="pt-4">
               <Link
@@ -133,7 +133,7 @@ export default function AboutPage() {
               <h3 className="text-xl font-medium mb-4">Photojournalisme</h3>
               <p className="text-gray-600">
                 Je privilégie une approche documentaire, capturant les moments spontanés et les émotions authentiques 
-                qui racontent l'histoire unique de votre journée.
+                qui racontent l&apos;histoire unique de votre journée.
               </p>
             </motion.div>
 
@@ -180,14 +180,14 @@ export default function AboutPage() {
               en photographie de mariage et des collaborations avec des photographes de renom.
             </p>
             <p className="text-gray-600">
-              Mon parcours m'a amené à photographier des mariages dans des lieux exceptionnels à travers la France 
-              et l'Europe, enrichissant constamment ma vision et ma technique.
+              Mon parcours m&apos;a amené à photographier des mariages dans des lieux exceptionnels à travers la France 
+              et l&apos;Europe, enrichissant constamment ma vision et ma technique.
             </p>
             <ul className="list-disc list-inside text-gray-600 space-y-2">
               <li>Diplôme des Beaux-Arts en Photographie</li>
               <li>Formation avancée en éclairage de portrait</li>
               <li>Masterclass en narration visuelle</li>
-              <li>Membre de l'Association des Photographes de Mariage</li>
+              <li>Membre de l&apos;Association des Photographes de Mariage</li>
             </ul>
           </motion.div>
 
@@ -201,11 +201,11 @@ export default function AboutPage() {
             <div className="h-1 w-20 bg-gray-300"></div>
             <p className="text-gray-600">
               J'utilise exclusivement du matériel haut de gamme pour garantir des images de la plus haute qualité, 
-              quelles que soient les conditions d'éclairage ou les défis du lieu.
+              quelles que soient les conditions d&apos;éclairage ou les défis du lieu.
             </p>
             <p className="text-gray-600">
               Mon équipement est toujours redondant pour assurer une sécurité maximale - je n'ai jamais manqué un moment 
-              important en raison d'une défaillance technique.
+              important en raison d&apos;une défaillance technique.
             </p>
             <ul className="list-disc list-inside text-gray-600 space-y-2">
               <li>Appareils photo professionnels full-frame</li>
