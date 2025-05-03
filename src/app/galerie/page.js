@@ -20,7 +20,7 @@ export default function GalleryPage() {
     },
     {
       id: 2,
-      src: '/images/dscf6935.webp',
+      src: '/images/ladyprep.webp',
       title: 'Préparation de la Mariée',
       location: 'Rennes',
       description: 'Les moments intimes de préparation avant la cérémonie.',
