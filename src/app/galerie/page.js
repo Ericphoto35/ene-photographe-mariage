@@ -14,7 +14,7 @@ export default function GalleryPage() {
       id: 1,
       src: '/images/87157226_3052041271497044_5875200998170951680_n.jpg',
       title: 'Premier Regard',
-      location: 'Château de Versailles',
+      location: 'Saint Malo',
       description: 'Ce moment magique où les mariés se voient pour la première fois le jour de leur mariage.',
       category: 'Mariages'
     },
@@ -22,15 +22,15 @@ export default function GalleryPage() {
       id: 2,
       src: '/images/dscf6935.webp',
       title: 'Préparation de la Mariée',
-      location: 'Paris',
+      location: 'Rennes',
       description: 'Les moments intimes de préparation avant la cérémonie.',
       category: 'Préparatifs'
     },
     {
       id: 3,
-      src: '/images/92336089_3163801453654358_8416366644216987648_n.jpg',
+      src: '/images/justine.webp',
       title: 'Échange des Vœux',
-      location: 'Domaine de Chantilly',
+      location: 'Rennes',
       description: 'Un moment d\'émotion intense pendant l\'échange des vœux.',
       category: 'Cérémonies'
     },
@@ -38,71 +38,71 @@ export default function GalleryPage() {
       id: 4,
       src: '/images/87362184_3052043968163441_3712265440819412992_n.jpg',
       title: 'Séance Couple',
-      location: 'Jardin du Luxembourg',
+      location: 'Pointe du Grouin',
       description: 'Une séance photo intime capturant l\'amour entre les mariés.',
       category: 'Couples'
     },
     {
       id: 5,
-      src: '/images/87362184_3052043968163441_3712265440819412992_n.jpg',
+      src: '/images/ceremonie.webp',
       title: 'Cérémonie Laïque',
-      location: 'Provence',
+      location: 'Nantes',
       description: 'Une cérémonie en plein air remplie d\'émotions et de joie.',
       category: 'Cérémonies'
     },
     {
       id: 6,
-      src: '/images/87362184_3052043968163441_3712265440819412992_n.jpg',
+      src: '/images/robemariee.webp',
       title: 'Détails de la Robe',
-      location: 'Suite Hôtel de Crillon',
+      location: 'Combourg',
       description: 'Les détails délicats qui font toute la beauté d\'une robe de mariée.',
       category: 'Préparatifs'
     },
     {
       id: 7,
-      src: '/images/87362184_3052043968163441_3712265440819412992_n.jpg',
+      src: '/images/premieredanse.webp',
       title: 'Première Danse',
-      location: 'Château de Fontainebleau',
+      location: 'Nantes',
       description: 'La première danse des mariés, un moment de grâce et d\'intimité.',
       category: 'Mariages'
     },
     {
       id: 8,
-      src: '/images/87362184_3052043968163441_3712265440819412992_n.jpg',
+      src: '/images/engagement.webp',
       title: 'Séance d\'Engagement',
-      location: 'Montmartre',
+      location: 'Cancale',
       description: 'Une séance d\'engagement dans les rues pittoresques de Paris.',
       category: 'Couples'
     },
     {
       id: 9,
-      src: '/images/87362184_3052043968163441_3712265440819412992_n.jpg',
+      src: '/images/bouquet.webp',
       title: 'Bouquet de la Mariée',
-      location: 'Normandie',
+      location: 'Nantes',
       description: 'Le magnifique bouquet de la mariée, composé avec soin.',
       category: 'Préparatifs'
     },
     {
       id: 10,
-      src: '/images/87362184_3052043968163441_3712265440819412992_n.jpg',
+      src: '/images/echange.webp',
       title: 'Échange des Alliances',
-      location: 'Église Saint-Germain-des-Prés',
+      location: 'Nantes',
       description: 'Le moment solennel de l\'échange des alliances.',
       category: 'Cérémonies'
     },
     {
       id: 11,
-      src: '/images/87362184_3052043968163441_3712265440819412992_n.jpg',
+      src: '/images/couche.webp',
       title: 'Couple au Coucher du Soleil',
-      location: 'Côte d\'Azur',
+      location: 'Rennes',
       description: 'Un moment romantique capturé à l\'heure dorée.',
       category: 'Couples'
     },
     {
       id: 12,
-      src: '/images/92336089_3163801453654358_8416366644216987648_n.jpg',
+      src: '/images/reception.webp',
       title: 'Réception Élégante',
-      location: 'Château de Vaux-le-Vicomte',
+      location: 'Nantes',
       description: 'Une réception somptueuse dans un cadre historique.',
       category: 'Mariages'
     }
