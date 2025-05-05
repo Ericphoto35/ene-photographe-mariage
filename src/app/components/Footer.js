@@ -48,8 +48,8 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <FiMail className="text-gray-400" />
-                <a href="mailto:contact@ene-photographie.com" className="text-gray-400 hover:text-white transition-colors duration-300">
-                  contact@ene-photographie.com
+                <a href="mailto:contact@enemariage.fr" className="text-gray-400 hover:text-white transition-colors duration-300">
+                  contact@enemariage.fr
                 </a>
               </div>
             </div>
@@ -84,7 +84,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-10 pt-6 text-center text-gray-500 text-sm">
-          <p>&copy; {currentYear} ENE Photographe de Mariage. Tous droits réservés.</p>
+          <p>&copy; {currentYear} ENE Photographe de Mariage. Tous droits réservés.Projet réalisé par ENE-Solutions.</p>
         </div>
       </div>
     </footer>

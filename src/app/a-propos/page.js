@@ -7,8 +7,8 @@ import { FiCamera, FiHeart, FiAward, FiCoffee } from 'react-icons/fi';
 export default function AboutPage() {
   // Statistiques du photographe
   const stats = [
-    { icon: <FiCamera />, value: '150+', label: 'Mariages Photographiés' },
-    { icon: <FiHeart />, value: '300+', label: 'Couples Heureux' },
+    { icon: <FiCamera />, value: '50+', label: 'Mariages Photographiés' },
+    { icon: <FiHeart />, value: '100+', label: 'Couples Heureux' },
     { icon: <FiAward />, value: '10+', label: 'Années d\'Expérience' },
     { icon: <FiCoffee />, value: '∞', label: 'Cafés Consommés' }
   ];
@@ -43,7 +43,7 @@ export default function AboutPage() {
             className="relative h-[500px] rounded-lg overflow-hidden shadow-xl"
           >
             <Image
-              src="/images/photographer.jpg"
+              src="/images/bouquet.webp"
               alt="ENE - Photographe de Mariage"
               fill
               style={{ objectFit: 'cover' }}
@@ -65,7 +65,7 @@ export default function AboutPage() {
               et à préserver des souvenirs précieux.
             </p>
             <p className="text-gray-600">
-              Basé en France, je voyage à travers le pays et à l'international pour documenter des mariages uniques. 
+              Basé à Rennes, je voyage à travers le pays et à l'international pour documenter des mariages uniques. 
               Ma philosophie est simple : capturer l&apos;essence de votre journée spéciale avec discrétion, sensibilité et créativité.
             </p>
             <p className="text-gray-600">
@@ -176,19 +176,12 @@ export default function AboutPage() {
             <h2 className="text-2xl font-serif font-light">Formation & Parcours</h2>
             <div className="h-1 w-20 bg-gray-300"></div>
             <p className="text-gray-600">
-              Diplômé de l'École des Beaux-Arts, j'ai perfectionné mon art à travers des ateliers spécialisés 
-              en photographie de mariage et des collaborations avec des photographes de renom.
+            "Mon aventure dans la photographie de mariage a commencé comme une exploration passionnée, un chemin que j'ai tracé moi-même, pas à pas. 
+            En tant qu'autodidacte, chaque mariage a été une leçon précieuse, une opportunité d'affiner mon regard et ma technique. Au fil du temps, 
+            une affinité particulière s'est développée : celle de capturer l'essence des personnes à travers le portrait. Ces moments intimes, 
+            ces expressions fugaces, racontent une partie unique de votre histoire. C'est avec cette sensibilité pour le portrait que j'aborde chaque mariage, 
+            cherchant à immortaliser non seulement l'événement, mais aussi les émotions profondes qui vous unissent."
             </p>
-            <p className="text-gray-600">
-              Mon parcours m&apos;a amené à photographier des mariages dans des lieux exceptionnels à travers la France 
-              et l&apos;Europe, enrichissant constamment ma vision et ma technique.
-            </p>
-            <ul className="list-disc list-inside text-gray-600 space-y-2">
-              <li>Diplôme des Beaux-Arts en Photographie</li>
-              <li>Formation avancée en éclairage de portrait</li>
-              <li>Masterclass en narration visuelle</li>
-              <li>Membre de l&apos;Association des Photographes de Mariage</li>
-            </ul>
           </motion.div>
 
           <motion.div

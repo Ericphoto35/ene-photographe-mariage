@@ -259,8 +259,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-medium mb-1">Téléphone</h3>
-                  <a href="tel:+33600000000" className="text-gray-600 hover:text-gray-900 transition-colors">
-                    +33 6 XX XX XX XX
+                  <a href="tel:+33633320795" className="text-gray-600 hover:text-gray-900 transition-colors">
+                    +33 6 33 32 07 95
                   </a>
                 </div>
               </div>
@@ -272,7 +272,7 @@ export default function ContactPage() {
                 <div>
                   <h3 className="font-medium mb-1">Basé à</h3>
                   <p className="text-gray-600">
-                    Paris, France<br />
+                    Rennes, France<br />
                     Disponible pour des déplacements en France et à l&apos;international
                   </p>
                 </div>
@@ -359,14 +359,14 @@ export default function ContactPage() {
           className="relative h-80 rounded-lg overflow-hidden"
         >
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.95410942259!2d2.2646349499999997!3d48.8588377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sfr!2sfr!4v1650000000000!5m2!1sfr!2sfr" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42619.231801043694!2d-1.7296468549145179!3d48.115984290937526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480ede2fa7d69085%3A0x40ca5cd36e4ab30!2sRennes!5e0!3m2!1sfr!2sfr!4v1746433869508!5m2!1sfr!2sfr" 
             width="100%" 
             height="100%" 
             style={{ border: 0 }} 
             allowFullScreen="" 
             loading="lazy" 
             referrerPolicy="no-referrer-when-downgrade"
-            title="Carte de Paris"
+            title="Carte de Rennes"
           ></iframe>
         </motion.div>
       </div>

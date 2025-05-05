@@ -9,7 +9,7 @@ export default function ServicesPage() {
   const packages = [
     {
       name: 'Essentiel',
-      price: 'À partir de 1 500€',
+      price: 'À partir de 1 200€',
       description: 'Couverture complète de votre cérémonie et des moments clés de votre journée.',
       features: [
         'Consultation préalable',
@@ -23,7 +23,7 @@ export default function ServicesPage() {
     },
     {
       name: 'Élégance',
-      price: 'À partir de 2 200€',
+      price: 'À partir de 1600€',
       description: 'Une couverture complète de votre journée, des préparatifs jusqu\'au début de soirée.',
       features: [
         'Consultation préalable',
@@ -39,7 +39,7 @@ export default function ServicesPage() {
     },
     {
       name: 'Prestige',
-      price: 'À partir de 3 500€',
+      price: 'À partir de 2 500€',
       description: 'L\'expérience photographique ultime pour votre mariage, avec une couverture complète et des extras exclusifs.',
       features: [
         'Consultation préalable',
@@ -59,33 +59,33 @@ export default function ServicesPage() {
   const additionalServices = [
     {
       title: 'Séance d\'Engagement',
-      price: '450€',
+      price: '250€',
       description: 'Une séance photo avant le mariage pour capturer votre complicité dans un cadre détendu.',
-      image: '/images/engagement.jpg'
+      image: '/images/engagements.webp'
     },
     {
       title: 'Second Photographe',
-      price: '600€',
+      price: '400€',
       description: 'Un photographe supplémentaire pour capturer encore plus de moments et de perspectives.',
-      image: '/images/second-photographer.jpg'
+      image: '/images/photographe.webp'
     },
     {
       title: 'Album Photo Premium',
       price: 'À partir de 350€',
       description: 'Albums photo de haute qualité, personnalisés selon vos préférences.',
-      image: '/images/album.jpg'
+      image: '/images/album.webp'
     },
     {
       title: 'Tirages Fine Art',
       price: 'À partir de 120€',
       description: 'Tirages d\'art de qualité musée pour décorer votre intérieur.',
-      image: '/images/prints.jpg'
+      image: '/images/tirage.webp'
     }
   ];
 
   return (
     <div className="min-h-screen pt-24 pb-20">
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-6">  
         {/* En-tête */}
         <div className="text-center mb-16">
           <motion.h1

@@ -1,8 +1,41 @@
-import HeroSection from "./components/HeroSection";
-import ServicesSection from "./components/ServicesSection";
 import Image from "next/image";
 import Link from "next/link";
 import { FiCamera, FiHeart, FiMessageCircle } from "react-icons/fi";
+
+// Importer les composants clients depuis le fichier dédié
+import { HeroSection, ServicesSection, TestimonialsSection } from "./components/ClientComponents";
+
+// Métadonnées pour le SEO
+export const metadata = {
+  title: "ENE - Photographe de Mariage à Rennes | Capturer vos moments précieux",
+  description: "Photographe de mariage professionnel à Rennes, spécialisé dans la capture de moments précieux avec élégance et authenticité. Découvrez mon portfolio et mes services.",
+  keywords: ["photographe mariage", "photographe Rennes", "photos de mariage", "mariage Bretagne", "photographe professionnel"],
+  openGraph: {
+    title: "ENE - Photographe de Mariage à Rennes",
+    description: "Capturez les moments précieux de votre mariage avec un style élégant et authentique",
+    images: [
+      {
+        url: '/images/jg.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'ENE Photographe de Mariage'
+      }
+    ],
+    locale: 'fr_FR',
+    type: 'website',
+  },
+  // Balises structurées pour les moteurs de recherche (Schema.org)
+  alternates: {
+    canonical: 'https://www.ene-photographe-mariage.fr',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  }
+};
+
+// Forcer le rendu statique pour améliorer les performances
+export const dynamic = 'force-static';
 
 export default function Home() {
   // Exemples de photos pour la section de présentation
@@ -146,64 +179,25 @@ export default function Home() {
       </section>
 
       {/* Section Témoignages */}
-      <section className="py-20 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-serif mb-4">Ce Que Disent Mes Clients</h2>
-            <div className="h-px w-24 bg-gray-400 mx-auto mb-6"></div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 rounded-full bg-gray-200 mr-4"></div>
-                <div>
-                  <h4 className="font-medium">Marie & Thomas</h4>
-                  <p className="text-sm text-gray-500">Mariés en Juin 2023</p>
-                </div>
-              </div>
-              <p className="text-gray-600 italic">
-                &quot;ENE a su capturer l&apos;essence même de notre journée. Chaque photo raconte une histoire et nous permet de revivre ces moments magiques. Un talent exceptionnel!&quot;  
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 rounded-full bg-gray-200 mr-4"></div>
-                <div>
-                  <h4 className="font-medium">Sophie & Lucas</h4>
-                  <p className="text-sm text-gray-500">Mariés en Septembre 2023</p>
-                </div>
-              </div>
-              <p className="text-gray-600 italic">
-                &quot;Nous sommes enchantés par les photos de notre mariage. ENE a su se faire discret tout en capturant tous les moments importants. Le résultat est simplement magnifique!&quot;  
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 rounded-full bg-gray-200 mr-4"></div>
-                <div>
-                  <h4 className="font-medium">Julie & Antoine</h4>
-                  <p className="text-sm text-gray-500">Mariés en Mai 2024</p>
-                </div>
-              </div>
-              <p className="text-gray-600 italic">
-                &quot;Un grand merci pour ces souvenirs incroyables! Votre professionnalisme et votre créativité ont fait toute la différence. Nous recommandons ENE sans hésitation.&quot;  
-              </p>
-            </div>
-          </div>
-
-          <div className="flex justify-center mt-12 px-4">
-            <Link 
-              href="/galerie" 
-              className="inline-block px-8 py-3 border border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white transition-colors rounded-full text-sm uppercase tracking-wider font-medium w-full sm:w-auto text-center"
-            >
-              Voir mon portfolio
-            </Link>
-          </div>
-        </div>
-      </section>
+      <TestimonialsSection 
+        testimonials={[
+          {
+            name: 'Marie & Thomas',
+            date: 'Mariés en Juin 2023',
+            quote: 'ENE a su capturer l\'essence même de notre journée. Chaque photo raconte une histoire et nous permet de revivre ces moments magiques. Un talent exceptionnel!'
+          },
+          {
+            name: 'Sophie & Lucas',
+            date: 'Mariés en Septembre 2023',
+            quote: 'Nous sommes enchantés par les photos de notre mariage. ENE a su se faire discret tout en capturant tous les moments importants. Le résultat est simplement magnifique!'
+          },
+          {
+            name: 'Julie & Antoine',
+            date: 'Mariés en Mai 2024',
+            quote: 'Un grand merci pour ces souvenirs incroyables! Votre professionnalisme et votre créativité ont fait toute la différence. Nous recommandons ENE sans hésitation.'
+          }
+        ]}
+      />
     </div>
   );
 }
