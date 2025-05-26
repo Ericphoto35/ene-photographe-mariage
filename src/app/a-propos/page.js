@@ -57,20 +57,20 @@ export default function AboutPage() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="space-y-6"
           >
-            <h2 className="text-3xl font-serif font-light">Bonjour, je suis ENE</h2>
+            <h2 className="text-3xl font-serif font-light">Bonjour, nous sommes ENE Photographies</h2>
             <div className="h-1 w-20 bg-gray-300"></div>
             <p className="text-gray-600">
-              Photographe de mariage passionné, je capture des moments authentiques et émotionnels depuis plus de 10 ans. 
-              Mon parcours dans la photographie a commencé par une fascination pour la capacité des images à raconter des histoires 
+              Nous sommes une équipe de photographe de mariage passionnée, nous capturons des moments authentiques et émotionnels depuis plus de 10 ans. 
+              Notre parcours dans la photographie a commencé par une fascination pour la capacité des images à raconter des histoires 
               et à préserver des souvenirs précieux.
             </p>
             <p className="text-gray-600">
-              Basé à Rennes, je voyage à travers le pays et à l'international pour documenter des mariages uniques. 
-              Ma philosophie est simple : capturer l&apos;essence de votre journée spéciale avec discrétion, sensibilité et créativité.
+              Basé à Rennes, nous voyageons à travers le pays et à l'international pour documenter des mariages uniques. 
+              Notre philosophie est simple : capturer l&apos;essence de votre journée spéciale avec discrétion, sensibilité et créativité.
             </p>
             <p className="text-gray-600">
-              Chaque couple a une histoire unique, et je m'engage à la raconter à travers mes photographies. 
-              Je crois en la création d&apos;images intemporelles qui vous permettront de revivre ces moments précieux pour les années à venir.
+              Chaque couple a une histoire unique, et nous nous engageons à la raconter à travers nos photographies. 
+              Nous crois en la création d&apos;images intemporelles qui vous permettront de revivre ces moments précieux pour les années à venir.
             </p>
             <div className="pt-4">
               <Link
@@ -113,7 +113,7 @@ export default function AboutPage() {
               transition={{ duration: 0.6, delay: 0.6 }}
               className="text-3xl font-serif mb-4"
             >
-              Mon Approche
+              Notre Approche
             </motion.h2>
             <motion.div
               initial={{ opacity: 0, scaleX: 0 }}
@@ -132,7 +132,7 @@ export default function AboutPage() {
             >
               <h3 className="text-xl font-medium mb-4">Photojournalisme</h3>
               <p className="text-gray-600">
-                Je privilégie une approche documentaire, capturant les moments spontanés et les émotions authentiques 
+                Nous privilégions une approche documentaire, capturant les moments spontanés et les émotions authentiques 
                 qui racontent l&apos;histoire unique de votre journée.
               </p>
             </motion.div>
@@ -145,7 +145,7 @@ export default function AboutPage() {
             >
               <h3 className="text-xl font-medium mb-4">Portraits Élégants</h3>
               <p className="text-gray-600">
-                Je crée des portraits intemporels qui mettent en valeur votre connexion et votre beauté naturelle, 
+                Nous créons des portraits intemporels qui mettent en valeur votre connexion et votre beauté naturelle, 
                 avec une attention particulière à la lumière et à la composition.
               </p>
             </motion.div>
@@ -158,7 +158,7 @@ export default function AboutPage() {
             >
               <h3 className="text-xl font-medium mb-4">Détails Soignés</h3>
               <p className="text-gray-600">
-                Je m'assure de capturer tous les petits détails que vous avez soigneusement planifiés - des alliances 
+                Nous nous assurons de capturer tous les petits détails que vous avez soigneusement planifiés - des alliances 
                 aux décorations florales - pour préserver chaque aspect de votre célébration.
               </p>
             </motion.div>
@@ -176,10 +176,10 @@ export default function AboutPage() {
             <h2 className="text-2xl font-serif font-light">Formation & Parcours</h2>
             <div className="h-1 w-20 bg-gray-300"></div>
             <p className="text-gray-600">
-            "Mon aventure dans la photographie de mariage a commencé comme une exploration passionnée, un chemin que j'ai tracé moi-même, pas à pas. 
-            En tant qu'autodidacte, chaque mariage a été une leçon précieuse, une opportunité d'affiner mon regard et ma technique. Au fil du temps, 
+            "Notre aventure dans la photographie de mariage a commencé comme une exploration passionnée, un chemin que nous avons tracé nous-même, pas à pas. 
+            En tant qu'autodidacte, chaque mariage a été une leçon précieuse, une opportunité d'affiner notre regard et notre technique. Au fil du temps, 
             une affinité particulière s'est développée : celle de capturer l'essence des personnes à travers le portrait. Ces moments intimes, 
-            ces expressions fugaces, racontent une partie unique de votre histoire. C'est avec cette sensibilité pour le portrait que j'aborde chaque mariage, 
+            ces expressions fugaces, racontent une partie unique de votre histoire. C'est avec cette sensibilité pour le portrait que nous abordons chaque mariage, 
             cherchant à immortaliser non seulement l'événement, mais aussi les émotions profondes qui vous unissent."
             </p>
           </motion.div>
@@ -193,11 +193,11 @@ export default function AboutPage() {
             <h2 className="text-2xl font-serif font-light">Équipement Professionnel</h2>
             <div className="h-1 w-20 bg-gray-300"></div>
             <p className="text-gray-600">
-              J'utilise exclusivement du matériel haut de gamme pour garantir des images de la plus haute qualité, 
+              Nous utilisons exclusivement du matériel haut de gamme pour garantir des images de la plus haute qualité, 
               quelles que soient les conditions d&apos;éclairage ou les défis du lieu.
             </p>
             <p className="text-gray-600">
-              Mon équipement est toujours redondant pour assurer une sécurité maximale - je n'ai jamais manqué un moment 
+              Notre équipement est toujours redondant pour assurer une sécurité maximale - nous n'avons jamais manqué un moment 
               important en raison d&apos;une défaillance technique.
             </p>
             <ul className="list-disc list-inside text-gray-600 space-y-2">
