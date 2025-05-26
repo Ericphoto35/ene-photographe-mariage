@@ -247,8 +247,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-medium mb-1">Email</h3>
-                  <a href="mailto:contact@ene-photographie.com" className="text-gray-600 hover:text-gray-900 transition-colors">
-                    contact@ene-photographie.com
+                  <a href="mailto:contact@enemariage.fr" className="text-gray-600 hover:text-gray-900 transition-colors">
+                    contact@enemariage.fr
                   </a>
                 </div>
               </div>
