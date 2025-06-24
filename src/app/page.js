@@ -8,10 +8,10 @@ import { HeroSection, ServicesSection, TestimonialsSection } from "./components/
 // Métadonnées pour le SEO
 export const metadata = {
   title: "ENE - Photographe de Mariage à Rennes | Capturer vos moments précieux",
-  description: "Photographe de mariage professionnel à Rennes, spécialisé dans la capture de moments précieux avec élégance et authenticité. Découvrez mon portfolio et mes services.",
+  description: "Photographe de mariage professionnel à Rennes et en Bretagne, spécialisé dans la capture de moments précieux avec élégance et authenticité. Découvrez mon portfolio et mes services.",
   keywords: ["photographe mariage", "photographe Rennes", "photos de mariage", "mariage Bretagne", "photographe professionnel"],
   openGraph: {
-    title: "ENE - Photographe de Mariage à Rennes",
+    title: "ENE - Photographe de Mariage à Rennes et en Bretagne",
     description: "Capturez les moments précieux de votre mariage avec un style élégant et authentique",
     images: [
       {

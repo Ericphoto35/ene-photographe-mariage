@@ -66,7 +66,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="max-w-3xl mx-auto"
         >
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white sm:text-6xl mb-6">L'oeil de monsieur S, Photographe de Mariage</h1>
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white sm:text-6xl mb-6">L'oeil de monsieur S, Photographe de Mariage à Rennes et en Bretagne</h1>
           <motion.p 
             key={`title-${currentSlide}`}
             initial={{ opacity: 0, y: 20 }}
