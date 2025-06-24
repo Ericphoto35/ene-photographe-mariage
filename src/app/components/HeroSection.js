@@ -66,27 +66,28 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="max-w-3xl mx-auto"
         >
-          <motion.h1 
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white sm:text-6xl mb-6">L'oeil de monsieur S, Photographe de Mariage</h1>
+          <motion.p 
             key={`title-${currentSlide}`}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl md:text-6xl font-serif font-light mb-4"
+            className="text-2xl md:text-3xl font-serif font-light mb-4"
           >
             {slides[currentSlide].title}
-          </motion.h1>
+          </motion.p>
           
-          <motion.h2
+          <motion.p
             key={`subtitle-${currentSlide}`}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-2xl md:text-4xl font-serif font-light mb-8"
+            className="text-xl md:text-2xl font-serif font-light mb-8"
           >
             {slides[currentSlide].subtitle}
-          </motion.h2>
+          </motion.p>
           
           <motion.div
             initial={{ opacity: 0, y: 20 }}
