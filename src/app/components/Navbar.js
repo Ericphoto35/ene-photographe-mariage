@@ -58,7 +58,7 @@ const Navbar = () => {
               transition={{ duration: 0.5 }}
               className={`${scrolled ? 'text-black' : 'text-white'}`}
             >
-              ENE
+              L'oeil de monsieur S
             </motion.span>
             <motion.span 
               initial={{ opacity: 0 }}
