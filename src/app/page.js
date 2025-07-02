@@ -26,7 +26,7 @@ export const metadata = {
   },
   // Balises structurées pour les moteurs de recherche (Schema.org)
   alternates: {
-    canonical: 'https://www.ene-photographe-mariage.fr',
+    canonical: 'https://www.enephotos.fr',
   },
   robots: {
     index: true,

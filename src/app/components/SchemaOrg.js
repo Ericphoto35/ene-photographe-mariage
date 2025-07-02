@@ -5,8 +5,8 @@ export default function SchemaOrg() {
     "name": "ENE - Photographe de Mariage",
     "description": "Photographe de mariage professionnel à Rennes, spécialisé dans la capture de moments précieux avec élégance et authenticité.",
     "image": "/images/jg.jpg",
-    "url": "https://www.ene-photographe-mariage.fr",
-    "telephone": "+33600000000",
+    "url": "https://www.enephotos.fr/",
+    "telephone": "+33633320795",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Rennes",
