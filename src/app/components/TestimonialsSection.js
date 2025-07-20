@@ -19,7 +19,7 @@ const TestimonialsSection = ({ testimonials }) => {
             initial={{ opacity: 0, scaleX: 0 }}
             animate={{ opacity: 1, scaleX: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="h-px w-24 bg-gray-400 mx-auto mb-6"
+            className="h-px w-24 bg-[var(--border-gray)] mx-auto mb-6"
           ></motion.div>
         </div>
 
@@ -30,16 +30,16 @@ const TestimonialsSection = ({ testimonials }) => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 * index }}
-              className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="bg-[var(--bg-white)] p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 rounded-full bg-gray-200 mr-4"></div>
                 <div>
                   <h4 className="font-medium">{testimonial.name}</h4>
-                  <p className="text-sm text-gray-500">{testimonial.date}</p>
+                  <p className="text-sm text-[var(--text-gray-600)]">{testimonial.date}</p>
                 </div>
               </div>
-              <p className="text-gray-600 italic">
+              <p className="text-[var(--text-gray-600)] italic">
                 &quot;{testimonial.quote}&quot;
               </p>
             </motion.div>
@@ -54,7 +54,7 @@ const TestimonialsSection = ({ testimonials }) => {
         >
           <Link 
             href="/galerie" 
-            className="inline-block px-8 py-3 border border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white transition-colors rounded-full text-sm uppercase tracking-wider font-medium w-full sm:w-auto text-center"
+            className="inline-block px-8 py-3 border border-[var(--text-gray-800)] text-[var(--text-gray-800)] hover:bg-[var(--text-gray-800)] hover:text-[var(--bg-white)] transition-colors rounded-full text-sm uppercase tracking-wider font-medium w-full sm:w-auto text-center"
           >
             Voir mon portfolio
           </Link>

@@ -1,12 +1,15 @@
 'use client';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiMenu, FiX } from 'react-icons/fi';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+  const isHomePage = pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,7 +51,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-sm shadow-md py-3' : 'bg-transparent py-5'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled || !isHomePage ? 'bg-[var(--bg-white)]/90 backdrop-blur-sm shadow-md py-3' : 'bg-transparent py-5'}`}>
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
           <Link href="/" className="text-2xl font-serif font-bold tracking-wider">
@@ -56,7 +59,7 @@ const Navbar = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
-              className={`${scrolled ? 'text-black' : 'text-white'}`}
+              className={`${scrolled || !isHomePage ? 'text-[var(--foreground)]' : 'text-white'}`}
             >
               L'oeil de monsieur R
             </motion.span>
@@ -64,7 +67,7 @@ const Navbar = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className={`text-sm block font-light ${scrolled ? 'text-gray-700' : 'text-gray-200'}`}
+              className={`text-sm block font-light ${scrolled || !isHomePage ? 'text-[var(--text-gray-600)]' : 'text-gray-200'}`}
             >
               photographe de mariage
             </motion.span>
@@ -76,7 +79,7 @@ const Navbar = () => {
               <Link 
                 key={item} 
                 href={item === 'Accueil' ? '/' : `/${item === 'À propos' ? 'a-propos' : item.toLowerCase()}`}
-                className={`relative font-light text-sm tracking-wider ${scrolled ? 'text-gray-800' : 'text-white'} hover:opacity-80 transition-opacity`}
+                className={`relative font-light text-sm tracking-wider ${scrolled || !isHomePage ? 'text-[var(--text-gray-800)]' : 'text-white'} hover:opacity-80 transition-opacity`}
               >
                 <motion.span
                   initial={{ y: -20, opacity: 0 }}
@@ -91,7 +94,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <motion.button 
-            className={`md:hidden ${scrolled ? 'text-gray-800' : 'text-white'} focus:outline-none`}
+            className={`md:hidden ${scrolled || !isHomePage ? 'text-[var(--text-gray-800)]' : 'text-white'} focus:outline-none`}
             onClick={toggleMenu}
             whileTap={{ scale: 0.95 }}
           >
@@ -108,7 +111,7 @@ const Navbar = () => {
             animate="open"
             exit="closed"
             variants={menuVariants}
-            className="md:hidden bg-white/95 backdrop-blur-md absolute top-full left-0 w-full shadow-lg py-5"
+            className="md:hidden bg-[var(--bg-white)]/95 backdrop-blur-md absolute top-full left-0 w-full shadow-lg py-5"
           >
             <div className="container mx-auto px-4">
               <div className="flex flex-col space-y-4">
@@ -116,7 +119,7 @@ const Navbar = () => {
                   <motion.div key={item} variants={itemVariants}>
                     <Link 
                       href={item === 'Accueil' ? '/' : `/${item === 'À propos' ? 'a-propos' : item.toLowerCase()}`}
-                      className="block py-2 text-gray-800 hover:text-gray-600 transition-colors"
+                      className="block py-2 text-[var(--text-gray-800)] hover:text-[var(--text-gray-600)] transition-colors"
                       onClick={() => setIsOpen(false)}
                     >
                       {item}

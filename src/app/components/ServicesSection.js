@@ -51,14 +51,14 @@ const ServicesSection = () => {
   };
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-[var(--bg-gray-50)]">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <motion.h2
             initial={{ opacity: 0, y: -20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6 }}
-            className="text-3xl md:text-4xl font-serif mb-4"
+            className="text-3xl md:text-4xl font-serif mb-4 text-[var(--text-gray-800)]"
           >
             Mes Services
           </motion.h2>
@@ -66,13 +66,13 @@ const ServicesSection = () => {
             initial={{ opacity: 0, scaleX: 0 }}
             animate={isInView ? { opacity: 1, scaleX: 1 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="h-px w-24 bg-gray-400 mx-auto mb-6"
+            className="h-px w-24 bg-[var(--border-gray)] mx-auto mb-6"
           ></motion.div>
           <motion.p
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="max-w-2xl mx-auto text-gray-600"
+            className="max-w-2xl mx-auto text-[var(--text-gray-600)]"
           >
             Je propose une gamme complète de services pour capturer et préserver les moments les plus précieux de votre mariage.
           </motion.p>
@@ -90,13 +90,13 @@ const ServicesSection = () => {
               key={index}
               variants={itemVariants}
               whileHover={{ y: -10, transition: { duration: 0.3 } }}
-              className="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow"
+              className="bg-[var(--bg-white)] p-8 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow"
             >
-              <div className="text-gray-800 mb-4 flex justify-center">
+              <div className="text-[var(--text-gray-800)] mb-4 flex justify-center">
                 {service.icon}
               </div>
-              <h3 className="text-xl font-medium mb-3">{service.title}</h3>
-              <p className="text-gray-600 text-sm">{service.description}</p>
+              <h3 className="text-xl font-medium mb-3 text-[var(--text-gray-800)]">{service.title}</h3>
+              <p className="text-[var(--text-gray-600)] text-sm">{service.description}</p>
             </motion.div>
           ))}
         </motion.div>

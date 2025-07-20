@@ -65,20 +65,20 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-serif font-light">Capturer l&apos;essence de vos moments précieux</h2>
-              <div className="h-1 w-20 bg-gray-300"></div>
-              <p className="text-gray-600">
+              <div className="h-1 w-20 bg-[var(--border-gray)]"></div>
+              <p className="text-[var(--text-gray-600)]">
                 Bienvenue dans mon univers photographique où chaque image raconte une histoire unique. 
                 Spécialisé dans la photographie de mariage, je m&apos;engage à immortaliser les émotions et 
                 les instants qui font de votre journée un moment inoubliable.
               </p>
-              <p className="text-gray-600">
+              <p className="text-[var(--text-gray-600)]">
                 Mon approche combine un style documentaire discret et des portraits élégants pour créer 
                 un récit visuel authentique de votre célébration.  
               </p>
               <div className="flex justify-center md:justify-start mt-6">
                 <Link 
                   href="/a-propos" 
-                  className="inline-block px-6 py-3 border border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white transition-colors rounded-full text-sm uppercase tracking-wider font-medium"
+                  className="inline-block px-6 py-3 border border-[var(--text-gray-800)] text-[var(--text-gray-800)] hover:bg-[var(--text-gray-800)] hover:text-[var(--bg-white)] transition-colors rounded-full text-sm uppercase tracking-wider font-medium"
                 >
                   En savoir plus
                 </Link>
@@ -125,43 +125,43 @@ export default function Home() {
       <ServicesSection />
 
       {/* Section Pourquoi Me Choisir */}
-      <section className="py-20 px-4 bg-gray-100">
+      <section className="py-20 px-4 bg-[var(--bg-gray-100)]">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-serif mb-4">Pourquoi Me Choisir</h2>
-            <div className="h-px w-24 bg-gray-400 mx-auto mb-6"></div>
-            <p className="max-w-2xl mx-auto text-gray-600">
+            <div className="h-px w-24 bg-[var(--border-gray)] mx-auto mb-6"></div>
+            <p className="max-w-2xl mx-auto text-[var(--text-gray-600)]">
               Je m&apos;engage à offrir une expérience exceptionnelle à chaque couple, avec une attention particulière aux détails et aux moments qui comptent.  
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
-              <div className="text-gray-800 mb-4 flex justify-center">
+            <div className="bg-[var(--bg-white)] p-8 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+              <div className="text-[var(--text-gray-800)] mb-4 flex justify-center">
                 <FiCamera size={36} />
               </div>
               <h3 className="text-xl font-medium mb-3">Style Unique</h3>
-              <p className="text-gray-600 text-sm">
+              <p className="text-[var(--text-gray-600)] text-sm">
                 Une approche photographique qui mêle élégance intemporelle et spontanéité pour des images authentiques et émotionnelles.
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
-              <div className="text-gray-800 mb-4 flex justify-center">
+            <div className="bg-[var(--bg-white)] p-8 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+              <div className="text-[var(--text-gray-800)] mb-4 flex justify-center">
                 <FiHeart size={36} />
               </div>
               <h3 className="text-xl font-medium mb-3">Passion & Dévouement</h3>
-              <p className="text-gray-600 text-sm">
+              <p className="text-[var(--text-gray-600)] text-sm">
                 Un engagement total pour capturer l&apos;essence de votre journée avec attention, discrétion et professionnalisme.
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
-              <div className="text-gray-800 mb-4 flex justify-center">
+            <div className="bg-[var(--bg-white)] p-8 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+              <div className="text-[var(--text-gray-800)] mb-4 flex justify-center">
                 <FiMessageCircle size={36} />
               </div>
               <h3 className="text-xl font-medium mb-3">Communication Fluide</h3>
-              <p className="text-gray-600 text-sm">
+              <p className="text-[var(--text-gray-600)] text-sm">
                 Un accompagnement personnalisé avant, pendant et après votre mariage pour une expérience sereine et sans stress.
               </p>
             </div>
@@ -170,7 +170,7 @@ export default function Home() {
           <div className="flex justify-center mt-12 px-4">
             <Link 
               href="/contact" 
-              className="inline-block px-8 py-3 bg-gray-800 text-white hover:bg-gray-700 transition-colors rounded-full text-sm uppercase tracking-wider font-medium w-full sm:w-auto text-center"
+              className="inline-block px-8 py-3 bg-[var(--text-gray-800)] text-[var(--bg-white)] hover:bg-gray-700 transition-colors rounded-full text-sm uppercase tracking-wider font-medium w-full sm:w-auto text-center"
             >
               Demander un devis
             </Link>

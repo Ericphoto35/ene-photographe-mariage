@@ -71,7 +71,7 @@ const GalleryGrid = ({ images }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 p-4"
           onClick={closeLightbox}
           onKeyDown={handleKeyDown}
           tabIndex={0}
@@ -120,7 +120,7 @@ const GalleryGrid = ({ images }) => {
               priority
               style={{ width: 'auto', height: 'auto' }}
             />
-            <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent text-white">
+            <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent text-white">
               <h3 className="text-xl font-medium">{selectedImage.title}</h3>
               {selectedImage.location && (
                 <p className="text-sm text-white/80">{selectedImage.location}</p>

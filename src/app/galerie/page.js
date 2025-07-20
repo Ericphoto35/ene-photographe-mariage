@@ -130,13 +130,13 @@ export default function GalleryPage() {
             initial={{ opacity: 0, scaleX: 0 }}
             animate={{ opacity: 1, scaleX: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="h-px w-24 bg-gray-400 mx-auto mb-6"
+            className="h-px w-24 bg-[var(--border-gray)] mx-auto mb-6"
           ></motion.div>
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="max-w-2xl mx-auto text-gray-600"
+            className="max-w-2xl mx-auto text-[var(--text-gray-600)]"
           >
             Découvrez une sélection de mes photographies de mariage, capturant l&apos;amour, l&apos;émotion et la beauté de ces journées spéciales.
           </motion.p>
@@ -152,8 +152,8 @@ export default function GalleryPage() {
               onClick={() => setActiveCategory(category)}
               className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ${
                 activeCategory === category
-                  ? 'bg-gray-800 text-white'
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                  ? 'bg-[var(--text-gray-800)] text-[var(--bg-white)]'
+                  : 'bg-[var(--bg-gray-100)] text-[var(--text-gray-600)] hover:bg-[var(--bg-gray-50)]'
               }`}
             >
               {category}
@@ -172,14 +172,14 @@ export default function GalleryPage() {
 
         {/* Appel à l'action */}
         <div className="text-center mt-16">
-          <p className="text-gray-600 mb-6">
+          <p className="text-[var(--text-gray-600)] mb-6">
             Vous aimez ce que vous voyez ? Contactez-moi pour discuter de votre projet de mariage.
           </p>
           <motion.a
             href="/contact"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="inline-block px-8 py-3 bg-gray-800 text-white hover:bg-gray-700 transition-colors rounded-full text-sm uppercase tracking-wider font-medium"
+            className="inline-block px-8 py-3 bg-[var(--text-gray-800)] text-[var(--bg-white)] hover:bg-[var(--text-gray-600)] transition-colors rounded-full text-sm uppercase tracking-wider font-medium"
           >
             Me contacter
           </motion.a>
