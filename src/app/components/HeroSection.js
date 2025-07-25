@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { FaInstagram } from 'react-icons/fa';
 
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -107,6 +108,24 @@ const HeroSection = () => {
             >
               Voir la galerie
             </Link>
+          </motion.div>
+          
+          {/* Icône Instagram */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="mt-6 flex justify-center"
+          >
+            <a 
+              href="https://www.instagram.com/monsieur_r_mariage" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-white hover:text-pink-400 transition-colors duration-300 transform hover:scale-110"
+              aria-label="Suivez-nous sur Instagram"
+            >
+              <FaInstagram size={32} />
+            </a>
           </motion.div>
         </motion.div>
       </div>
