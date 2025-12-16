@@ -22,33 +22,64 @@ export default function ContactPage() {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setError('');
+    // Dans ContactPage.js
 
-    // Simuler l'envoi du formulaire (à remplacer par votre logique d'envoi réelle)
-    try {
-      // Simulation d'une requête API
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      
-      // Réinitialiser le formulaire après succès
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        eventDate: '',
-        eventLocation: '',
-        eventType: 'Mariage',
-        message: '',
-      });
-      setIsSubmitted(true);
-    } catch (err) {
-      setError('Une erreur est survenue lors de l\'envoi du formulaire. Veuillez réessayer.');
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setIsSubmitting(true);
+        setError('');
+
+        // Dans ContactPage.js, remplacez tout le bloc try/catch par :
+
+        try {
+            console.log("Envoi des données...", formData); // Log 1
+
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+
+            // On vérifie d'abord si c'est du JSON avant de parser
+            const contentType = response.headers.get("content-type");
+            let data;
+
+            if (contentType && contentType.indexOf("application/json") !== -1) {
+                data = await response.json();
+            } else {
+                // Si ce n'est pas du JSON, c'est probablement une page d'erreur HTML (404 ou 500)
+                const text = await response.text();
+                console.error("Réponse non-JSON reçue du serveur:", text);
+                throw new Error("Le serveur a renvoyé une erreur (voir console)");
+            }
+
+            if (!response.ok) {
+                throw new Error(data.message || 'Une erreur est survenue');
+            }
+
+            console.log("Succès:", data); // Log succès
+
+            // Réinitialiser le formulaire
+            setFormData({
+                name: '',
+                email: '',
+                phone: '',
+                eventDate: '',
+                eventLocation: '',
+                eventType: 'Mariage',
+                message: '',
+            });
+            setIsSubmitted(true);
+
+        } catch (err) {
+            console.error("DÉTAIL DE L'ERREUR :", err); // Regardez ici dans la console F12
+            setError('Une erreur est survenue : ' + err.message);
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
 
   return (
     <div className="min-h-screen pt-24 pb-20">

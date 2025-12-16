@@ -59,7 +59,7 @@ const Footer = () => {
               <h4 className="text-sm font-medium mb-3">Suivez-nous</h4>
               <div className="flex space-x-4">
                 <motion.a 
-                  href="https://instagram.com" 
+                  href="https://www.instagram.com/monsieur_r_mariage/"
                   target="_blank" 
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1 }}
@@ -69,7 +69,7 @@ const Footer = () => {
                   <FiInstagram size={18} />
                 </motion.a>
                 <motion.a 
-                  href="https://facebook.com" 
+                  href="https://www.instagram.com/monsieur_r_mariage/"
                   target="_blank" 
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1 }}

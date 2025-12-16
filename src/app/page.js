@@ -26,7 +26,7 @@ export const metadata = {
   },
   // Balises structurées pour les moteurs de recherche (Schema.org)
   alternates: {
-    canonical: 'https://www.enephotos.fr',
+    canonical: 'https://www.loeil-de-monsieur-r.fr',
   },
   robots: {
     index: true,
