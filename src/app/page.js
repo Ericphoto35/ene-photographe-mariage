@@ -184,17 +184,17 @@ export default function Home() {
           {
             name: 'Marie & Thomas',
             date: 'Mariés en Juin 2023',
-            quote: 'ENE a su capturer l\'essence même de notre journée. Chaque photo raconte une histoire et nous permet de revivre ces moments magiques. Un talent exceptionnel!'
+            quote: 'Monsieur R a su capturer l\'essence même de notre journée. Chaque photo raconte une histoire et nous permet de revivre ces moments magiques. Un talent exceptionnel!'
           },
           {
             name: 'Sophie & Lucas',
-            date: 'Mariés en Septembre 2023',
-            quote: 'Nous sommes enchantés par les photos de notre mariage. ENE a su se faire discret tout en capturant tous les moments importants. Le résultat est simplement magnifique!'
+            date: 'Mariés en Septembre 2022',
+            quote: 'Nous sommes enchantés par les photos de notre mariage. Monsieur R a su se faire discret tout en capturant tous les moments importants. Le résultat est simplement magnifique!'
           },
           {
             name: 'Julie & Antoine',
-            date: 'Mariés en Mai 2024',
-            quote: 'Un grand merci pour ces souvenirs incroyables! Votre professionnalisme et votre créativité ont fait toute la différence. Nous recommandons ENE sans hésitation.'
+            date: 'Mariés en Mai 2023',
+            quote: 'Un grand merci pour ces souvenirs incroyables! Votre professionnalisme et votre créativité ont fait toute la différence. Nous recommandons Monsieur R sans hésitation.'
           }
         ]}
       />
