@@ -57,7 +57,7 @@ export default function AboutPage() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="space-y-6"
           >
-            <h2 className="text-3xl font-serif font-light">Bonjour, nous sommes ENE Photographies</h2>
+            <h2 className="text-3xl font-serif font-light">Bonjour, je suis l'oeil de Monsieur R Photographies</h2>
             <div className="h-1 w-20 bg-gray-300"></div>
             <p className="text-gray-600">
               Nous sommes une équipe de photographe de mariage passionnée, nous capturons des moments authentiques et émotionnels depuis plus de 10 ans. 

@@ -313,7 +313,7 @@ export default function ContactPage() {
             <h3 className="text-xl font-medium mb-4">Suivez-moi</h3>
             <div className="flex space-x-4">
               <a 
-                href="https://instagram.com" 
+                href="https://www.instagram.com/monsieur_r_mariage/"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-gray-100 p-3 rounded-full hover:bg-gray-200 transition-colors"
@@ -321,7 +321,7 @@ export default function ContactPage() {
                 <FiInstagram size={20} className="text-gray-700" />
               </a>
               <a 
-                href="https://facebook.com" 
+                href="https://www.instagram.com/monsieur_r_mariage/"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-gray-100 p-3 rounded-full hover:bg-gray-200 transition-colors"

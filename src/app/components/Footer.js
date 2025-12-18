@@ -13,8 +13,8 @@ const Footer = () => {
           {/* Logo & Description */}
           <div className="space-y-4">
             <Link href="/" className="text-2xl font-serif font-bold tracking-wider">
-              <span>ENE</span>
-              <span className="text-sm block font-light">photographe de mariage</span>
+              <span>L'oeil de Monsieur R</span>
+              <span className="text-sm block font-light">Photographe de mariage</span>
             </Link>
             <p className="text-gray-400 text-sm mt-2">
               Capturer vos moments précieux avec élégance et authenticité. Spécialiste en photographie de mariage.
