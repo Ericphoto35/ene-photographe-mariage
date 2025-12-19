@@ -84,7 +84,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-10 pt-6 text-center text-gray-500 text-sm">
-          <p>&copy; {currentYear} ENE Photographe de Mariage. Tous droits réservés.Projet réalisé par ENE-Solutions.</p>
+          <p>&copy; {currentYear} Monsieur R Photographe de Mariage. Tous droits réservés.Projet réalisé par ENE-Solutions.</p>
         </div>
       </div>
     </footer>
