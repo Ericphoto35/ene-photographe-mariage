@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 import { FaInstagram } from 'react-icons/fa';
 
 const HeroSection = () => {
@@ -39,21 +40,26 @@ const HeroSection = () => {
           key={index}
           className="absolute inset-0 w-full h-full"
           initial={{ opacity: 0 }}
-          animate={{ 
+          animate={{
             opacity: currentSlide === index ? 1 : 0,
             scale: currentSlide === index ? 1 : 1.1
           }}
-          transition={{ 
+          transition={{
             opacity: { duration: 1.5 },
             scale: { duration: 6 }
           }}
           style={{
-            backgroundImage: `url(${slide.image})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
             zIndex: currentSlide === index ? 1 : 0
           }}
         >
+          <Image
+            src={slide.image}
+            alt={slide.title}
+            fill
+            className="object-cover"
+            priority={index === 0}
+            sizes="100vw"
+          />
           {/* Overlay */}
           <div className="absolute inset-0 bg-black/40"></div>
         </motion.div>
@@ -68,7 +74,7 @@ const HeroSection = () => {
           className="max-w-3xl mx-auto"
         >
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white sm:text-6xl mb-6">Photographe de Mariage à Rennes et en Bretagne</h1>
-          <motion.p 
+          <motion.p
             key={`title-${currentSlide}`}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -78,7 +84,7 @@ const HeroSection = () => {
           >
             {slides[currentSlide].title}
           </motion.p>
-          
+
           <motion.p
             key={`subtitle-${currentSlide}`}
             initial={{ opacity: 0, y: 20 }}
@@ -89,27 +95,27 @@ const HeroSection = () => {
           >
             {slides[currentSlide].subtitle}
           </motion.p>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             className="mt-8 flex flex-col sm:flex-row gap-4 sm:gap-2 justify-center items-center"
           >
-            <Link 
+            <Link
               href="/contact"
               className="px-8 py-3 bg-white text-gray-900 hover:bg-gray-100 transition-colors rounded-full text-sm uppercase tracking-wider font-medium w-full sm:w-auto text-center"
             >
               Contactez-moi
             </Link>
-            <Link 
+            <Link
               href="/galerie"
               className="px-8 py-3 border border-white text-white hover:bg-white/10 transition-colors rounded-full text-sm uppercase tracking-wider font-medium w-full sm:w-auto text-center"
             >
               Voir la galerie
             </Link>
           </motion.div>
-          
+
           {/* Icône Instagram */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -117,9 +123,9 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="mt-6 flex justify-center"
           >
-            <a 
-              href="https://www.instagram.com/monsieur_r_mariage" 
-              target="_blank" 
+            <a
+              href="https://www.instagram.com/monsieur_r_mariage"
+              target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-pink-400 transition-colors duration-300 transform hover:scale-110"
               aria-label="Suivez-nous sur Instagram"
@@ -136,9 +142,8 @@ const HeroSection = () => {
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`w-2 h-2 rounded-full transition-all duration-300 ${
-              currentSlide === index ? 'w-8 bg-white' : 'bg-white/50'
-            }`}
+            className={`w-2 h-2 rounded-full transition-all duration-300 ${currentSlide === index ? 'w-8 bg-white' : 'bg-white/50'
+              }`}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}

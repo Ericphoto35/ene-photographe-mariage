@@ -2,8 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { FiCamera, FiHeart, FiMessageCircle } from "react-icons/fi";
 
-// Importer les composants clients depuis le fichier dédié
-import { HeroSection, ServicesSection, TestimonialsSection } from "./components/ClientComponents";
+// Importer les composants directement
+import HeroSection from "./components/HeroSection";
+import ServicesSection from "./components/ServicesSection";
+import TestimonialsSection from "./components/TestimonialsSection";
 
 // Métadonnées pour le SEO
 export const metadata = {
@@ -67,17 +69,17 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl font-serif font-light">Capturer l&apos;essence de vos moments précieux</h2>
               <div className="h-1 w-20 bg-[var(--border-gray)]"></div>
               <p className="text-[var(--text-gray-600)]">
-                Bienvenue dans mon univers photographique où chaque image raconte une histoire unique. 
-                Spécialisé dans la photographie de mariage, je m&apos;engage à immortaliser les émotions et 
+                Bienvenue dans mon univers photographique où chaque image raconte une histoire unique.
+                Spécialisé dans la photographie de mariage, je m&apos;engage à immortaliser les émotions et
                 les instants qui font de votre journée un moment inoubliable.
               </p>
               <p className="text-[var(--text-gray-600)]">
-                Mon approche combine un style documentaire discret et des portraits élégants pour créer 
-                un récit visuel authentique de votre célébration.  
+                Mon approche combine un style documentaire discret et des portraits élégants pour créer
+                un récit visuel authentique de votre célébration.
               </p>
               <div className="flex justify-center md:justify-start mt-6">
-                <Link 
-                  href="/a-propos" 
+                <Link
+                  href="/a-propos"
                   className="inline-block px-6 py-3 border border-[var(--text-gray-800)] text-[var(--text-gray-800)] hover:bg-[var(--text-gray-800)] hover:text-[var(--bg-white)] transition-colors rounded-full text-sm uppercase tracking-wider font-medium"
                 >
                   En savoir plus
@@ -87,8 +89,8 @@ export default function Home() {
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
                 <div className="overflow-hidden rounded-lg shadow-md h-64 md:h-80">
-                  <Image 
-                    src={featuredImages[0].src} 
+                  <Image
+                    src={featuredImages[0].src}
                     alt={featuredImages[0].alt}
                     width={400}
                     height={600}
@@ -96,8 +98,8 @@ export default function Home() {
                   />
                 </div>
                 <div className="overflow-hidden rounded-lg shadow-md h-40 md:h-48">
-                  <Image 
-                    src={featuredImages[1].src} 
+                  <Image
+                    src={featuredImages[1].src}
                     alt={featuredImages[1].alt}
                     width={300}
                     height={200}
@@ -107,8 +109,8 @@ export default function Home() {
               </div>
               <div className="mt-8">
                 <div className="overflow-hidden rounded-lg shadow-md h-80 md:h-96">
-                  <Image 
-                    src={featuredImages[2].src} 
+                  <Image
+                    src={featuredImages[2].src}
                     alt={featuredImages[2].alt}
                     width={400}
                     height={700}
@@ -131,7 +133,7 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-serif mb-4">Pourquoi Me Choisir</h2>
             <div className="h-px w-24 bg-[var(--border-gray)] mx-auto mb-6"></div>
             <p className="max-w-2xl mx-auto text-[var(--text-gray-600)]">
-              Je m&apos;engage à offrir une expérience exceptionnelle à chaque couple, avec une attention particulière aux détails et aux moments qui comptent.  
+              Je m&apos;engage à offrir une expérience exceptionnelle à chaque couple, avec une attention particulière aux détails et aux moments qui comptent.
             </p>
           </div>
 
@@ -168,8 +170,8 @@ export default function Home() {
           </div>
 
           <div className="flex justify-center mt-12 px-4">
-            <Link 
-              href="/contact" 
+            <Link
+              href="/contact"
               className="inline-block px-8 py-3 bg-[var(--text-gray-800)] text-[var(--bg-white)] hover:bg-gray-700 transition-colors rounded-full text-sm uppercase tracking-wider font-medium w-full sm:w-auto text-center"
             >
               Demander un devis
@@ -179,7 +181,7 @@ export default function Home() {
       </section>
 
       {/* Section Témoignages */}
-      <TestimonialsSection 
+      <TestimonialsSection
         testimonials={[
           {
             name: 'Marie & Thomas',
