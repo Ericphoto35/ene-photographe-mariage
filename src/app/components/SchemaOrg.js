@@ -1,16 +1,18 @@
 export default function SchemaOrg() {
   const schema = {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "ENE - Photographe de Mariage",
-    "description": "Photographe de mariage professionnel à Rennes, spécialisé dans la capture de moments précieux avec élégance et authenticité.",
-    "image": "/images/jg.jpg",
-    "url": "https://www.enephotos.fr/",
+    "@type": "LocalBusiness",
+    "name": "L'Oeil de Monsieur R - Photographe de Mariage",
+    "description": "Photographe de mariage professionnel basé à Rennes, intervenant en Bretagne et partout en France. Capture de moments authentiques et émotionnels avec élégance et discrétion.",
+    "image": "https://www.loeil-de-monsieur-r.fr/images/jg.jpg",
+    "url": "https://www.loeil-de-monsieur-r.fr",
     "telephone": "+33633320795",
+    "email": "contact@enemariage.fr",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Rennes",
       "addressRegion": "Bretagne",
+      "postalCode": "35000",
       "addressCountry": "FR"
     },
     "geo": {
@@ -31,8 +33,16 @@ export default function SchemaOrg() {
       "opens": "09:00",
       "closes": "18:00"
     },
+    "areaServed": [
+      { "@type": "City", "name": "Rennes" },
+      { "@type": "City", "name": "Saint-Malo" },
+      { "@type": "City", "name": "Vannes" },
+      { "@type": "City", "name": "Dinan" },
+      { "@type": "City", "name": "Nantes" },
+      { "@type": "AdministrativeArea", "name": "Bretagne" }
+    ],
     "sameAs": [
-      "https://www.instagram.com/ene_photographe/",
+      "https://www.instagram.com/monsieur_r_mariage/",
       "https://www.facebook.com/enephotographe/"
     ],
     "hasOfferCatalog": {

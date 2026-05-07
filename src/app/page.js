@@ -9,18 +9,18 @@ import TestimonialsSection from "./components/TestimonialsSection";
 
 // Métadonnées pour le SEO
 export const metadata = {
-  title: "ENE - Photographe de Mariage à Rennes | Capturer vos moments précieux",
-  description: "Photographe de mariage professionnel à Rennes et en Bretagne, spécialisé dans la capture de moments précieux avec élégance et authenticité. Découvrez mon portfolio et mes services.",
-  keywords: ["photographe mariage", "photographe Rennes", "photos de mariage", "mariage Bretagne", "photographe professionnel"],
+  title: "Photographe de Mariage Rennes et Bretagne | L'Oeil de Monsieur R",
+  description: "Photographe de mariage professionnel à Rennes et en Bretagne. L'Oeil de Monsieur R capture avec authenticité vos moments précieux : Saint-Malo, Vannes, Dinan, et toute la Bretagne.",
+  keywords: ["photographe mariage Rennes", "photographe mariage Bretagne", "photographe mariage Saint-Malo", "photographe mariage Vannes", "photographe mariage Dinan", "photos de mariage", "L'Oeil de Monsieur R"],
   openGraph: {
-    title: "ENE - Photographe de Mariage à Rennes et en Bretagne",
-    description: "Capturez les moments précieux de votre mariage avec un style élégant et authentique",
+    title: "Photographe de Mariage à Rennes et en Bretagne | L'Oeil de Monsieur R",
+    description: "Capturez les moments précieux de votre mariage en Bretagne avec un style élégant et authentique",
     images: [
       {
         url: '/images/jg.jpg',
         width: 1200,
         height: 630,
-        alt: 'ENE Photographe de Mariage'
+        alt: "L'Oeil de Monsieur R - Photographe de Mariage à Rennes, Bretagne"
       }
     ],
     locale: 'fr_FR',
@@ -44,15 +44,15 @@ export default function Home() {
   const featuredImages = [
     {
       src: "/images/jg.jpg",
-      alt: "Couple de mariés au coucher du soleil"
+      alt: "Couple de mariés au coucher du soleil en Bretagne - L'Oeil de Monsieur R photographe mariage Rennes"
     },
     {
       src: "/images/mmmariage2.webp",
-      alt: "Préparation de la mariée"
+      alt: "Préparation de la mariée à Rennes - L'Oeil de Monsieur R photographe mariage Bretagne"
     },
     {
       src: "/images/92336089_3163801453654358_8416366644216987648_n.jpg",
-      alt: "Cérémonie de mariage"
+      alt: "Cérémonie de mariage en Bretagne - L'Oeil de Monsieur R photographe Rennes"
     }
   ];
 

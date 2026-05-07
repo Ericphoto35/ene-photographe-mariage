@@ -10,16 +10,19 @@ const HeroSection = () => {
   const slides = [
     {
       image: '/images/87157226_3052041271497044_5875200998170951680_n.jpg',
+      alt: "Mariage en Bretagne - L'Oeil de Monsieur R photographe mariage Rennes",
       title: 'Capturons ensemble',
       subtitle: 'vos moments précieux'
     },
     {
       image: '/images/mmmariage.jpg',
+      alt: "Séance couple mariage à Rennes - L'Oeil de Monsieur R photographe Bretagne",
       title: 'Des souvenirs',
       subtitle: 'qui durent toute une vie'
     },
     {
       image: '/images/hhmariage.jpg',
+      alt: "Cérémonie de mariage en Bretagne - L'Oeil de Monsieur R photographe Rennes",
       title: 'Votre histoire',
       subtitle: 'racontée en images'
     }
@@ -54,7 +57,7 @@ const HeroSection = () => {
         >
           <Image
             src={slide.image}
-            alt={slide.title}
+            alt={slide.alt}
             fill
             className="object-cover"
             priority={index === 0}
