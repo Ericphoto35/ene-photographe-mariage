@@ -8,7 +8,7 @@ const sections = [
     id: 'preparation',
     title: 'Préparation',
     description: 'Les instants suspendus avant le grand jour.',
-    downloadHref: '#',
+    downloadHref: 'https://www.amazon.fr/photos/share/wwjPAH5ECx7S2LB4chErOpDORcU7SESJx9zuMOiUAj2',
     images: [
       { id: 'p1', src: '/images/mariee.webp', title: 'La mariée' },
       { id: 'p2', src: '/images/Marie.webp', title: 'Préparation' },
@@ -22,7 +22,7 @@ const sections = [
     id: 'mairie',
     title: 'Mairie',
     description: "L'officialisation de l'union.",
-    downloadHref: '#',
+    downloadHref: 'https://www.amazon.fr/photos/share/UeXEw4g9H3EtFno2VNzEiMgkpJDkUWFXUBq1cFEyOWP',
     images: [
       { id: 'm1', src: '/images/Mairie.webp', title: 'Mairie' },
       { id: 'm2', src: '/images/Mairie_Helene.webp', title: 'Hélène' },
@@ -36,7 +36,7 @@ const sections = [
     id: 'garden-party',
     title: 'Garden Party',
     description: 'Cocktail et convivialité en plein air.',
-    downloadHref: '#',
+    downloadHref: 'https://www.amazon.fr/photos/share/MErtk6wxrg6Ek0DZNytik6f0FuHaiwzIfspQPAB5coM',
     images: [
       { id: 'gp1', src: '/images/Garden_1.webp', title: 'Garden Party' },
       { id: 'gp2', src: '/images/Garden_2.webp', title: 'Garden Party' },
@@ -50,7 +50,7 @@ const sections = [
     id: 'ceremonie-laique',
     title: 'Cérémonie Laïque',
     description: 'Les vœux, les rires et les larmes.',
-    downloadHref: '#',
+    downloadHref: 'https://www.amazon.fr/photos/share/KXWIQszw7e4gIpJPlGclmiRQZMOhsWDRER5cxI9TGD9',
     images: [
       { id: 'c1', src: '/images/cere.webp', title: 'Cérémonie laïque' },
       { id: 'c2', src: '/images/cere_2.webp', title: 'Cérémonie laïque' },
@@ -64,7 +64,7 @@ const sections = [
     id: 'groupe',
     title: 'Photos de Groupe',
     description: "Famille et amis réunis pour l'occasion.",
-    downloadHref: '#',
+    downloadHref: 'https://www.amazon.fr/photos/share/y567AscrempFuTU1LX58OK4RzSOz9iIiUmxb1F2g5nO',
     images: [
       { id: 'g1', src: '/images/groupe1.webp', title: 'Photo de groupe' },
       { id: 'g2', src: '/images/groupe2.webp', title: 'Photo de groupe' },
@@ -78,7 +78,7 @@ const sections = [
     id: 'couple',
     title: 'Couple',
     description: 'Hélène et Florian, en amoureux.',
-    downloadHref: '#',
+    downloadHref: 'https://www.amazon.fr/photos/share/w1mr1WKGKPBFHEnutwMoDVPkCHWcm9T4LOIPFf4Bukj',
     images: [
       { id: 'cp1', src: '/images/couple1.webp', title: 'Couple' },
       { id: 'cp2', src: '/images/couple2.webp', title: 'Couple' },
@@ -132,6 +132,8 @@ export default function HeleneFlorianContent() {
               <div className="text-center mt-8">
                 <motion.a
                   href={section.downloadHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="inline-flex items-center gap-2 px-8 py-3 bg-[var(--text-gray-800)] text-[var(--bg-white)] hover:bg-[var(--text-gray-600)] transition-colors rounded-full text-sm uppercase tracking-wider font-medium"
