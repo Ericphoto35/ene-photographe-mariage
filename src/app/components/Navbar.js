@@ -75,9 +75,9 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
-            {['Accueil', 'Galerie', 'Services', 'À propos', 'Contact'].map((item, index) => (
-              <Link 
-                key={item} 
+            {['Accueil', 'Galerie', 'Services', 'À propos', 'Blog', 'Contact'].map((item, index) => (
+              <Link
+                key={item}
                 href={item === 'Accueil' ? '/' : `/${item === 'À propos' ? 'a-propos' : item.toLowerCase()}`}
                 className={`relative font-light text-sm tracking-wider ${scrolled || !isHomePage ? 'text-[var(--text-gray-800)]' : 'text-white'} hover:opacity-80 transition-opacity`}
               >
@@ -115,7 +115,7 @@ const Navbar = () => {
           >
             <div className="container mx-auto px-4">
               <div className="flex flex-col space-y-4">
-                {['Accueil', 'Galerie', 'Services', 'À propos', 'Contact'].map((item) => (
+                {['Accueil', 'Galerie', 'Services', 'À propos', 'Blog', 'Contact'].map((item) => (
                   <motion.div key={item} variants={itemVariants}>
                     <Link 
                       href={item === 'Accueil' ? '/' : `/${item === 'À propos' ? 'a-propos' : item.toLowerCase()}`}

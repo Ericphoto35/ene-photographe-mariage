@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
+  metadataBase: new URL('https://www.loeil-de-monsieur-r.fr'),
   title: "L'Oeil de Monsieur R - Photographe de Mariage à Rennes | Bretagne",
   description: "Photographe de mariage professionnel basé à Rennes, L'Oeil de Monsieur R capture avec authenticité et élégance vos moments les plus précieux en Bretagne et partout en France.",
 };
