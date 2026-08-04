@@ -84,7 +84,18 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-10 pt-6 text-center text-gray-500 text-sm">
-          <p>&copy; {currentYear} Monsieur R Photographe de Mariage. Tous droits réservés.Projet réalisé par ENE-Solutions.</p>
+          <p>
+            &copy; {currentYear} Monsieur R Photographe de Mariage. Tous droits réservés. Projet réalisé par{' '}
+            <a
+              href="https://www.enesolutions.fr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors duration-300 underline"
+            >
+              ENE-Solutions
+            </a>{' '}
+            et Eric Soret.
+          </p>
         </div>
       </div>
     </footer>
