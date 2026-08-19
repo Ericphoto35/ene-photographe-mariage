@@ -1,5 +1,60 @@
 export const blogPosts = [
   {
+    slug: 'mariage-manoir-du-pas-jahan-rudy-kelly',
+    title: 'Mariage au Manoir du Pas Jahan à Couëron : le reportage de Rudy & Kelly',
+    metaTitle: 'Photographe Mariage Nantes | Manoir du Pas Jahan — Rudy & Kelly',
+    metaDescription:
+      "Reportage photo du mariage de Rudy & Kelly au Manoir du Pas Jahan à Couëron, près de Nantes : cérémonie laïque et soirée dans un manoir du XIVe siècle.",
+    date: '2026-08-19',
+    location: 'Manoir du Pas Jahan, Couëron (près de Nantes)',
+    venueUrl: 'https://www.location-salles-nantes.net/fr',
+    excerpt:
+      "Retour en images sur le mariage de Rudy & Kelly au Manoir du Pas Jahan, entre cérémonie laïque intimiste et soirée dans un manoir du XIVe siècle aux portes de Nantes.",
+    coverImage: '/images/blog/mariage-manoir-du-pas-jahan-rudy-kelly/montage.jpg',
+    intro: [
+      "Le 24 août 2024, direction la Loire-Atlantique pour le mariage de Rudy et Kelly, célébré au Manoir du Pas Jahan à Couëron, à une quinzaine de minutes de Nantes. Un lieu de réception que j'avais envie de raconter : une demeure du XIVe siècle, rénovée dans le respect des matériaux d'origine, nichée dans la campagne couëronnaise.",
+      "Photographier un mariage près de Nantes, c'est souvent retrouver ce mélange très Pays de la Loire : pierre, verdure, et une vraie proximité avec la ville sans jamais en sentir l'agitation. Le Manoir du Pas Jahan incarne parfaitement cet équilibre — assez intimiste pour une cérémonie laïque, assez vaste pour une soirée qui se prolonge.",
+      "Voici un aperçu du reportage, moment par moment.",
+    ],
+    sections: [
+      {
+        heading: 'Les préparatifs, entre détails et émotion',
+        paragraphs: [
+          "La journée commence toujours par les préparatifs : les alliances, les chaussures, le nœud papillon, les petits objets gravés au nom des mariés. Ce sont des instants discrets, souvent parmi les plus parlants d'un reportage, parce qu'ils racontent le couple avant même qu'on le voie.",
+          "C'est le moment où je travaille en retrait, sur les textures et les gestes plutôt que sur les visages. Une manière de poser l'ambiance de la journée sans jamais être intrusif — et de garder une trace de ces détails qu'on ne revoit plus une fois la cérémonie lancée.",
+        ],
+        image: {
+          src: '/images/blog/mariage-manoir-du-pas-jahan-rudy-kelly/preparatifs.jpg',
+          alt: 'Préparation du mariage de Rudy et Kelly : alliances, chaussures et détails du jour J',
+        },
+      },
+      {
+        heading: 'Une cérémonie laïque au Manoir du Pas Jahan',
+        paragraphs: [
+          "Rudy et Kelly se sont dit oui lors d'une cérémonie laïque en extérieur, sous une arche de bois habillée de fleurs et de voilage, face à leurs invités installés dans le parc du manoir. C'est souvent le moment le plus dense d'un reportage : les vœux lus à voix haute, les regards dans l'assemblée, la lumière naturelle de fin d'après-midi.",
+          "De plus en plus de couples que j'accompagne autour de Nantes optent pour une cérémonie laïque sur leur lieu de réception : tout se passe au même endroit, les invités ne bougent pas, et le récit photo gagne en continuité. Le Manoir du Pas Jahan s'y prête particulièrement, entre pierre, verdure et cette vieille voiture décapotable qui attendait le couple dans la cour.",
+        ],
+      },
+      {
+        heading: 'La soirée au Manoir du Pas Jahan',
+        paragraphs: [
+          "Après la cérémonie, la journée bascule vers la fête. Au manoir, on glisse naturellement du parc vers la salle : première danse, toasts, photos de groupe sur la pelouse, et cette énergie un peu débridée qui arrive quand tout le monde a soufflé. C'est un autre rythme de photographie — moins de silence, plus de mouvement.",
+          "J'aime cette partie du reportage autant que la cérémonie, parce qu'elle raconte le couple autrement : moins solennel, plus vivant. Une soirée de mariage près de Nantes, dans un lieu comme le Pas Jahan, a souvent cette ambiance chaleureuse où les invités restent jusqu'au bout.",
+        ],
+        image: {
+          src: '/images/blog/mariage-manoir-du-pas-jahan-rudy-kelly/soiree.jpg',
+          alt: 'Soirée de mariage de Rudy et Kelly au Manoir du Pas Jahan près de Nantes',
+        },
+      },
+    ],
+    outro:
+      "Un immense merci à Rudy et Kelly pour leur confiance. Vous préparez votre mariage près de Nantes, au Manoir du Pas Jahan ou ailleurs en Loire-Atlantique ? N'hésitez pas à me contacter pour échanger sur votre projet.",
+    relatedLinks: [
+      { label: 'Découvrir la galerie complète', href: '/galerie' },
+      { label: 'Voir mes formules de mariage', href: '/services' },
+    ],
+  },
+  {
     slug: 'mariage-domaine-de-kerlys-helene-florian',
     title: "Mariage au Domaine de Kerlys à Briec-de-l'Odet : le reportage d'Hélène & Florian",
     metaTitle: 'Photographe Mariage Domaine de Kerlys | Reportage Hélène & Florian',

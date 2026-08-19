@@ -8,7 +8,9 @@ export default function BlogPostContent({ post }) {
     '@type': 'Article',
     headline: post.title,
     description: post.metaDescription,
-    image: `https://www.loeil-de-monsieur-r.fr${post.coverImage}`,
+    ...(post.coverImage
+      ? { image: `https://www.loeil-de-monsieur-r.fr${post.coverImage}` }
+      : {}),
     datePublished: post.date,
     author: {
       '@type': 'Person',
@@ -59,17 +61,19 @@ export default function BlogPostContent({ post }) {
           ></motion.div>
         </div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="relative max-w-4xl mx-auto aspect-[16/9] mb-12 overflow-hidden"
-        >
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${post.coverImage})` }}
-          />
-        </motion.div>
+        {post.coverImage && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="relative max-w-4xl mx-auto aspect-[16/9] mb-12 overflow-hidden"
+          >
+            <div
+              className="absolute inset-0 bg-cover bg-center"
+              style={{ backgroundImage: `url(${post.coverImage})` }}
+            />
+          </motion.div>
+        )}
 
         <article className="max-w-2xl mx-auto space-y-12">
           <div className="space-y-4 text-[var(--text-gray-600)] leading-relaxed">

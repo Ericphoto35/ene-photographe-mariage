@@ -23,7 +23,7 @@ export async function generateMetadata({ params }) {
       title: post.metaTitle,
       description: post.metaDescription,
       url,
-      images: [post.coverImage],
+      ...(post.coverImage ? { images: [post.coverImage] } : {}),
       locale: 'fr_FR',
       type: 'article',
     },

@@ -41,11 +41,17 @@ export default function BlogListContent() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <Link href={`/blog/${post.slug}`} className="group block">
-                <div className="relative overflow-hidden aspect-[4/3] mb-4">
-                  <div
-                    className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-                    style={{ backgroundImage: `url(${post.coverImage})` }}
-                  />
+                <div className="relative overflow-hidden aspect-[4/3] mb-4 bg-[var(--bg-gray-100)]">
+                  {post.coverImage ? (
+                    <div
+                      className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                      style={{ backgroundImage: `url(${post.coverImage})` }}
+                    />
+                  ) : (
+                    <div className="absolute inset-0 flex items-center justify-center text-[var(--text-gray-600)] font-serif text-lg px-4 text-center">
+                      Photos à venir
+                    </div>
+                  )}
                 </div>
                 <p className="text-xs uppercase tracking-wider text-[var(--text-gray-600)] mb-2">
                   {post.location}
