@@ -1,69 +1,183 @@
 import Image from "next/image";
+import { CallToAction } from "@/components/CallToAction";
+import { CircleGallery } from "@/components/CircleGallery";
+import { MainButton } from "@/components/MainButton";
+import { Reveal } from "@/components/Reveal";
+import { StickyProjects } from "@/components/StickyProjects";
+import {
+  homeIntro,
+  homeServices,
+  homeServicesIntro,
+  homeWhyChoose,
+  testimonials,
+} from "@/lib/data";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+      {/* 1. Hero — textes = site live, visuel = design moderne */}
+      <section className="hero">
+        <div className="hero-copy pad">
+          <div className="hero-copy-inner">
+            <Reveal>
+              <div className="dash" />
+            </Reveal>
+            <Reveal delay={120} className="min-w-0">
+              <h1 className="display hero-title">
+                <span className="hero-title-main">
+                  <span className="hero-title-word">Photographe</span>{" "}
+                  <span className="hero-title-word">de Mariage</span>
+                </span>
+                <span className="hero-title-place">à Rennes et en Bretagne</span>
+              </h1>
+            </Reveal>
+            <Reveal delay={240}>
+              <p className="mt-6 max-w-sm text-sm leading-6 text-muted">
+                Capturons ensemble
+                <br />
+                vos moments précieux
+              </p>
+            </Reveal>
+            <Reveal delay={360}>
+              <div className="mt-10 flex flex-wrap gap-8">
+                <MainButton href="/contact" left="Contactez" right="moi" />
+                <MainButton href="/projects" left="Voir la" right="galerie" />
+              </div>
+            </Reveal>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        <div className="hero-visual">
+          <CircleGallery />
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* 2. Intro / À propos */}
+      <section className="pad py-24 md:py-32">
+        <div className="wrap">
+          <Reveal>
+            <h2 className="display h2 max-w-4xl">{homeIntro.title}</h2>
+          </Reveal>
+          <Reveal delay={120}>
+            <div className="mt-10 max-w-xl space-y-4">
+              {homeIntro.paragraphs.map((paragraph) => (
+                <p key={paragraph.slice(0, 24)} className="text-sm leading-6 text-muted">
+                  {paragraph}
+                </p>
+              ))}
+              <div className="pt-4">
+                <MainButton href="/about" left="En savoir" right="plus" />
+              </div>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* 3. Mes Services */}
+      <section className="pad py-24 md:py-32">
+        <div className="wrap">
+          <Reveal>
+            <h2 className="display h2">Mes Services</h2>
+          </Reveal>
+          <Reveal delay={100}>
+            <p className="mt-6 max-w-xl text-sm leading-6 text-muted">{homeServicesIntro}</p>
+          </Reveal>
+
+          <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {homeServices.map((service, index) => (
+              <Reveal key={service.title} delay={index * 100}>
+                <article className="service-card">
+                  <div className="relative aspect-[4/5] overflow-hidden">
+                    <Image
+                      src={service.image}
+                      alt={service.title}
+                      fill
+                      className="gray-photo object-cover"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    />
+                    <span className="absolute right-4 top-4 text-2xl">+</span>
+                  </div>
+                  <h3 className="display mt-5 text-3xl md:text-4xl">{service.title}</h3>
+                  <p className="mt-3 text-sm text-muted">{service.description}</p>
+                </article>
+              </Reveal>
+            ))}
+          </div>
+
+          <Reveal>
+            <div className="mt-14">
+              <MainButton href="/services" left="Voir les" right="formules" />
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* 4. Pourquoi Me Choisir */}
+      <section className="pad py-24 md:py-32">
+        <div className="wrap">
+          <Reveal>
+            <h2 className="display h2 max-w-4xl">{homeWhyChoose.title}</h2>
+          </Reveal>
+          <Reveal delay={100}>
+            <p className="mt-6 max-w-xl text-sm leading-6 text-muted">{homeWhyChoose.intro}</p>
+          </Reveal>
+
+          <div className="mt-16 grid gap-12 md:grid-cols-3">
+            {homeWhyChoose.items.map((item, index) => (
+              <Reveal key={item.title} delay={index * 100}>
+                <article>
+                  <div className="dash" />
+                  <h3 className="display mt-6 text-4xl">{item.title}</h3>
+                  <p className="mt-4 text-sm leading-6 text-muted">{item.text}</p>
+                </article>
+              </Reveal>
+            ))}
+          </div>
+
+          <Reveal>
+            <div className="mt-14">
+              <MainButton href="/contact" left="Demander" right="un devis" />
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* 5. Galerie — rubrique moderne (aperçu), absente en scroll sur le live */}
+      <section>
+        <div className="pad pb-10">
+          <div className="wrap flex flex-wrap items-end justify-between gap-6">
+            <Reveal>
+              <h2 className="display h2">Galerie</h2>
+            </Reveal>
+            <Reveal delay={80}>
+              <MainButton href="/projects" left="Voir mon" right="portfolio" />
+            </Reveal>
+          </div>
+        </div>
+        <StickyProjects />
+      </section>
+
+      {/* 6. Témoignages */}
+      <section className="pad py-24 md:py-32">
+        <div className="wrap">
+          <Reveal>
+            <h2 className="display h2 max-w-4xl">Ce Que Disent Mes Clients</h2>
+          </Reveal>
+          <div className="mt-16 grid gap-12 md:grid-cols-3">
+            {testimonials.map((item, index) => (
+              <Reveal key={item.names} delay={index * 100}>
+                <blockquote>
+                  <h3 className="display text-4xl">{item.names}</h3>
+                  <p className="mt-2 text-sm text-muted">{item.date}</p>
+                  <p className="mt-4 text-sm leading-6 text-muted">« {item.quote} »</p>
+                </blockquote>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 7. CTA final */}
+      <CallToAction />
+    </>
   );
 }
