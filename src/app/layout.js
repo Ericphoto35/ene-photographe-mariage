@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import SchemaOrg from "./components/SchemaOrg";
+import CookieBanner from "./components/CookieBanner";
 
 const bodoniModa = Bodoni_Moda({
   variable: "--font-bodoni-moda",
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
         <SchemaOrg />
+        <CookieBanner />
       </body>
     </html>
   );

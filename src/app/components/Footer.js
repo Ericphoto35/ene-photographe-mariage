@@ -84,13 +84,20 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-10 pt-6 text-center text-gray-500 text-sm space-y-3">
-          <p>
+          <p className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
             <Link
               href="/mentions-legales"
               className="text-gray-400 hover:text-white transition-colors duration-300 underline"
             >
               Mentions légales
             </Link>
+            <button
+              type="button"
+              onClick={() => window.dispatchEvent(new Event('open-cookie-settings'))}
+              className="text-gray-400 hover:text-white transition-colors duration-300 underline"
+            >
+              Gérer les cookies
+            </button>
           </p>
           <p>
             &copy; {currentYear} Monsieur R Photographe de Mariage. Tous droits réservés. Projet réalisé par{' '}
