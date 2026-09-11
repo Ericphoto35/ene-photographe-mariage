@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { FiMail, FiPhone, FiMapPin, FiInstagram, FiFacebook } from 'react-icons/fi';
 
@@ -12,14 +13,18 @@ export default function ContactContent() {
     eventLocation: '',
     eventType: 'Mariage',
     message: '',
+    consent: false,
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [error, setError] = useState('');
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    const { name, value, type, checked } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: type === 'checkbox' ? checked : value,
+    }));
   };
 
   const handleSubmit = async (e) => {
@@ -59,6 +64,7 @@ export default function ContactContent() {
         eventLocation: '',
         eventType: 'Mariage',
         message: '',
+        consent: false,
       });
       setIsSubmitted(true);
 
@@ -233,15 +239,38 @@ export default function ContactContent() {
                   ></textarea>
                 </div>
 
+                <div className="flex items-start gap-3">
+                  <input
+                    type="checkbox"
+                    id="consent"
+                    name="consent"
+                    checked={formData.consent}
+                    onChange={handleChange}
+                    required
+                    className="mt-1 h-4 w-4 rounded border-gray-300 text-gray-800 focus:ring-gray-400"
+                  />
+                  <label htmlFor="consent" className="text-sm text-gray-600 leading-relaxed">
+                    J&apos;accepte que mes données personnelles soient utilisées pour traiter ma
+                    demande de contact, conformément aux{' '}
+                    <Link
+                      href="/mentions-legales#donnees-personnelles"
+                      className="underline hover:text-gray-900"
+                    >
+                      mentions légales
+                    </Link>
+                    . *
+                  </label>
+                </div>
+
                 {error && (
                   <div className="text-red-500 text-sm">{error}</div>
                 )}
 
                 <button
                   type="submit"
-                  disabled={isSubmitting}
+                  disabled={isSubmitting || !formData.consent}
                   className={`px-8 py-3 bg-gray-800 text-white rounded-full text-sm uppercase tracking-wider font-medium transition-colors ${
-                    isSubmitting ? 'opacity-70 cursor-not-allowed' : 'hover:bg-gray-700'
+                    isSubmitting || !formData.consent ? 'opacity-70 cursor-not-allowed' : 'hover:bg-gray-700'
                   }`}
                 >
                   {isSubmitting ? 'Envoi en cours...' : 'Envoyer'}
