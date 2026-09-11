@@ -163,14 +163,18 @@ export default function MentionsLegalesContent() {
             </p>
           </section>
 
-          <section>
+          <section id="cookies">
             <h2 className="text-2xl font-serif text-[var(--text-gray-800)] mb-4">
               5. Cookies
             </h2>
-            <p>
+            <p className="mb-4">
               Ce site n&apos;utilise pas de cookies publicitaires ni d&apos;outils d&apos;analyse
-              tiers. La page contact peut afficher une carte Google Maps, susceptible de déposer
-              des cookies tiers. Vous pouvez paramétrer votre navigateur pour refuser les cookies.
+              tiers. Un bandeau de consentement vous permet d&apos;accepter ou de refuser le
+              chargement de Google Maps sur la page contact (cookies tiers éventuels).
+            </p>
+            <p>
+              Vous pouvez modifier votre choix à tout moment via le lien « Gérer les cookies »
+              situé dans le pied de page, ou en paramétrant votre navigateur.
             </p>
           </section>
 
