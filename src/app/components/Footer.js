@@ -83,7 +83,15 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-10 pt-6 text-center text-gray-500 text-sm">
+        <div className="border-t border-gray-800 mt-10 pt-6 text-center text-gray-500 text-sm space-y-3">
+          <p>
+            <Link
+              href="/mentions-legales"
+              className="text-gray-400 hover:text-white transition-colors duration-300 underline"
+            >
+              Mentions légales
+            </Link>
+          </p>
           <p>
             &copy; {currentYear} Monsieur R Photographe de Mariage. Tous droits réservés. Projet réalisé par{' '}
             <a

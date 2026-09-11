@@ -5,7 +5,21 @@ import nodemailer from 'nodemailer';
 export async function POST(request) {
     try {
         const body = await request.json();
-        const { name, email, phone, eventDate, eventLocation, eventType, message } = body;
+        const { name, email, phone, eventDate, eventLocation, eventType, message, consent } = body;
+
+        if (!consent) {
+            return NextResponse.json(
+                { message: 'Le consentement au traitement des données est requis.' },
+                { status: 400 }
+            );
+        }
+
+        if (!name || !email || !message) {
+            return NextResponse.json(
+                { message: 'Veuillez renseigner les champs obligatoires.' },
+                { status: 400 }
+            );
+        }
 
         // Configuration sécurisée via les variables d'environnement
         const transporter = nodemailer.createTransport({
