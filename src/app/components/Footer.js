@@ -83,7 +83,22 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-10 pt-6 text-center text-gray-500 text-sm space-y-3">
+        <div className="border-t border-gray-800 mt-10 pt-6 text-center text-gray-500 text-sm space-y-4">
+          <div className="flex justify-center">
+            <a
+              rel="nofollow noopener noreferrer"
+              href="https://www.mariages.net"
+              title="Mariages.net"
+              target="_blank"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                alt="Mariages.net"
+                src="https://www.mariages.net/images/sellos/label-partenaire--gg426109.png"
+                style={{ borderWidth: 0 }}
+              />
+            </a>
+          </div>
           <p className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
             <Link
               href="/mentions-legales"
