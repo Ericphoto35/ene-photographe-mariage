@@ -1,5 +1,64 @@
 export const blogPosts = [
   {
+    slug: 'mariage-haras-du-reuzel-charlotte-thomas',
+    title: 'Mariage au Haras du Reuzel à Orgères : le reportage de Charlotte & Thomas',
+    metaTitle: 'Photographe Mariage Rennes | Haras du Reuzel — Charlotte & Thomas',
+    metaDescription:
+      "Reportage photo du mariage de Charlotte & Thomas au Haras du Reuzel à Orgères, près de Rennes : préparatifs, cérémonie et séance couple dans un domaine champêtre en Ille-et-Vilaine.",
+    date: '2026-09-23',
+    location: 'Haras du Reuzel, Orgères (près de Rennes)',
+    venueUrl: 'https://www.harasdureuzel.com/',
+    excerpt:
+      "Retour en images sur le mariage de Charlotte & Thomas au Haras du Reuzel, entre préparatifs intimistes, cérémonie et séance couple dans un domaine verdoyant aux portes de Rennes.",
+    coverImage: '/images/blog/mariage-haras-du-reuzel-charlotte-thomas/couverture.jpg',
+    intro: [
+      "Le 6 septembre 2025, direction Orgères, à une dizaine de minutes de Rennes, pour le mariage de Charlotte et Thomas au Haras du Reuzel. Un domaine familial niché dans un parc verdoyant, privatisé pour la journée, où la campagne d'Ille-et-Vilaine s'offre tout entière aux mariés et à leurs invités.",
+      "Photographier un mariage près de Rennes, c'est souvent retrouver ce mélange très breton : grands arbres, lumière changeante, et un lieu assez intimiste pour laisser respirer les émotions. Le Haras du Reuzel s'y prête particulièrement — préau, terrasse, parc arboré — un cadre idéal pour un reportage naturel, sans jamais forcer la pose.",
+      "Voici un aperçu du reportage, moment par moment.",
+    ],
+    sections: [
+      {
+        heading: 'Les préparatifs, entre détails et émotion',
+        paragraphs: [
+          "La journée commence toujours par les préparatifs : les gestes précis, les derniers ajustements, les regards complices avant de se rejoindre. Ce sont des instants discrets, souvent parmi les plus parlants d'un reportage, parce qu'ils racontent le couple avant même la cérémonie.",
+          "C'est le moment où je travaille en retrait, sur les textures et les gestes plutôt que sur les grands tableaux. Une manière de poser l'ambiance de la journée sans jamais être intrusif — et de garder une trace de ces détails qu'on ne revoit plus une fois le cortège lancé.",
+        ],
+        image: {
+          src: '/images/blog/mariage-haras-du-reuzel-charlotte-thomas/preparatifs.jpg',
+          alt: 'Préparation du mariage de Charlotte et Thomas au Haras du Reuzel près de Rennes',
+        },
+      },
+      {
+        heading: 'La cérémonie au Haras du Reuzel',
+        paragraphs: [
+          "Charlotte et Thomas se sont dit oui au cœur du domaine, face à leurs proches. Au Haras du Reuzel, le cadre naturel porte la cérémonie : verdure, lumière de début septembre, et cette attention particulière des invités quand le silence se fait.",
+          "C'est souvent le moment le plus dense d'un reportage : les vœux, les regards dans l'assemblée, les émotions qui passent trop vite pour être retenues autrement qu'en image. Photographier une cérémonie près de Rennes, dans un lieu comme celui-ci, permet de rester proche sans jamais casser l'intimité du moment.",
+        ],
+        image: {
+          src: '/images/blog/mariage-haras-du-reuzel-charlotte-thomas/ceremonie.jpg',
+          alt: 'Cérémonie de mariage de Charlotte et Thomas au Haras du Reuzel à Orgères',
+        },
+      },
+      {
+        heading: 'La séance couple dans le parc',
+        paragraphs: [
+          "Après la cérémonie, on s'éloigne un instant des invités pour une séance couple dans le parc du haras. Moins de bruit, plus de souffle : c'est le moment où Charlotte et Thomas se retrouvent à deux, et où le reportage devient plus contemplatif.",
+          "Le Haras du Reuzel offre plein de recoins photogéniques — allées, arbres, lumière filtrée — idéaux pour des portraits naturels. J'aime cette parenthèse autant que le reste de la journée : elle donne au couple des images plus intimes, à garder pour eux.",
+        ],
+        image: {
+          src: '/images/blog/mariage-haras-du-reuzel-charlotte-thomas/couple.jpg',
+          alt: 'Séance couple de Charlotte et Thomas dans le parc du Haras du Reuzel',
+        },
+      },
+    ],
+    outro:
+      "Un immense merci à Charlotte et Thomas pour leur confiance. Vous préparez votre mariage près de Rennes, au Haras du Reuzel ou ailleurs en Ille-et-Vilaine ? N'hésitez pas à me contacter pour échanger sur votre projet.",
+    relatedLinks: [
+      { label: 'Découvrir la galerie complète', href: '/galerie' },
+      { label: 'Voir mes formules de mariage', href: '/services' },
+    ],
+  },
+  {
     slug: 'mariage-manoir-du-pas-jahan-rudy-kelly',
     title: 'Mariage au Manoir du Pas Jahan à Couëron : le reportage de Rudy & Kelly',
     metaTitle: 'Photographe Mariage Nantes | Manoir du Pas Jahan — Rudy & Kelly',
