@@ -87,7 +87,7 @@ const Footer = () => {
           <div className="flex justify-center">
             <a
               rel="nofollow noopener noreferrer"
-              href="https://www.mariages.net"
+              href="https://www.mariages.net/photo-mariage/loeil-de-monsieur-r-photographe-de-mariage--e426109"
               title="Mariages.net"
               target="_blank"
             >
