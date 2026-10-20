@@ -1,5 +1,60 @@
 export const blogPosts = [
   {
+    slug: 'mariage-jardin-des-acanthes-benedicte-gael',
+    title: 'Mariage au Jardin des Acanthes à Plescop : le reportage de Bénédicte & Gaël',
+    metaTitle: 'Photographe Mariage Vannes | Jardin des Acanthes — Bénédicte & Gaël',
+    metaDescription:
+      "Reportage d'un photographe de mariage en Bretagne : Bénédicte & Gaël au Jardin des Acanthes à Plescop, près de Vannes, dans un parc du Morbihan.",
+    date: '2026-10-20',
+    location: 'Jardin des Acanthes, Plescop (près de Vannes)',
+    venueUrl: 'https://www.jardindesacanthes.com/',
+    excerpt:
+      "Retour en images sur le mariage de Bénédicte & Gaël au Jardin des Acanthes, entre préparatifs, cérémonie sous les saules et fête dans le parc, le jour du solstice près de Vannes.",
+    coverImage: '/images/blog/mariage-jardin-des-acanthes-benedicte-gael/ceremonie.webp',
+    intro: [
+      "Le 21 juin 2025, jour du solstice d'été, direction Plescop pour le mariage de Bénédicte et Gaël au Jardin des Acanthes. Un domaine privatisé à cinq minutes de Vannes, au cœur d'un parc arboré de deux hectares, où la journée se vit autant dehors que dedans.",
+      "Photographier un mariage en Bretagne, dans le Morbihan près de Vannes, c'est souvent jouer avec une lumière longue et un lieu assez vaste pour que tout le monde respire. Le Jardin des Acanthes s'y prête particulièrement — halle pour le cocktail, salle ouverte sur le jardin, maison de famille à l'écart du voisinage.",
+      "Voici un aperçu du reportage, moment par moment.",
+    ],
+    sections: [
+      {
+        heading: 'Les préparatifs, entre détails et émotion',
+        paragraphs: [
+          "La journée commence par les préparatifs : la robe en dentelle sur son cintre, les alliances, les chaussures, le gilet rose de Gaël. Ce sont des instants discrets, souvent parmi les plus parlants d'un reportage, parce qu'ils racontent le couple avant même la cérémonie.",
+          "C'est le moment où je travaille en retrait, sur les textures et les gestes plutôt que sur les grands tableaux. Une manière de poser l'ambiance de la journée sans jamais être intrusif.",
+        ],
+        image: {
+          src: '/images/blog/mariage-jardin-des-acanthes-benedicte-gael/preparatifs.webp',
+          alt: 'Préparatifs du mariage de Bénédicte et Gaël : robe, alliances et détails du jour J au Jardin des Acanthes',
+        },
+      },
+      {
+        heading: 'Une cérémonie sous les saules',
+        paragraphs: [
+          "Bénédicte et Gaël se sont dit oui en extérieur, dans le parc du Jardin des Acanthes, face à leurs proches. Les saules, l'arche fleurie et la lumière du 21 juin portent la cérémonie : un cadre naturel, assez vaste pour que les émotions respirent.",
+          "Le baiser sous l'arche, le lancer du bouquet, les rires sur la pelouse : ce sont des images qui passent vite, et que le reportage a justement pour rôle de retenir.",
+        ],
+      },
+      {
+        heading: 'La fête sur la pelouse',
+        paragraphs: [
+          "Après la cérémonie, la journée bascule vers la fête, toujours dans le parc. Haie d'honneur, photos de groupe sous les arbres, cette énergie un peu débridée quand tout le monde a soufflé. C'est un autre rythme de photographie — moins de silence, plus de mouvement.",
+          "J'aime cette partie du reportage autant que la cérémonie, parce qu'elle raconte Bénédicte et Gaël autrement : moins solennels, plus vivants, entourés de leurs proches jusqu'au bout.",
+        ],
+        image: {
+          src: '/images/blog/mariage-jardin-des-acanthes-benedicte-gael/soiree.jpg',
+          alt: 'Fête de mariage de Bénédicte et Gaël sur la pelouse du Jardin des Acanthes près de Vannes',
+        },
+      },
+    ],
+    outro:
+      "Un immense merci à Bénédicte et Gaël pour leur confiance. Basé à Rennes, je photographie des mariages dans toute la Bretagne. Vous préparez le vôtre près de Vannes, au Jardin des Acanthes ou ailleurs dans le Morbihan ? N'hésitez pas à me contacter pour échanger sur votre projet.",
+    relatedLinks: [
+      { label: 'Découvrir la galerie complète', href: '/galerie' },
+      { label: 'Voir mes formules de mariage', href: '/services' },
+    ],
+  },
+  {
     slug: 'mariage-haras-du-reuzel-charlotte-thomas',
     title: 'Mariage au Haras du Reuzel à Orgères : le reportage de Charlotte & Thomas',
     metaTitle: 'Photographe Mariage Rennes | Haras du Reuzel — Charlotte & Thomas',
