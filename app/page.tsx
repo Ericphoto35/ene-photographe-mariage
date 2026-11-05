@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { CallToAction } from "@/components/CallToAction";
-import { CircleGallery } from "@/components/CircleGallery";
+import { HeroFineArt } from "@/components/HeroFineArt";
 import { MainButton } from "@/components/MainButton";
 import { Reveal } from "@/components/Reveal";
 import { StickyProjects } from "@/components/StickyProjects";
@@ -15,44 +15,111 @@ import {
 export default function HomePage() {
   return (
     <>
-      {/* 1. Hero — textes = site live, visuel = design moderne */}
-      <section className="hero">
-        <div className="hero-copy pad">
-          <div className="hero-copy-inner">
-            <Reveal>
-              <div className="dash" />
-            </Reveal>
-            <Reveal delay={120} className="min-w-0">
-              <h1 className="display hero-title">
-                <span className="hero-title-main">
-                  <span className="hero-title-word">Photographe</span>{" "}
-                  <span className="hero-title-word">de Mariage</span>
-                </span>
-                <span className="hero-title-place">à Rennes et en Bretagne</span>
-              </h1>
-            </Reveal>
-            <Reveal delay={240}>
-              <p className="mt-6 max-w-sm text-sm leading-6 text-muted">
-                Capturons ensemble
-                <br />
-                vos moments précieux
-              </p>
-            </Reveal>
-            <Reveal delay={360}>
-              <div className="mt-10 flex flex-wrap gap-8">
-                <MainButton href="/contact" left="Contactez" right="moi" />
-                <MainButton href="/projects" left="Voir la" right="galerie" />
+      {/* 1. Hero — Éditorial Magazine & Planche Fine Art */}
+      <section className="hero-editorial pad">
+        <div className="wrap hero-editorial-shell">
+          {/* Barre supérieure d'index magazine */}
+          <Reveal y={16}>
+            <div className="hero-meta-top">
+              <span className="flex items-center gap-2.5">
+                <span className="hero-status-dot" />
+                <span>ÉDITION N° 01 — REPORTAGE &amp; FINE ART</span>
+              </span>
+              <span className="hidden md:inline text-muted">
+                RENNES · BRETAGNE · FRANCE
+              </span>
+              <span className="text-muted">48° 06′ N, 1° 40′ W</span>
+            </div>
+          </Reveal>
+
+          {/* Grille principale : Typographie monumentale + Triptyque Fine Art */}
+          <div className="hero-editorial-grid">
+            <div className="hero-copy">
+              <div className="hero-copy-inner">
+                <Reveal>
+                  <div className="flex items-center gap-4">
+                    <div className="dash !mb-0" />
+                    <span className="text-xs tracking-[0.2em] text-muted">
+                      L&apos;OEIL DE MONSIEUR R — RÉCIT VISUEL
+                    </span>
+                  </div>
+                </Reveal>
+
+                <Reveal delay={120} className="min-w-0 mt-6">
+                  <h1 className="display hero-title">
+                    <span className="hero-title-main">
+                      <span className="hero-title-word">Photographe</span>
+                      <span className="hero-title-word hero-title-indent">
+                        de Mariage
+                      </span>
+                    </span>
+                    <span className="hero-title-place">
+                      <span className="hero-title-rule" aria-hidden="true" />
+                      <span>à Rennes et en Bretagne</span>
+                    </span>
+                  </h1>
+                </Reveal>
+
+                <Reveal delay={240}>
+                  <div className="hero-editorial-lead">
+                    <p className="text-sm leading-6 text-paper">
+                      Capturons ensemble
+                      <br />
+                      vos moments précieux
+                    </p>
+                    <p className="text-xs leading-5 text-muted max-w-xs">
+                      Approche documentaire discrète et portraits intemporels pour raconter
+                      l&apos;authenticité de votre journée.
+                    </p>
+                  </div>
+                </Reveal>
+
+                <Reveal delay={360}>
+                  <div className="mt-10 flex flex-wrap items-center gap-8 md:gap-10">
+                    <MainButton href="/contact" left="Contactez" right="moi" />
+                    <MainButton href="/projects" left="Voir la" right="galerie" />
+                  </div>
+                </Reveal>
               </div>
-            </Reveal>
+            </div>
+
+            <div className="hero-visual">
+              <Reveal delay={180} className="w-full">
+                <HeroFineArt />
+              </Reveal>
+            </div>
           </div>
-        </div>
-        <div className="hero-visual">
-          <CircleGallery />
+
+          {/* Barre d'index éditoriale inférieure */}
+          <Reveal delay={420} y={16}>
+            <div className="hero-meta-bottom">
+              <div className="hero-pillars">
+                <div className="hero-pillar">
+                  <span className="text-muted">01 /</span>
+                  <span>STYLE DOCUMENTAIRE</span>
+                </div>
+                <div className="hero-pillar">
+                  <span className="text-muted">02 /</span>
+                  <span>PORTRAITS &amp; TIRAGES FINE ART</span>
+                </div>
+                <div className="hero-pillar">
+                  <span className="text-muted">03 /</span>
+                  <span>BRETAGNE &amp; INTERNATIONAL</span>
+                </div>
+              </div>
+              <a href="#intro" className="hero-scroll-cue">
+                <span>DÉFILER</span>
+                <span aria-hidden="true" className="hero-scroll-arrow">
+                  ↓
+                </span>
+              </a>
+            </div>
+          </Reveal>
         </div>
       </section>
 
       {/* 2. Intro / À propos */}
-      <section className="pad py-24 md:py-32">
+      <section id="intro" className="pad py-24 md:py-32">
         <div className="wrap">
           <Reveal>
             <h2 className="display h2 max-w-4xl">{homeIntro.title}</h2>
