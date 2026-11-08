@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Oswald } from "next/font/google";
 import { Footer } from "@/components/Footer";
 import { Providers } from "@/components/Providers";
-import { faviconSrc } from "@/lib/cdn";
+import { SchemaOrg } from "@/components/SchemaOrg";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -17,14 +17,23 @@ const display = Oswald({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.loeil-de-monsieur-r.fr"),
   title: {
-    default: "Photographe de Mariage Rennes et Bretagne | L'Oeil de Monsieur R",
+    default: "L'Oeil de Monsieur R - Photographe de Mariage à Rennes | Bretagne",
     template: "%s | L'Oeil de Monsieur R",
   },
   description:
-    "Photographe de mariage à Rennes et en Bretagne. Style documentaire discret et portraits élégants pour capturer vos moments précieux.",
-  icons: {
-    icon: faviconSrc,
+    "Photographe de mariage professionnel basé à Rennes, L'Oeil de Monsieur R capture avec authenticité et élégance vos moments les plus précieux en Bretagne et partout en France.",
+  alternates: {
+    canonical: "https://www.loeil-de-monsieur-r.fr",
+  },
+  openGraph: {
+    title: "L'Oeil de Monsieur R - Photographe de Mariage à Rennes | Bretagne",
+    description:
+      "Photographe de mariage professionnel basé à Rennes, intervenant en Bretagne et partout en France.",
+    url: "https://www.loeil-de-monsieur-r.fr",
+    locale: "fr_FR",
+    type: "website",
   },
 };
 
@@ -38,6 +47,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Providers>
           <main>{children}</main>
           <Footer />
+          <SchemaOrg />
         </Providers>
       </body>
     </html>

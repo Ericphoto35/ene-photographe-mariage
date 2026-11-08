@@ -6,7 +6,22 @@ import { MainButton } from "@/components/MainButton";
 import { Reveal } from "@/components/Reveal";
 import { projects } from "@/lib/data";
 
-export const metadata: Metadata = { title: "Galerie" };
+export const metadata: Metadata = {
+  title: "Galerie Photos Mariage Bretagne",
+  description:
+    "Découvrez ma galerie de photographies de mariage en Bretagne : Rennes, Saint-Malo, Vannes, Cancale, Nantes et toute la région. Des images authentiques et émotionnelles.",
+  alternates: {
+    canonical: "https://www.loeil-de-monsieur-r.fr/projects",
+  },
+  openGraph: {
+    title: "Galerie Photos Mariage Bretagne | L'Oeil de Monsieur R",
+    description:
+      "Portfolio photographe mariage Bretagne — Rennes, Saint-Malo, Vannes, Cancale et toute la France.",
+    url: "https://www.loeil-de-monsieur-r.fr/projects",
+    locale: "fr_FR",
+    type: "website",
+  },
+};
 
 export default function ProjectsPage() {
   return (
