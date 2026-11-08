@@ -16,9 +16,11 @@ export function RollingStat({ value, label }: RollingStatProps) {
     if (!root) return;
     const strips = Array.from(root.querySelectorAll<HTMLElement>("[data-strip]"));
 
+    const stepDigits = String(value).split("");
+
     const roll = () => {
       strips.forEach((strip, index) => {
-        const digit = Number(digits[index]);
+        const digit = Number(stepDigits[index]);
         strip.style.transform = `translateY(-${digit * 10}%)`;
       });
     };

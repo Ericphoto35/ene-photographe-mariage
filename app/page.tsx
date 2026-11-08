@@ -1,9 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
 import { CallToAction } from "@/components/CallToAction";
 import { HeroFineArt } from "@/components/HeroFineArt";
-import { MainButton } from "@/components/MainButton";
+import { ArrowIcon, MainButton } from "@/components/MainButton";
 import { Reveal } from "@/components/Reveal";
 import { StickyProjects } from "@/components/StickyProjects";
+import { blogPosts } from "@/lib/blogPosts";
 import {
   homeIntro,
   homeServices,
@@ -243,7 +245,58 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 7. CTA final */}
+      {/* 7. Journal & Derniers Reportages (Blog) */}
+      <section className="pad py-24 md:py-32 border-t border-white/10">
+        <div className="wrap">
+          <div className="flex flex-wrap items-end justify-between gap-6">
+            <Reveal>
+              <div className="dash" />
+              <h2 className="display h2">Journal &amp; Reportages</h2>
+            </Reveal>
+            <Reveal delay={80}>
+              <MainButton href="/blog" left="Voir tous" right="les récits" />
+            </Reveal>
+          </div>
+
+          <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            {blogPosts.map((post, index) => (
+              <Reveal key={post.slug} delay={index * 100}>
+                <Link
+                  href={`/blog/${post.slug}`}
+                  className="project-card group flex h-full flex-col justify-between border border-white/12 p-4 transition-colors hover:border-white/35"
+                >
+                  <div>
+                    <div className="mb-3 flex items-center justify-between text-[0.68rem] tracking-[0.16em] text-muted">
+                      <span>N° {post.number}</span>
+                      <span>{post.displayDate}</span>
+                    </div>
+                    <div className="relative aspect-[4/3] overflow-hidden bg-panel">
+                      <Image
+                        src={post.coverImage}
+                        alt={post.title}
+                        fill
+                        className="gray-photo object-cover"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                      />
+                    </div>
+                    <p className="mt-4 text-[0.68rem] tracking-[0.14em] text-[#d69a58]">
+                      {post.location}
+                    </p>
+                    <h3 className="display mt-2 text-2xl leading-[0.98]">{post.title}</h3>
+                  </div>
+
+                  <div className="mt-6 flex items-center justify-between border-t border-white/10 pt-3 text-[0.7rem] tracking-[0.16em]">
+                    <span>LIRE LE RÉCIT</span>
+                    <ArrowIcon />
+                  </div>
+                </Link>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 8. CTA final */}
       <CallToAction />
     </>
   );

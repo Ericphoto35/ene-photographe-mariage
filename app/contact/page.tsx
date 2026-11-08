@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ConsentAwareMap } from "@/components/ConsentAwareMap";
 import { ContactForm } from "@/components/ContactForm";
 import { ContactStrip } from "@/components/ContactStrip";
 import { Reveal } from "@/components/Reveal";
@@ -83,6 +84,14 @@ export default function ContactPage() {
               </Reveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="pad pb-28">
+        <div className="wrap">
+          <Reveal>
+            <ConsentAwareMap />
+          </Reveal>
         </div>
       </section>
     </>

@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { navLinks, site, socialLinks } from "@/lib/data";
 import { BrandMark } from "./BrandMark";
@@ -115,9 +117,48 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="site-footer-bottom">
+        <div className="site-footer-bottom space-y-4">
+          <div className="flex justify-center">
+            <a
+              rel="nofollow noopener noreferrer"
+              href="https://www.mariages.net/photo-mariage/loeil-de-monsieur-r-photographe-de-mariage--e426109"
+              title="Mariages.net"
+              target="_blank"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                alt="Mariages.net"
+                src="https://www.mariages.net/images/sellos/label-partenaire--gg426109.png"
+                style={{ borderWidth: 0 }}
+              />
+            </a>
+          </div>
+          <p className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
+            <Link
+              href="/mentions-legales"
+              className="text-muted underline underline-offset-4 transition-colors hover:text-paper"
+            >
+              Mentions légales
+            </Link>
+            <button
+              type="button"
+              onClick={() => window.dispatchEvent(new Event("open-cookie-settings"))}
+              className="cursor-pointer bg-transparent border-0 p-0 text-muted underline underline-offset-4 transition-colors hover:text-paper text-[0.8rem]"
+            >
+              Gérer les cookies
+            </button>
+          </p>
           <p>
-            © {year} Monsieur R Photographe de Mariage. Tous droits réservés.
+            © {year} Monsieur R Photographe de Mariage. Tous droits réservés. Projet réalisé par{" "}
+            <a
+              href="https://www.enesolutions.fr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-4 transition-colors hover:text-paper"
+            >
+              ENE-Solutions
+            </a>{" "}
+            et Eric Soret.
           </p>
         </div>
       </div>

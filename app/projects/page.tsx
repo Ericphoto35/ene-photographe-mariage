@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { CategoryGallery } from "@/components/CategoryGallery";
 import { MainButton } from "@/components/MainButton";
 import { Reveal } from "@/components/Reveal";
 import { projects } from "@/lib/data";
@@ -43,6 +44,8 @@ export default function ProjectsPage() {
             </Reveal>
           ))}
         </div>
+
+        <CategoryGallery />
 
         <Reveal>
           <div className="mt-20">

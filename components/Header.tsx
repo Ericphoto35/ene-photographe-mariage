@@ -13,10 +13,6 @@ export function Header() {
   const pathname = usePathname();
 
   useEffect(() => {
-    setOpen(false);
-  }, [pathname]);
-
-  useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
     return () => {
       document.body.style.overflow = "";
@@ -65,6 +61,7 @@ export function Header() {
             <Link
               key={link.href}
               href={link.href}
+              onClick={() => setOpen(false)}
               className="nav-link"
               aria-current={pathname === link.href ? "page" : undefined}
             >
