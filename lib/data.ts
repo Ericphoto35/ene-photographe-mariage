@@ -77,7 +77,7 @@ export const homeServices = [
     title: "Tirages Fine Art",
     description:
       "Des tirages d'art de qualité musée pour décorer votre intérieur avec vos plus belles photos de mariage.",
-    image: `${SITE}/667994748c414028ca615775_img-12.webp`,
+    image: "/images/87889333_3052041288163709_1545270873085181952_n.jpg",
   },
 ];
 
@@ -102,13 +102,13 @@ export const homeWhyChoose = {
 };
 
 export const ctaImages = [
-  `${SITE}/667994748c414028ca615770_img-08.webp`,
-  `${SITE}/667994748c414028ca615775_img-12.webp`,
-  `${SITE}/667994748c414028ca615776_img-16.webp`,
-  `${SITE}/667994748c414028ca615779_img-17.webp`,
-  `${SITE}/667994748c414028ca615778_img-15.webp`,
-  `${SITE}/667994748c414028ca615777_img-14.webp`,
-  `${SITE}/667994748c414028ca615774_img-11.webp`,
+  "/images/couple1.webp",
+  "/images/joeetseb1.webp",
+  "/images/rudy et kelly.webp",
+  "/images/kellyrudy2.webp",
+  "/images/TUB-cy6hTKCDrjr-LhE5jw.webp",
+  "/images/i-Xl--zhTuOurqrjZkI-Hg.webp",
+  "/images/premieredanse.webp",
 ];
 
 export const testimonials = [
@@ -136,7 +136,7 @@ export const projects = [
   {
     slug: "majestic",
     number: "01",
-    name: "Josephine",
+    name: "Joe et Sebastien",
     year: "2023",
     category: "Mariage",
     short: "Un récit visuel authentique, du premier regard aux derniers instants de la fête.",
@@ -147,27 +147,27 @@ export const projects = [
     gallery: [
       `${CMS}/6679f0a1b1b8c8f5fd1679f4_Plan%20de%20travail%201.webp`,
       `${CMS}/6679f197fb43e92c7afe9141_Plan%20de%20travail%201-2.webp`,
-      `${CMS}/6679f1c3976f303d759faa57_Plan%20de%20travail%20x.webp`,
-      `${CMS}/6679f1cec2808be97716ca14_Plan%20de%20travail%202-2.webp`,
+      "/images/joeetseb1.webp",
+      "/images/joeetseb3.webp",
     ],
     next: "serene",
   },
   {
     slug: "serene",
     number: "02",
-    name: "Sebastien",
+    name: "Kelly et Rudy",
     year: "2022",
     category: "Couples",
     short: "Une séance plus calme, pour immortaliser votre amour hors du jour J.",
     excerpt:
       "Entre portraits élégants et moments spontanés, cette série cherche l'essence des personnes : les expressions fugaces, la lumière, le lien.",
     body: "La séance couple — avant le mariage ou pendant la journée — est un temps plus détendu. L'objectif : des images intimes, vraies, qui racontent une partie unique de votre histoire.",
-    cover: `${CMS}/6679f197fb43e92c7afe9141_Plan%20de%20travail%201-2.webp`,
+    cover: "/images/rudy et kelly.webp",
     gallery: [
-      `${CMS}/6679f197fb43e92c7afe9141_Plan%20de%20travail%201-2.webp`,
-      `${CMS}/667994748c414028ca6157fc_project2-img-02.webp`,
-      `${CMS}/667994748c414028ca6157fd_project2-img-03.webp`,
-      `${CMS}/667994748c414028ca6157fe_project2-img-04.webp`,
+      "/images/rudy et kelly.webp",
+      "/images/kellyrudy2.webp",
+      "/images/kellyrudy3.webp",
+      "/images/kellyrudy4.webp",
     ],
     next: "eloquent",
   },
@@ -184,9 +184,9 @@ export const projects = [
     cover: `${CMS}/6679f1c3976f303d759faa57_Plan%20de%20travail%20x.webp`,
     gallery: [
       `${CMS}/6679f1c3976f303d759faa57_Plan%20de%20travail%20x.webp`,
-      `${CMS}/667994748c414028ca6157f9_project3-img-02.webp`,
-      `${CMS}/667994748c414028ca6157fa_project3-img-03.webp`,
-      `${CMS}/667994748c414028ca6157fb_project3-img-04.webp`,
+      "/images/TUB-cy6hTKCDrjr-LhE5jw.webp",
+      "/images/6JU1hif4Ty61_Nd11hjcfg.webp",
+      "/images/b1EQdDlURpaoaUQpJ9aAMQ.webp",
     ],
     next: "vibrant",
   },
@@ -203,9 +203,9 @@ export const projects = [
     cover: `${CMS}/6679f270976f303d75a03475_Plan%20de%20travail%202-3.webp`,
     gallery: [
       `${CMS}/6679f270976f303d75a03475_Plan%20de%20travail%202-3.webp`,
-      `${CMS}/667994748c414028ca6157f6_project4-img-02.webp`,
-      `${CMS}/667994748c414028ca6157f8_project4-img-03.webp`,
-      `${CMS}/667994748c414028ca6157f7_project4-img-04.webp`,
+      "/images/i-Xl--zhTuOurqrjZkI-Hg.webp",
+      "/images/Vs8Zz7leSyO-xHxSj8PDIg.webp",
+      "/images/OSJXnvlORJ2alH0gvRu6XA.webp",
     ],
     next: "majestic",
   },
@@ -242,7 +242,7 @@ export const services = [
     title: "Tirages Fine Art",
     description:
       "Des tirages d'art de qualité musée pour décorer votre intérieur avec vos plus belles photos de mariage.",
-    image: `${SITE}/667994748c414028ca615775_img-12.webp`,
+    image: "/images/87889333_3052041288163709_1545270873085181952_n.jpg",
   },
 ];
 
@@ -327,11 +327,11 @@ export const equipment = [
 ];
 
 export const aboutCollage = [
-  `${SITE}/667994748c414028ca61577e_img-20.webp`,
-  `${SITE}/667994748c414028ca615763_img-03.webp`,
-  `${SITE}/667994748c414028ca61577d_img-19.webp`,
-  `${SITE}/667994748c414028ca615764_img-01.webp`,
-  `${SITE}/667994748c414028ca61577c_img-18.webp`,
+  "/images/justine.webp",
+  "/images/kellyrudy3.webp",
+  "/images/ladyprep.webp",
+  "/images/mmmariage.jpg",
+  "/images/robemariee.webp",
 ];
 
 export const contactImages = [

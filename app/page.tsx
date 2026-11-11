@@ -7,6 +7,7 @@ import { Reveal } from "@/components/Reveal";
 import { StickyProjects } from "@/components/StickyProjects";
 import { blogPosts } from "@/lib/blogPosts";
 import {
+  heroCircleImages,
   homeIntro,
   homeServices,
   homeServicesIntro,
@@ -19,7 +20,20 @@ export default function HomePage() {
     <>
       {/* 1. Hero — Éditorial Magazine & Planche Fine Art */}
       <section className="hero-editorial pad">
-        <div className="wrap hero-editorial-shell">
+        {/* Photo en fondu à l'arrière du texte sur mobile */}
+        <div className="hero-mobile-bg" aria-hidden="true">
+          <Image
+            src={heroCircleImages[0]}
+            alt=""
+            fill
+            loading="eager"
+            sizes="(max-width: 1023px) 100vw, 1px"
+            className="hero-mobile-bg-img object-cover"
+          />
+          <div className="hero-mobile-bg-fade" />
+        </div>
+
+        <div className="wrap hero-editorial-shell relative z-10">
           {/* Barre supérieure d'index magazine */}
           <Reveal y={16}>
             <div className="hero-meta-top">
@@ -161,7 +175,7 @@ export default function HomePage() {
                       alt={service.title}
                       fill
                       className="gray-photo object-cover"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                      sizes="(max-width: 640px) 88vw, (max-width: 1024px) 45vw, 22vw"
                     />
                     <span className="absolute right-4 top-4 text-2xl">+</span>
                   </div>

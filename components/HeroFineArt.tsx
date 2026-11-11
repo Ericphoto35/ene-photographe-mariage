@@ -67,6 +67,7 @@ export function HeroFineArt() {
               src={heroCircleImages[secondaryIndex]}
               alt={secondaryMeta.title}
               fill
+              loading="eager"
               sizes="(max-width: 768px) 42vw, 220px"
               className="fineart-photo object-cover"
             />
@@ -98,8 +99,8 @@ export function HeroFineArt() {
                   src={src}
                   alt={plateLabels[index % plateLabels.length].title}
                   fill
-                  priority={index === 0}
-                  sizes="(max-width: 768px) 85vw, 440px"
+                  loading={index === 0 ? "eager" : "lazy"}
+                  sizes="(max-width: 768px) 75vw, 380px"
                   className={`fineart-main-photo object-cover transition-all duration-700 ${
                     isCurrent
                       ? "scale-100 opacity-100"
@@ -158,6 +159,7 @@ export function HeroFineArt() {
               src={heroCircleImages[tertiaryIndex]}
               alt={tertiaryMeta.title}
               fill
+              loading="eager"
               sizes="(max-width: 768px) 38vw, 190px"
               className="fineart-photo object-cover"
             />

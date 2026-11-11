@@ -145,6 +145,34 @@ a {
   overflow: hidden;
 }
 
+.hero-mobile-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: block;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.hero-mobile-bg-img {
+  object-position: center 22%;
+  filter: grayscale(0.2) sepia(0.12) contrast(1.06);
+  opacity: 0.72;
+  transform: scale(1.02);
+}
+
+.hero-mobile-bg-fade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(9, 9, 9, 0.82) 0%,
+    rgba(9, 9, 9, 0.25) 35%,
+    rgba(9, 9, 9, 0.5) 70%,
+    var(--black-01) 100%
+  );
+}
+
 .hero-editorial-shell {
   display: flex;
   flex-direction: column;
@@ -210,7 +238,7 @@ a {
 
 .hero-visual {
   min-width: 0;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -270,6 +298,14 @@ a {
 @media (min-width: 1024px) {
   .hero-editorial {
     padding-top: 6.25rem;
+  }
+
+  .hero-mobile-bg {
+    display: none;
+  }
+
+  .hero-visual {
+    display: flex;
   }
 
   .hero-editorial-grid {
