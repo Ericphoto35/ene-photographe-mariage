@@ -221,21 +221,21 @@ export const services = [
     title: "Photographie de Mariage",
     description:
       "Capturer chaque moment précieux de votre journée spéciale, des préparatifs jusqu'à la fin des festivités.",
-    image: `${SITE}/667994748c414028ca615763_img-03.webp`,
+    image: `${SITE}/6679effd31234493053de684_Plan%20de%20travail%205-1.webp`,
   },
   {
     number: "02",
     title: "Séance d'Engagement",
     description:
       "Une séance photo avant le mariage pour immortaliser votre amour dans un cadre plus détendu.",
-    image: `${SITE}/667994748c414028ca615766_img-02.webp`,
+    image: `${SITE}/6679ecae70514671a2d72fad_Plan%20de%20travail%201.webp`,
   },
   {
     number: "03",
     title: "Albums Photo",
     description:
       "Des albums photo de haute qualité, conçus sur mesure pour préserver vos souvenirs pour les générations à venir. Fabriqués à la main, personnalisés selon vos préférences de taille, de couverture et de mise en page.",
-    image: `${SITE}/667994748c414028ca615770_img-08.webp`,
+    image: `${SITE}/6679f01f3c972f40647b13c4_Plan%20de%20travail%205.2.webp`,
   },
   {
     number: "04",
