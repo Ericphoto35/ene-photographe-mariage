@@ -273,7 +273,7 @@ export default function HomePage() {
           </div>
 
           <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-            {blogPosts.map((post, index) => (
+            {blogPosts.slice(0, 4).map((post, index) => (
               <Reveal key={post.slug} delay={index * 100}>
                 <Link
                   href={`/blog/${post.slug}`}

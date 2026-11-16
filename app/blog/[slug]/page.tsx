@@ -46,20 +46,58 @@ export default async function BlogPostPage({ params }: Props) {
   const currentIndex = blogPosts.findIndex((p) => p.slug === post.slug);
   const nextPost = blogPosts[(currentIndex + 1) % blogPosts.length];
 
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: post.title,
-    description: post.metaDescription,
-    ...(post.coverImage
-      ? { image: `https://www.loeil-de-monsieur-r.fr${post.coverImage}` }
-      : {}),
-    datePublished: post.date,
-    author: {
-      "@type": "Person",
-      name: "L'Oeil de Monsieur R",
+  const articleUrl = `https://www.loeil-de-monsieur-r.fr/blog/${post.slug}`;
+
+  const articleSchema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      headline: post.metaTitle,
+      description: post.metaDescription,
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": articleUrl,
+      },
+      ...(post.coverImage
+        ? { image: `https://www.loeil-de-monsieur-r.fr${post.coverImage}` }
+        : {}),
+      datePublished: post.date,
+      author: {
+        "@type": "Person",
+        name: "L'Oeil de Monsieur R",
+        url: "https://www.loeil-de-monsieur-r.fr",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "L'Oeil de Monsieur R",
+        url: "https://www.loeil-de-monsieur-r.fr",
+      },
     },
-  };
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Accueil",
+          item: "https://www.loeil-de-monsieur-r.fr",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Blog",
+          item: "https://www.loeil-de-monsieur-r.fr/blog",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: post.metaTitle,
+          item: articleUrl,
+        },
+      ],
+    },
+  ];
 
   return (
     <article className="pb-28 pt-36 md:pt-44">
@@ -101,7 +139,7 @@ export default async function BlogPostPage({ params }: Props) {
           {/* En-tête de l'article */}
           <Reveal>
             <div className="dash" />
-            <h1 className="display h2 max-w-5xl">{post.title}</h1>
+            <h1 className="display h2 max-w-5xl leading-[1.05]">{post.title}</h1>
           </Reveal>
 
           {/* Image de couverture grand format */}
@@ -160,7 +198,7 @@ export default async function BlogPostPage({ params }: Props) {
                       <span className="text-xs tracking-[0.18em] text-[#d69a58]">
                         CHAPITRE {String(index + 1).padStart(2, "0")}
                       </span>
-                      <h2 className="display mt-3 text-4xl md:text-5xl">
+                      <h2 className="display mt-3 text-4xl leading-[1.05] md:text-5xl">
                         {section.heading}
                       </h2>
                     </Reveal>
@@ -214,6 +252,16 @@ export default async function BlogPostPage({ params }: Props) {
                     {link.label}
                   </Link>
                 ))}
+                {post.venueUrl ? (
+                  <a
+                    href={post.venueUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs tracking-[0.16em] text-[#d69a58] underline underline-offset-4 transition-opacity hover:opacity-80"
+                  >
+                    Lieu de réception : {post.location} ↗
+                  </a>
+                ) : null}
               </div>
             </div>
           </Reveal>

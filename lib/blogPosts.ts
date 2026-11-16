@@ -28,6 +28,69 @@ export type BlogPost = {
 export const blogPosts: BlogPost[] = [
   {
     number: "01",
+    slug: "mariage-trempe-sec-vitre-adeline-kevin",
+    title: "Mariage au Trempe Sec a Vitre & ceremonies a Noyal : le reportage d'Adeline & Kevin",
+    metaTitle: "Photographe Mariage Vitré & Noyal | Le Trempe Sec — Adeline & Kévin",
+    metaDescription:
+      "Reportage photo du mariage d'Adeline & Kévin le 29 juin 2024 en Ille-et-Vilaine : cérémonies civile et religieuse à la mairie et à l'église de Noyal, puis réception au Trempe Sec à Vitré.",
+    date: "2024-06-29",
+    displayDate: "29 Juin 2024",
+    location: "Noyal & Le Trempe Sec, Vitré (Ille-et-Vilaine)",
+    venueUrl: "https://www.letrempesec.fr/",
+    excerpt:
+      "Retour en images sur le mariage d'Adeline & Kévin le 29 juin 2024 en Ille-et-Vilaine, entre cérémonies à la mairie et à l'église de Noyal, et réception chaleureuse au Trempe Sec à Vitré.",
+    coverImage:
+      "/images/blog/mariage-trempe-sec-vitre-adeline-kevin/adelinekevintrempesec.webp",
+    intro: [
+      "Le 29 juin 2024, direction l'Ille-et-Vilaine, entre Rennes et Vitré, pour le mariage d'Adeline et Kévin. Une journée complète qui débute par l'émotion des cérémonies civile et religieuse à la mairie puis à l'église de Noyal, avant de rejoindre Le Trempe Sec à Vitré pour le vin d'honneur, la séance couple et la soirée.",
+      "Photographier un mariage entre Noyal et Vitré, c'est suivre le rythme authentique d'une journée bretonne : la solennité des engagements entourés des familles, la sortie d'église sous les applaudissements, puis le souffle plus détendu d'un ancien corps de ferme rénové en pierres apparentes au cœur de la campagne vitréenne.",
+      "Voici un aperçu du reportage, moment par moment.",
+    ],
+    sections: [
+      {
+        heading: "L'union civile a la mairie de Noyal",
+        paragraphs: [
+          "La journée s'ouvre à la mairie de Noyal pour la cérémonie civile, entourée des proches, des parents et des témoins d'Adeline et Kévin. Les regards complices, la lecture des actes et le premier « oui » officiel lancent avec beaucoup d'émotion le récit de cette journée en Ille-et-Vilaine.",
+          "En reportage, je privilégie ici la spontanéité : capter un sourire échangé, une main serrée et les félicitations chaleureuses sur le parvis de la mairie avant de rejoindre l'église.",
+        ],
+        image: {
+          src: "/images/blog/mariage-trempe-sec-vitre-adeline-kevin/adelinekevinmairie.webp",
+          alt: "Cérémonie civile du mariage d'Adeline et Kévin à la mairie de Noyal en Ille-et-Vilaine",
+        },
+      },
+      {
+        heading: "La ceremonie religieuse a l'eglise de Noyal",
+        paragraphs: [
+          "À quelques pas de la mairie, l'émotion gagne encore en intensité sous les voûtes de l'église de Noyal. L'entrée des mariés, l'échange des consentements et la bénédiction des alliances offrent une atmosphère solennelle et lumineuse.",
+          "À la sortie de l'église, les applaudissements et la joie des invités donnent lieu à des images vivantes et intemporelles, avant que le cortège ne prenne la direction de Vitré.",
+        ],
+        image: {
+          src: "/images/blog/mariage-trempe-sec-vitre-adeline-kevin/adelinekevineglise.webp",
+          alt: "Cérémonie religieuse d'Adeline et Kévin à l'église de Noyal près de Rennes et Vitré",
+        },
+      },
+      {
+        heading: "Reception, seance couple et fete au Trempe Sec a Vitre",
+        paragraphs: [
+          "Après les cérémonies à Noyal, cap sur Vitré pour rejoindre Le Trempe Sec. Cet ancien corps de ferme rénové, alliant pierres apparentes, hangar couvert et espaces extérieurs verdoyants, offre un cadre de caractère pour le vin d'honneur, les photos de groupe conviviales et une parenthèse à deux avec Adeline et Kévin dans la lumière de fin d'après-midi.",
+          "La soirée se prolonge ensuite dans la salle de réception du Trempe Sec dans une ambiance chaleureuse et festive : discours, éclats de rire et ouverture de bal viennent clore en beauté ce reportage de mariage à Vitré.",
+        ],
+        image: {
+          src: "/images/blog/mariage-trempe-sec-vitre-adeline-kevin/adelinekevintrempesec.webp",
+          alt: "Réception de mariage d'Adeline et Kévin au domaine Le Trempe Sec à Vitré",
+        },
+      },
+    ],
+    outro:
+      "Un immense merci à Adeline et Kévin pour leur confiance et leur accueil tout au long de cette journée du 29 juin 2024. Basé à Rennes, j'accompagne les futurs mariés dans toute l'Ille-et-Vilaine et en Bretagne : vous préparez votre mariage à Noyal, à Vitré, au Trempe Sec ou dans la région rennaise ? N'hésitez pas à me contacter pour me raconter votre projet.",
+    relatedLinks: [
+      { label: "Photographe de mariage à Rennes & en Bretagne (Accueil)", href: "/" },
+      { label: "Découvrir la galerie complète", href: "/projects" },
+      { label: "Voir mes formules et tarifs de mariage", href: "/services" },
+    ],
+  },
+  {
+    number: "02",
     slug: "mariage-jardin-des-acanthes-benedicte-gael",
     title: "Mariage au Jardin des Acanthes à Plescop : le reportage de Bénédicte & Gaël",
     metaTitle: "Photographe Mariage Vannes | Jardin des Acanthes — Bénédicte & Gaël",
@@ -84,7 +147,7 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    number: "02",
+    number: "03",
     slug: "mariage-haras-du-reuzel-charlotte-thomas",
     title: "Mariage au Haras du Reuzel à Orgères : le reportage de Charlotte & Thomas",
     metaTitle: "Photographe Mariage Rennes | Haras du Reuzel — Charlotte & Thomas",
@@ -145,7 +208,7 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    number: "03",
+    number: "04",
     slug: "mariage-manoir-du-pas-jahan-rudy-kelly",
     title: "Mariage au Manoir du Pas Jahan à Couëron : le reportage de Rudy & Kelly",
     metaTitle: "Photographe Mariage Nantes | Manoir du Pas Jahan — Rudy & Kelly",
@@ -202,7 +265,7 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    number: "04",
+    number: "05",
     slug: "mariage-domaine-de-kerlys-helene-florian",
     title: "Mariage au Domaine de Kerlys à Briec-de-l'Odet : le reportage d'Hélène & Florian",
     metaTitle: "Photographe Mariage Domaine de Kerlys | Reportage Hélène & Florian",
