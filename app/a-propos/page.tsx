@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   description:
     "Découvrez l'histoire et l'approche de L'Oeil de Monsieur R, photographe de mariage professionnel basé à Rennes, intervenant en Bretagne et partout en France.",
   alternates: {
-    canonical: "https://www.loeil-de-monsieur-r.fr/a-propos",
+    canonical: "https://www.loeil-de-monsieur-r.fr/about",
   },
   openGraph: {
     title: "À Propos - Photographe Mariage Rennes | L'Oeil de Monsieur R",
     description:
       "Photographe de mariage passionné basé à Rennes, 10+ ans d'expérience en Bretagne et en France.",
-    url: "https://www.loeil-de-monsieur-r.fr/a-propos",
+    url: "https://www.loeil-de-monsieur-r.fr/about",
     locale: "fr_FR",
     type: "website",
   },

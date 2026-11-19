@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { blogPosts } from "@/lib/blogPosts";
+import { projects } from "@/lib/data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.loeil-de-monsieur-r.fr";
@@ -22,13 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/projects`,
       lastModified,
       changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/galerie`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.8,
+      priority: 0.9,
     },
     {
       url: `${baseUrl}/contact`,
@@ -40,10 +35,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/about`,
       lastModified,
       changeFrequency: "monthly",
-      priority: 0.7,
+      priority: 0.8,
     },
     {
-      url: `${baseUrl}/a-propos`,
+      url: `${baseUrl}/blog`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/mariage-helene-florian`,
       lastModified,
       changeFrequency: "monthly",
       priority: 0.7,
@@ -54,18 +55,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.3,
     },
-    {
-      url: `${baseUrl}/blog`,
+    ...projects.map((project) => ({
+      url: `${baseUrl}/project/${project.slug}`,
       lastModified,
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
     ...blogPosts.map((post) => ({
       url: `${baseUrl}/blog/${post.slug}`,
       lastModified: new Date(post.date),
       changeFrequency: "monthly" as const,
-      priority: 0.7,
+      priority: 0.8,
     })),
   ];
 }
-

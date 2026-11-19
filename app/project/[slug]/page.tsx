@@ -15,7 +15,27 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const project = getProject(slug);
-  return { title: project?.name ?? "Project" };
+  if (!project) return { title: "Galerie Mariage Bretagne" };
+
+  const title = `${project.name} — Reportage & Galerie ${project.category} en Bretagne`;
+  const description = `${project.excerpt} Découvrez la galerie photo "${project.name}" réalisée par L'Oeil de Monsieur R, photographe de mariage à Rennes et en Bretagne.`;
+  const url = `https://www.loeil-de-monsieur-r.fr/project/${project.slug}`;
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      title: `${title} | L'Oeil de Monsieur R`,
+      description,
+      url,
+      images: [project.cover],
+      locale: "fr_FR",
+      type: "article",
+    },
+  };
 }
 
 export default async function ProjectPage({ params }: Props) {
@@ -43,7 +63,13 @@ export default async function ProjectPage({ params }: Props) {
         {project.gallery.map((src, index) => (
           <Reveal key={src} delay={(index % 2) * 100} y={40}>
             <div className="relative aspect-[4/5] overflow-hidden">
-              <Image src={src} alt={project.name} fill className="gray-photo object-cover" sizes="50vw" />
+              <Image
+                src={src}
+                alt={`${project.name} — Photographie de mariage en Bretagne (${index + 1})`}
+                fill
+                className="gray-photo object-cover"
+                sizes="50vw"
+              />
             </div>
           </Reveal>
         ))}

@@ -335,14 +335,14 @@ export const aboutCollage = [
 ];
 
 export const contactImages = [
-  `${SITE}/667994748c414028ca615772_img-05.webp`,
-  `${SITE}/667994748c414028ca615766_img-02.webp`,
-  `${SITE}/667994748c414028ca615774_img-11.webp`,
-  `${SITE}/667994748c414028ca615771_img-10.webp`,
-  `${SITE}/667994748c414028ca615773_img-04.webp`,
-  `${SITE}/667994748c414028ca615770_img-08.webp`,
-  `${SITE}/667994748c414028ca615762_img-07.webp`,
-  `${SITE}/667994748c414028ca615767_img-09.webp`,
+  "/images/joeetseb1.webp",
+  "/images/rudy et kelly.webp",
+  "/images/kellyrudy2.webp",
+  "/images/TUB-cy6hTKCDrjr-LhE5jw.webp",
+  "/images/i-Xl--zhTuOurqrjZkI-Hg.webp",
+  "/images/Vs8Zz7leSyO-xHxSj8PDIg.webp",
+  "/images/couple3.webp",
+  "/images/ceremonie.webp",
 ];
 
 export const serviceFaqs = [

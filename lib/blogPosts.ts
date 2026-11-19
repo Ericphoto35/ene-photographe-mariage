@@ -563,6 +563,139 @@ export const blogPosts: BlogPost[] = [
       { label: "Découvrir mes formules et demander un devis", href: "/services" },
     ],
   },
+  {
+    number: "09",
+    slug: "prix-tarif-photographe-mariage-rennes-bretagne",
+    title: "Quel est le prix d'un photographe de mariage a Rennes et en Bretagne ?",
+    metaTitle: "Prix Photographe Mariage Rennes & Bretagne : Tarifs, Formules et Budget",
+    metaDescription:
+      "Combien coûte un photographe de mariage à Rennes et en Bretagne ? Découvrez les tarifs moyens, ce que comprend chaque formule (de 1 200 € à 2 500 €) et comment choisir votre photographe.",
+    date: "2026-11-14",
+    displayDate: "Guide Budget — Bretagne",
+    location: "Rennes, Ille-et-Vilaine & Toute la Bretagne",
+    excerpt:
+      "Transparence sur les tarifs d'un photographe de mariage en Bretagne : pourquoi les prix varient, combien d'heures de présence prévoir et que comprennent réellement les formules de reportage.",
+    coverImage: "/images/rkmariage.webp",
+    intro: [
+      "Lorsqu'on commence à établir le budget de son mariage à Rennes, en Ille-et-Vilaine ou en Bretagne, la question du tarif du photographe arrive très vite. Entre les offres à quelques centaines d'euros sur les petites annonces et les prestations haut de gamme, il n'est pas toujours simple de comprendre ce qui justifie le prix d'un reportage professionnel.",
+      "Pourtant, une fois la fête terminée, le gâteau dégusté et les fleurs séchées, les photographies — aux côtés de vos alliances — sont le seul patrimoine matériel et émotionnel qui traverse les décennies.",
+      "Voici un guide clair et transparent pour comprendre les tarifs d'un photographe de mariage à Rennes et choisir la formule adaptée à votre journée.",
+    ],
+    sections: [
+      {
+        heading: "Combien coute en moyenne un photographe de mariage en Bretagne ?",
+        paragraphs: [
+          "En Bretagne et dans le Grand Ouest (Rennes, Saint-Malo, Vannes, Nantes, Quimper), le tarif d'un photographe de mariage professionnel déclaré et expérimenté se situe généralement entre 1 200 € et 2 800 € selon la durée de présence et les supports inclus (albums faits main, coffrets de tirages Fine Art, séance d'engagement).",
+          "Pour ma part, j'ai conçu trois formules claires et évolutives : la formule Essentiel à partir de 1 200 € (8 heures de couverture, idéale de la cérémonie au cocktail avec plus de 300 photos retouchées), la formule Élégance à partir de 1 600 € (12 heures, des préparatifs jusqu'au début de soirée avec 500+ photos et un album 30x30 cm), et la formule Prestige à partir de 2 500 € (couverture illimitée du jour J, séance d'engagement offerte, second photographe, album 35x35 cm et coffret de 100 tirages Fine Art).",
+        ],
+        image: {
+          src: "/images/rkmariage.webp",
+          alt: "Alliances et détails de mariage photographiés en Bretagne par L'Oeil de Monsieur R",
+        },
+      },
+      {
+        heading: "Ce qui est inclus derriere le tarif du jour J : 40 a 50 heures de travail",
+        paragraphs: [
+          "On imagine souvent que le travail du photographe se limite aux 8 ou 12 heures de présence le samedi du mariage. En réalité, un reportage complet représente entre 40 et 50 heures de travail par mariage : les rendez-vous de préparation et de conseil sur le planning, le repérage des lieux, la prise de vue le jour J, puis plusieurs jours entiers de tri sélectif et de post-traitement artisanal photo par photo.",
+          "À cela s'ajoutent le matériel professionnel plein format doublé (deux boîtiers, objectifs lumineux, cartes mémoire à double enregistrement simultané pour une sécurité absolue), les sauvegardes sur serveurs sécurisés, la galerie privée en ligne pour vos invités et les assurances professionnelles.",
+        ],
+        image: {
+          src: "/images/album.webp",
+          alt: "Album photo de mariage sur mesure et tirages Fine Art de qualité musée",
+        },
+      },
+      {
+        heading: "Comment choisir la formule ideale pour votre mariage ?",
+        paragraphs: [
+          "Posez-vous une seule question : quels sont les moments que vous aurez envie de revivre dans vingt ans ? Si vous tenez à l'atmosphère intime du matin — les regards de vos parents lors de l'habillage, les détails de la robe, l'ouverture du bal le soir — une couverture de 12 heures des préparatifs à la première danse est le choix le plus équilibré.",
+          "De plus, toutes mes formules sont modulables : nous pouvons partir d'une base et l'ajuster sur mesure à votre programme, que vous organisiez un mariage intimiste à la mairie de Rennes ou un grand week-end festif dans un domaine breton.",
+        ],
+        image: {
+          src: "/images/TUB-cy6hTKCDrjr-LhE5jw.webp",
+          alt: "Détails et émotion lors d'un reportage de mariage en Ille-et-Vilaine",
+        },
+      },
+    ],
+    outro:
+      "Vous souhaitez recevoir une proposition personnalisée pour votre date de mariage à Rennes ou en Bretagne ? Consultez le détail de mes formules ou écrivez-moi directement : je vous réponds sous 24 à 48 heures.",
+    relatedLinks: [
+      { label: "Voir le détail de mes 3 formules & tarifs (/services)", href: "/services" },
+      { label: "Demander un devis personnalisé (/contact)", href: "/contact" },
+      {
+        label: "Guide : Les plus beaux domaines de mariage autour de Rennes",
+        href: "/blog/domaines-salles-mariage-rennes-ille-et-vilaine",
+      },
+      { label: "Photographe de mariage à Rennes & en Bretagne (Accueil)", href: "/" },
+    ],
+  },
+  {
+    number: "10",
+    slug: "pourquoi-faire-seance-engagement-mariage-bretagne",
+    title: "Pourquoi faire une seance d'engagement avant son mariage en Bretagne ?",
+    metaTitle: "Séance Engagement Mariage Rennes & Bretagne : 4 Raisons de Sauter le Pas",
+    metaDescription:
+      "Qu'est-ce qu'une séance photo d'engagement avant le mariage ? Découvrez pourquoi cette séance couple à Rennes, Saint-Malo ou en Bretagne transforme vos photos du jour J.",
+    date: "2026-11-12",
+    displayDate: "Séance Couple — Bretagne",
+    location: "Rennes, Côte d'Émeraude & Bretagne",
+    excerpt:
+      "Vous pensez ne pas être photogéniques ou avoir peur de poser ? La séance d'engagement avant le mariage est le meilleur secret pour être 100 % naturels devant l'objectif le jour J.",
+    coverImage: "/images/engagements.webp",
+    intro: [
+      "« Nous n'avons pas l'habitude d'être pris en photo, nous avons peur de ne pas savoir quoi faire de nos mains le jour du mariage ! » C'est sans doute la phrase que j'entends le plus souvent lors de mon premier échange avec les futurs mariés à Rennes.",
+      "Et c'est parfaitement normal : être photographié demande un minimum de confiance et de complicité avec la personne qui tient l'appareil. C'est précisément pour cette raison que la séance d'engagement (ou séance couple avant mariage) existe.",
+      "Voici pourquoi cette parenthèse de 1h30, quelques mois avant votre mariage en Bretagne, change tout pour vos photos du jour J.",
+    ],
+    sections: [
+      {
+        heading: "1. Apprivoiser l'objectif et oublier le photographe avant le jour J",
+        paragraphs: [
+          "Lors d'une séance d'engagement, il n'y a ni horaire de mairie à respecter, ni cent invités qui vous regardent. Nous partons nous promener en tenue civile dans un lieu qui vous ressemble — sur la côte à Saint-Malo ou Cancale, dans une forêt bretonne ou dans les rues de Rennes.",
+          "Au bout de quinze minutes, les épaules se relâchent, vous comprenez ma façon de vous guider sans jamais vous figer dans des poses artificielles, et vous oubliez l'appareil. Résultat : le jour du mariage, vous êtes déjà en terrain connu et vos portraits de mariés gagnent instantanément en naturel.",
+        ],
+        image: {
+          src: "/images/engagements.webp",
+          alt: "Séance photo d'engagement d'un couple de futurs mariés en Bretagne",
+        },
+      },
+      {
+        heading: "2. Des photos professionnelles pour vos faire-part et votre decoration",
+        paragraphs: [
+          "Au-delà de l'expérience humaine, la séance d'engagement vous offre une série complète de portraits professionnels en tenue de tous les jours. Beaucoup de mes couples utilisent ces images pour illustrer leur faire-part de mariage, leur site internet dédié aux invités, leur livre d'or ou la décoration de leur salle de réception.",
+          "C'est aussi l'occasion de célébrer vos fiançailles dans un décor différent de celui de votre mariage : si vous vous mariez à la campagne dans les terres d'Ille-et-Vilaine, nous pouvons réaliser votre séance d'engagement face à la mer sur la Côte d'Émeraude.",
+        ],
+        image: {
+          src: "/images/kellyrudy2.webp",
+          alt: "Portrait complice de couple en noir et blanc lors d'une séance photo en Bretagne",
+        },
+      },
+      {
+        heading: "3. Jouer avec la lumiere et le caractere de la meteo bretonne",
+        paragraphs: [
+          "En photographie, un ciel breton légèrement voilé ou traversé de nuages est souvent bien plus flatteur qu'un grand soleil de midi sans nuage, qui crée des ombres dures sur les visages. Les nuages agissent comme une immense boîte à lumière naturelle qui adoucit les traits et fait ressortir les textures.",
+          "La séance d'engagement vous permet de constater par vous-mêmes à quel point la lumière de Bretagne — qu'elle soit dorée au coucher du soleil ou plus dramatique au bord de l'océan — donne des images intenses et intemporelles.",
+        ],
+        image: {
+          src: "/images/i-Xl--zhTuOurqrjZkI-Hg.webp",
+          alt: "Couple de mariés sous la lumière naturelle bretonne",
+        },
+      },
+    ],
+    outro:
+      "La séance d'engagement peut être réservée seule, ajoutée à votre formule de mariage, et elle est incluse d'office dans ma Formule Prestige. Envie d'organiser la vôtre autour de Rennes ou sur la côte bretonne ? Contactez-moi pour en discuter.",
+    relatedLinks: [
+      {
+        label: "Guide : Où faire ses photos de couple à Rennes, Saint-Malo & en Bretagne ?",
+        href: "/blog/ou-faire-photos-couple-mariage-rennes-saint-malo-bretagne",
+      },
+      {
+        label: "Guide : Quel est le prix d'un photographe de mariage en Bretagne ?",
+        href: "/blog/prix-tarif-photographe-mariage-rennes-bretagne",
+      },
+      { label: "Voir mes formules Mariage & Séance d'Engagement (/services)", href: "/services" },
+      { label: "Photographe de mariage à Rennes & en Bretagne (Accueil)", href: "/" },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
