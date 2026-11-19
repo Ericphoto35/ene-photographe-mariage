@@ -85,14 +85,21 @@ export const blogPosts: BlogPost[] = [
       "Un immense merci à Adeline et Kévin pour leur confiance et leur accueil tout au long de cette journée du 29 juin 2024. Basé à Rennes, j'accompagne les futurs mariés dans toute l'Ille-et-Vilaine et en Bretagne : vous préparez votre mariage à Noyal, à Vitré, au Trempe Sec ou dans la région rennaise ? N'hésitez pas à me contacter pour me raconter votre projet.",
     relatedLinks: [
       { label: "Photographe de mariage à Rennes & en Bretagne (Accueil)", href: "/" },
-      { label: "Découvrir la galerie complète", href: "/projects" },
+      {
+        label: "Guide : Où se marier autour de Rennes et en Ille-et-Vilaine ?",
+        href: "/blog/domaines-salles-mariage-rennes-ille-et-vilaine",
+      },
+      {
+        label: "Guide : Organiser le timing photo de son mariage sans stress",
+        href: "/blog/organiser-planning-timing-photo-mariage-sans-stress",
+      },
       { label: "Voir mes formules et tarifs de mariage", href: "/services" },
     ],
   },
   {
     number: "02",
     slug: "mariage-jardin-des-acanthes-benedicte-gael",
-    title: "Mariage au Jardin des Acanthes à Plescop : le reportage de Bénédicte & Gaël",
+    title: "Mariage au Jardin des Acanthes a Plescop : le reportage de Benedicte & Gael",
     metaTitle: "Photographe Mariage Vannes | Jardin des Acanthes — Bénédicte & Gaël",
     metaDescription:
       "Reportage d'un photographe de mariage en Bretagne : Bénédicte & Gaël au Jardin des Acanthes à Plescop, près de Vannes, dans un parc du Morbihan.",
@@ -142,6 +149,11 @@ export const blogPosts: BlogPost[] = [
     outro:
       "Un immense merci à Bénédicte et Gaël pour leur confiance. Basé à Rennes, je photographie des mariages dans toute la Bretagne. Vous préparez le vôtre près de Vannes, au Jardin des Acanthes ou ailleurs dans le Morbihan ? N'hésitez pas à me contacter pour échanger sur votre projet.",
     relatedLinks: [
+      { label: "Photographe de mariage à Rennes & en Bretagne (Accueil)", href: "/" },
+      {
+        label: "Guide : Où se marier autour de Rennes et en Bretagne ?",
+        href: "/blog/domaines-salles-mariage-rennes-ille-et-vilaine",
+      },
       { label: "Découvrir la galerie complète", href: "/projects" },
       { label: "Voir mes formules de mariage", href: "/services" },
     ],
@@ -149,7 +161,7 @@ export const blogPosts: BlogPost[] = [
   {
     number: "03",
     slug: "mariage-haras-du-reuzel-charlotte-thomas",
-    title: "Mariage au Haras du Reuzel à Orgères : le reportage de Charlotte & Thomas",
+    title: "Mariage au Haras du Reuzel a Orgeres : le reportage de Charlotte & Thomas",
     metaTitle: "Photographe Mariage Rennes | Haras du Reuzel — Charlotte & Thomas",
     metaDescription:
       "Reportage photo du mariage de Charlotte & Thomas au Haras du Reuzel à Orgères, près de Rennes : préparatifs, cérémonie et séance couple dans un domaine champêtre en Ille-et-Vilaine.",
@@ -203,14 +215,22 @@ export const blogPosts: BlogPost[] = [
     outro:
       "Un immense merci à Charlotte et Thomas pour leur confiance. Vous préparez votre mariage près de Rennes, au Haras du Reuzel ou ailleurs en Ille-et-Vilaine ? N'hésitez pas à me contacter pour échanger sur votre projet.",
     relatedLinks: [
-      { label: "Découvrir la galerie complète", href: "/projects" },
+      { label: "Photographe de mariage à Rennes & en Bretagne (Accueil)", href: "/" },
+      {
+        label: "Guide : Les plus beaux domaines de mariage autour de Rennes",
+        href: "/blog/domaines-salles-mariage-rennes-ille-et-vilaine",
+      },
+      {
+        label: "Guide : Où faire ses photos de couple à Rennes & Saint-Malo ?",
+        href: "/blog/ou-faire-photos-couple-mariage-rennes-saint-malo-bretagne",
+      },
       { label: "Voir mes formules de mariage", href: "/services" },
     ],
   },
   {
     number: "04",
     slug: "mariage-manoir-du-pas-jahan-rudy-kelly",
-    title: "Mariage au Manoir du Pas Jahan à Couëron : le reportage de Rudy & Kelly",
+    title: "Mariage au Manoir du Pas Jahan a Coueron : le reportage de Rudy & Kelly",
     metaTitle: "Photographe Mariage Nantes | Manoir du Pas Jahan — Rudy & Kelly",
     metaDescription:
       "Reportage photo du mariage de Rudy & Kelly au Manoir du Pas Jahan à Couëron, près de Nantes : cérémonie laïque et soirée dans un manoir du XIVe siècle.",
@@ -260,6 +280,11 @@ export const blogPosts: BlogPost[] = [
     outro:
       "Un immense merci à Rudy et Kelly pour leur confiance. Vous préparez votre mariage près de Nantes, au Manoir du Pas Jahan ou ailleurs en Loire-Atlantique ? N'hésitez pas à me contacter pour échanger sur votre projet.",
     relatedLinks: [
+      { label: "Photographe de mariage à Rennes & en Bretagne (Accueil)", href: "/" },
+      {
+        label: "Guide : Organiser le timing photo de son mariage sans stress",
+        href: "/blog/organiser-planning-timing-photo-mariage-sans-stress",
+      },
       { label: "Découvrir la galerie complète", href: "/projects" },
       { label: "Voir mes formules de mariage", href: "/services" },
     ],
@@ -267,7 +292,7 @@ export const blogPosts: BlogPost[] = [
   {
     number: "05",
     slug: "mariage-domaine-de-kerlys-helene-florian",
-    title: "Mariage au Domaine de Kerlys à Briec-de-l'Odet : le reportage d'Hélène & Florian",
+    title: "Mariage au Domaine de Kerlys a Briec-de-l'Odet : le reportage d'Helene & Florian",
     metaTitle: "Photographe Mariage Domaine de Kerlys | Reportage Hélène & Florian",
     metaDescription:
       "Reportage photo d'un mariage champêtre au Domaine de Kerlys à Briec-de-l'Odet, dans le Finistère : préparatifs, mairie, garden party et cérémonie laïque.",
@@ -328,8 +353,214 @@ export const blogPosts: BlogPost[] = [
     outro:
       "Un immense merci à Hélène et Florian pour leur confiance. Vous préparez votre mariage en Bretagne, au Domaine de Kerlys ou ailleurs dans le Finistère ? N'hésitez pas à me contacter pour échanger sur votre projet.",
     relatedLinks: [
+      { label: "Photographe de mariage à Rennes & en Bretagne (Accueil)", href: "/" },
       { label: "Découvrir la galerie complète", href: "/projects" },
       { label: "Voir mes formules de mariage", href: "/services" },
+      {
+        label: "Guide : Où se marier autour de Rennes et en Bretagne ?",
+        href: "/blog/domaines-salles-mariage-rennes-ille-et-vilaine",
+      },
+    ],
+  },
+  {
+    number: "06",
+    slug: "domaines-salles-mariage-rennes-ille-et-vilaine",
+    title: "Ou se marier autour de Rennes et en Bretagne ? Les plus beaux domaines de reception",
+    metaTitle: "Où se marier autour de Rennes ? Domaines & Lieux de Réception en Bretagne (35)",
+    metaDescription:
+      "Sélection et conseils d'un photographe de mariage à Rennes sur les plus beaux domaines, manoirs et salles de réception en Ille-et-Vilaine (35) et en Bretagne : Haras du Reuzel, Le Trempe Sec à Vitré, Jardin des Acanthes...",
+    date: "2026-11-18",
+    displayDate: "Guide Mariés — Bretagne",
+    location: "Rennes, Vitré, Vannes, Nantes & Bretagne",
+    excerpt:
+      "Corps de ferme en pierres apparentes, haras verdoyants aux portes de Rennes ou manoirs historiques : comment choisir votre lieu de réception en Ille-et-Vilaine et en Bretagne pour un mariage inoubliable et photogénique.",
+    coverImage: "/images/ceremonie.webp",
+    intro: [
+      "Choisir son lieu de réception est souvent la toute première grande décision d'un couple qui prépare son mariage à Rennes, en Ille-et-Vilaine ou ailleurs en Bretagne. Au-delà de la capacité d'accueil et du couchage, l'architecture du domaine, l'orientation de la cour et les espaces extérieurs façonnent toute l'atmosphère — et la lumière — de votre journée.",
+      "En tant que photographe de mariage basé à Rennes, j'ai la chance d'accompagner des couples dans des lieux de caractère aux quatre coins de la Bretagne : d'Orgères à Vitré, en passant par Vannes, Quimper ou les portes de Nantes. Chaque domaine possède son propre rythme et sa propre signature visuelle.",
+      "Voici mes conseils de terrain et quelques coups de cœur découverts lors de mes derniers reportages pour vous aider à trouver le lieu idéal.",
+    ],
+    sections: [
+      {
+        heading: "Aux portes de Rennes et a Vitre : le charme de l'Ille-et-Vilaine (35)",
+        paragraphs: [
+          "L'Ille-et-Vilaine regorge d'anciens corps de ferme rénovés et de domaines familiaux accessibles en moins de vingt à trente minutes depuis Rennes. Au sud de la métropole rennaise, à Orgères, le Haras du Reuzel séduit par son grand parc arboré, son préau plein de cachet et son cadre champêtre préservé, parfait pour un cocktail ou une cérémonie laïque à l'ombre des grands arbres.",
+          "À l'est de Rennes, du côté de Vitré et Noyal-sur-Vilaine, un domaine comme Le Trempe Sec incarne merveilleusement le mariage breton chaleureux : pierres apparentes, vaste hangar couvert pour profiter du vin d'honneur même si une averse passe, et une salle de réception conviviale ouverte sur la campagne vitréenne.",
+        ],
+        image: {
+          src: "/images/blog/mariage-trempe-sec-vitre-adeline-kevin/adelinekevintrempesec.webp",
+          alt: "Réception de mariage en Ille-et-Vilaine au domaine Le Trempe Sec à Vitré près de Rennes",
+        },
+      },
+      {
+        heading: "Morbihan, Finistere et Pays de la Loire : grands parcs et manoirs historiques",
+        paragraphs: [
+          "Si vous rêvez d'un domaine entouré de jardins à quelques minutes de l'océan ou du Golfe du Morbihan, le Jardin des Acanthes à Plescop (tout près de Vannes) offre deux hectares de verdure et de saules pleureurs où la lumière d'été glisse jusqu'à la tombée de la nuit. Plus à l'ouest, dans le Finistère près de Quimper, le Domaine de Kerlys à Briec-de-l'Odet est un écrin idéal pour une garden party et une cérémonie laïque au vert.",
+          "Enfin, pour les couples qui réunissent leurs familles entre Bretagne et Loire-Atlantique, des demeures du XIVe siècle comme le Manoir du Pas Jahan à Couëron (aux portes de Nantes) marient la noblesse des vieilles pierres et l'intimité d'un parc clos.",
+        ],
+        image: {
+          src: "/images/Garden_1.webp",
+          alt: "Garden party et vin d'honneur en extérieur dans un domaine de mariage en Bretagne",
+        },
+      },
+      {
+        heading: "3 conseils de photographe pour choisir votre domaine en Bretagne",
+        paragraphs: [
+          "1. Pensez toujours au « plan B » lumineux : en Bretagne, la météo peut changer en une heure. Privilégiez un domaine doté d'un préau, d'une halle en bois ou d'une orangerie ouverte sur l'extérieur plutôt qu'une tente sombre. Vous garderez une belle lumière naturelle quoi qu'il arrive.",
+          "2. Regardez où se couche le soleil : lors de votre visite du lieu, demandez où se trouve l'ouest. C'est là que nous réaliserons vos plus belles photos de couple à la Golden Hour, pendant que vos invités profitent de la fin du vin d'honneur. 3. Privilégiez l'unité de lieu : moins vous avez de temps de route entre la cérémonie et le cocktail, plus vous profitez de vos proches — et plus votre reportage photo respire la sérénité.",
+        ],
+        image: {
+          src: "/images/couche.webp",
+          alt: "Silhouette de mariés au coucher du soleil lors d'un mariage en Bretagne",
+        },
+      },
+    ],
+    outro:
+      "Vous avez trouvé votre domaine de réception autour de Rennes, à Vitré, Saint-Malo, Vannes ou Nantes, et vous cherchez un photographe au style documentaire et intemporel pour raconter votre journée ? Contactez-moi pour vérifier ma disponibilité à votre date.",
+    relatedLinks: [
+      { label: "Photographe de mariage à Rennes & en Bretagne (Accueil)", href: "/" },
+      {
+        label: "Reportage au Trempe Sec à Vitré (Adeline & Kévin)",
+        href: "/blog/mariage-trempe-sec-vitre-adeline-kevin",
+      },
+      {
+        label: "Reportage au Haras du Reuzel près de Rennes (Charlotte & Thomas)",
+        href: "/blog/mariage-haras-du-reuzel-charlotte-thomas",
+      },
+      { label: "Voir mes formules et tarifs de mariage", href: "/services" },
+    ],
+  },
+  {
+    number: "07",
+    slug: "ou-faire-photos-couple-mariage-rennes-saint-malo-bretagne",
+    title: "Ou faire ses photos de couple de mariage a Rennes, Saint-Malo et en Bretagne ?",
+    metaTitle: "Photos de Couple Mariage Rennes, Saint-Malo & Bretagne : Les Plus Beaux Lieux",
+    metaDescription:
+      "Où réaliser sa séance photo de couple ou d'engagement à Rennes, Saint-Malo, Cancale et en Bretagne ? Les meilleurs lieux et conseils lumière par L'Oeil de Monsieur R.",
+    date: "2026-11-17",
+    displayDate: "Conseils Photo — Bretagne",
+    location: "Rennes, Saint-Malo, Cancale & Côte d'Émeraude",
+    excerpt:
+      "Remparts de Saint-Malo face au large, ruelles historiques et parcs de Rennes ou sentiers côtiers de Bretagne : où et à quelle heure organiser votre séance couple ou séance d'engagement ?",
+    coverImage: "/images/87889333_3052041288163709_1545270873085181952_n.jpg",
+    intro: [
+      "La séance photo de couple — qu'elle ait lieu le jour du mariage, lors d'une séance d'engagement quelques mois avant, ou en séance « Day After » — est le seul moment où vous vous retrouvez vraiment tous les deux, loin du tumulte des préparatifs et du protocole.",
+      "En Bretagne, nous avons une chance immense : en moins d'une heure de route depuis Rennes, les décors passent des façades à pans de bois et des jardins botaniques aux falaises sauvages de la Côte d'Émeraude, de Saint-Malo à Cancale.",
+      "Voici mes lieux préférés et mes conseils pour des portraits de couple naturels, élégants et chargés d'émotion.",
+    ],
+    sections: [
+      {
+        heading: "La Cote d'Emeraude : Saint-Malo, Cancale et la Pointe du Grouin",
+        paragraphs: [
+          "Pour des images au souffle cinématographique, la côte nord de l'Ille-et-Vilaine est imbattable. Les remparts de Saint-Malo, avec la pierre granitique, le Fort National en arrière-plan et le vent marin qui donne du mouvement au voile ou à la robe, offrent un décor spectaculaire en toute saison.",
+          "À quelques kilomètres, les sentiers douaniers vers Cancale, la Pointe du Grouin ou Saint-Briac-sur-Mer permettent de s'isoler face à la mer, surtout en fin de journée lorsque la lumière rasante dore la lande et les rochers. C'est aussi un terrain de jeu magnifique pour une séance d'engagement avant le mariage ou un « Day After » les pieds dans le sable.",
+        ],
+        image: {
+          src: "/images/87889333_3052041288163709_1545270873085181952_n.jpg",
+          alt: "Photo de couple de mariés sur les remparts de Saint-Malo face à la mer et au Fort National",
+        },
+      },
+      {
+        heading: "A Rennes : entre patrimoine historique et ecrins de verdure",
+        paragraphs: [
+          "Si votre mariage se déroule à Rennes ou dans sa première couronne, inutile de faire des dizaines de kilomètres le jour J. Le centre historique de Rennes — autour des portes Mordelaises, de la place du Parlement de Bretagne ou des ruelles pavées bordées d'hôtels particuliers — apporte une esthétique éditoriale très élégante, particulièrement adaptée au noir et blanc et au tirage Fine Art.",
+          "Côté nature, le parc du Thabor (avec sa roseraie et ses grilles anciennes) ou le parc Oberthür offrent une lumière filtrée par les grands arbres, idéale lorsque le soleil est encore haut en début d'après-midi.",
+        ],
+        image: {
+          src: "/images/couple1.webp",
+          alt: "Portrait de couple de mariage devant une porte ancienne en bois et pierre en Bretagne",
+        },
+      },
+      {
+        heading: "Le secret d'une seance couple reussie le jour J : la regle des 2 x 15 minutes",
+        paragraphs: [
+          "Beaucoup de futurs mariés craignent de devoir quitter leurs invités pendant une heure et demie le jour de leur mariage. Ma méthode est tout autre : plutôt qu'une longue séance fatigante en plein soleil à 15 h, je vous propose deux courtes parenthèses de 15 à 20 minutes directement sur votre lieu de réception.",
+          "Une première respiration juste après la cérémonie ou à l'arrivée au domaine, puis une seconde échappée de 15 minutes au coucher du soleil (la fameuse Golden Hour), juste avant de passer à table. Vous profitez pleinement de votre cocktail, et vous repartez avec des portraits baignés dans la plus belle lumière de la journée.",
+        ],
+        image: {
+          src: "/images/joeetseb1.webp",
+          alt: "Portrait naturel et complice de mariés lors de leur séance photo de couple en Bretagne",
+        },
+      },
+    ],
+    outro:
+      "Envie de préparer une séance d'engagement à Saint-Malo, à Rennes ou sur la côte bretonne avant votre mariage ? Parlons-en ensemble : la séance d'engagement est le meilleur moyen de faire connaissance avec l'objectif avant le jour J.",
+    relatedLinks: [
+      { label: "Photographe de mariage à Rennes & en Bretagne (Accueil)", href: "/" },
+      { label: "Découvrir le portfolio et les galeries", href: "/projects" },
+      {
+        label: "Guide : Où se marier autour de Rennes (Domaines & Lieux)",
+        href: "/blog/domaines-salles-mariage-rennes-ille-et-vilaine",
+      },
+      { label: "Voir mes formules (Mariage & Séance d'Engagement)", href: "/services" },
+    ],
+  },
+  {
+    number: "08",
+    slug: "organiser-planning-timing-photo-mariage-sans-stress",
+    title: "Comment organiser le timing photo de son mariage pour profiter de ses invites ?",
+    metaTitle: "Planning & Timing Photo Mariage : Le Guide Complet pour un Jour J Sans Stress",
+    metaDescription:
+      "Combien de temps prévoir pour les préparatifs, les photos de groupe, le vin d'honneur et la séance couple ? Les conseils d'un photographe de mariage à Rennes pour un planning fluide.",
+    date: "2026-11-15",
+    displayDate: "Organisation — Jour J",
+    location: "Rennes & Toute la Bretagne",
+    excerpt:
+      "Préparatifs le matin, sortie de mairie ou d'église, photos de groupe en 20 minutes chrono et lumière du soir : comment construire un planning de mariage fluide qui laisse toute la place à l'émotion.",
+    coverImage: "/images/Mairie.webp",
+    intro: [
+      "Lorsqu'on organise son mariage pour la première fois, il est difficile de savoir combien de temps prévoir pour chaque étape de la journée. Un timing trop serré génère du stress, tandis qu'un planning bien pensé vous permet d'oublier la montre — et d'oublier l'appareil photo — pour vivre chaque minute à 100 % avec vos proches.",
+      "Après des dizaines de mariages photographiés à Rennes et à travers toute la Bretagne, j'accompagne systématiquement mes couples en amont pour construire avec eux un déroulé réaliste, fluide et lumineux.",
+      "Voici mes repères concrets, étape par étape, pour organiser votre journée sans temps mort ni course contre la montre.",
+    ],
+    sections: [
+      {
+        heading: "1. Les preparatifs (compter 1h30 a 2h sur place)",
+        paragraphs: [
+          "Les préparatifs ne se résument pas à l'habillage final : c'est le prologue de votre histoire. Je rejoins généralement les mariés pour la dernière demi-heure de maquillage et de coiffure, puis pour les détails (la robe suspendue, les alliances, le bouquet, le costume) et enfin l'enfilage avec vos témoins ou vos parents.",
+          "Astuce de photographe : choisissez la pièce la plus lumineuse de la maison ou du domaine (près d'une grande fenêtre, lumière du jour sans éclairage jaune au plafond) et rangez les sacs et valises dans une pièce voisine. En deux minutes, la pièce devient un véritable studio naturel.",
+        ],
+        image: {
+          src: "/images/ladyprep.webp",
+          alt: "Préparatifs de la mariée en lumière naturelle lors d'un mariage en Bretagne",
+        },
+      },
+      {
+        heading: "2. Photos de groupe : l'astuce pour tout boucler en 20 minutes",
+        paragraphs: [
+          "C'est souvent le moment redouté par les mariés : passer une heure entière à appeler des invités éparpillés pendant que le cocktail refroidit. La solution est très simple : préparez à l'avance une liste de 10 à 12 groupes maximum, ordonnée des plus âgés (grands-parents, parents) aux plus jeunes (amis, témoins).",
+          "Confiez cette liste à deux témoins à la voix porteuse qui connaissent vos familles : pendant que je photographie le groupe N°1, ils rassemblent déjà le groupe N°2. Résultat : en 20 à 25 minutes dans la bonne humeur, toutes vos photos de famille sont dans la boîte et tout le monde file trinquer.",
+        ],
+        image: {
+          src: "/images/groupe1.webp",
+          alt: "Photo de groupe conviviale et dynamique lors d'un mariage en Bretagne",
+        },
+      },
+      {
+        heading: "3. Vin d'honneur, Golden Hour et entree en salle",
+        paragraphs: [
+          "Une fois les photos de groupe terminées, place au reportage sur le vif : éclats de rire, embrassades, animations, détails de la décoration de salle avant l'entrée des invités. C'est là que l'approche documentaire prend tout son sens : je me fonds parmi vos convives pour saisir les instants que vous n'avez même pas eu le temps de voir.",
+          "En été en Bretagne (de mai à septembre), le soleil se couche tard, entre 21 h et 22 h. Prévoir une micro-pause de 10 minutes entre le fromage et le dessert — ou juste avant d'entrer en salle — permet de capturer quelques images magiques au crépuscule, avant d'enchaîner sur les discours et votre première danse.",
+        ],
+        image: {
+          src: "/images/premieredanse.webp",
+          alt: "Ouverture de bal et première danse des mariés lors de la soirée de mariage",
+        },
+      },
+    ],
+    outro:
+      "Chaque mariage a son propre rythme, et mon rôle commence bien avant le jour J pour vous aider à bâtir un planning sur mesure. Vous préparez votre mariage à Rennes ou en Bretagne ? Échangeons sur votre journée.",
+    relatedLinks: [
+      { label: "Photographe de mariage à Rennes & en Bretagne (Accueil)", href: "/" },
+      {
+        label: "Guide : Où faire ses photos de couple à Rennes & Saint-Malo ?",
+        href: "/blog/ou-faire-photos-couple-mariage-rennes-saint-malo-bretagne",
+      },
+      {
+        label: "Guide : Les plus beaux domaines de mariage autour de Rennes",
+        href: "/blog/domaines-salles-mariage-rennes-ille-et-vilaine",
+      },
+      { label: "Découvrir mes formules et demander un devis", href: "/services" },
     ],
   },
 ];
