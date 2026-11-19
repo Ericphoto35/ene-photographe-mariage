@@ -3,6 +3,7 @@ import Link from "next/link";
 import { CallToAction } from "@/components/CallToAction";
 import { HeroFineArt } from "@/components/HeroFineArt";
 import { ArrowIcon, MainButton } from "@/components/MainButton";
+import { MariagesNetReviews } from "@/components/MariagesNetReviews";
 import { Reveal } from "@/components/Reveal";
 import { StickyProjects } from "@/components/StickyProjects";
 import { blogPosts } from "@/lib/blogPosts";
@@ -256,6 +257,10 @@ export default function HomePage() {
               </Reveal>
             ))}
           </div>
+
+          <Reveal delay={200}>
+            <MariagesNetReviews />
+          </Reveal>
         </div>
       </section>
 

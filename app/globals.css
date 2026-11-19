@@ -1159,3 +1159,100 @@ a:hover .hover-swap span {
     padding: 0 1.25rem;
   }
 }
+
+/* Widget Mariages.net responsive & thème sombre */
+.mariages-net-widget-wrap {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#wp-widget-reviews {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  text-transform: none;
+  letter-spacing: normal;
+  color: var(--grey-02) !important;
+}
+
+#wp-widget-reviews > div,
+#wp-widget-reviews iframe,
+#wp-widget-reviews table {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Titres des avis, prénoms des mariés et textes sombres injectés par Mariages.net */
+#wp-widget-reviews strong,
+#wp-widget-reviews b,
+#wp-widget-reviews h1,
+#wp-widget-reviews h2,
+#wp-widget-reviews h3,
+#wp-widget-reviews h4,
+#wp-widget-reviews h5,
+#wp-widget-reviews p,
+#wp-widget-reviews span,
+#wp-widget-reviews div {
+  color: var(--grey-02) !important;
+}
+
+/* Dates et textes secondaires légèrement adoucis */
+#wp-widget-reviews small,
+#wp-widget-reviews time {
+  color: var(--grey-01) !important;
+}
+
+/* Liens "En savoir plus" dans la teinte dorée du site */
+#wp-widget-reviews a {
+  color: #d69a58 !important;
+  transition: all 0.25s ease;
+}
+
+#wp-widget-reviews a:hover {
+  color: var(--grey-02) !important;
+}
+
+/* Bouton "Lisez tous nos avis" bien lisible sur fond sombre */
+#wp-widget-reviews a[class*="btn"],
+#wp-widget-reviews a[class*="button"],
+#wp-widget-reviews a[style*="border"],
+#wp-widget-reviews div[class*="btn"] a,
+#wp-widget-reviews div[class*="button"] a,
+#wp-widget-reviews .wp-widget-btn,
+#wp-widget-reviews a.mariages-net-all-btn {
+  display: block !important;
+  color: var(--grey-02) !important;
+  background-color: rgba(246, 246, 246, 0.08) !important;
+  border: 1px solid rgba(246, 246, 246, 0.4) !important;
+  padding: 0.7rem 1.25rem !important;
+  text-align: center !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.06em !important;
+  text-decoration: none !important;
+}
+
+#wp-widget-reviews a[class*="btn"]:hover,
+#wp-widget-reviews a[class*="button"]:hover,
+#wp-widget-reviews a[style*="border"]:hover,
+#wp-widget-reviews div[class*="btn"] a:hover,
+#wp-widget-reviews div[class*="button"] a:hover,
+#wp-widget-reviews .wp-widget-btn:hover,
+#wp-widget-reviews a.mariages-net-all-btn:hover {
+  background-color: var(--grey-02) !important;
+  color: var(--black-01) !important;
+  border-color: var(--grey-02) !important;
+}
+
+#wp-widget-reviews img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Logo Mariages.net en bas à gauche rendu clair sur fond noir */
+#wp-widget-reviews img[src*="logo"] {
+  filter: brightness(2.4) contrast(1.1);
+}
+
+
