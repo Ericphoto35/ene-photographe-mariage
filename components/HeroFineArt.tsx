@@ -65,7 +65,7 @@ export function HeroFineArt() {
           <div className="relative aspect-[3/4] w-full overflow-hidden bg-panel">
             <Image
               src={heroCircleImages[secondaryIndex]}
-              alt={secondaryMeta.title}
+              alt={`${secondaryMeta.title} — Photographe de mariage à Rennes et en Bretagne (${secondaryMeta.tag})`}
               fill
               loading="eager"
               sizes="(max-width: 768px) 42vw, 220px"
@@ -97,7 +97,7 @@ export function HeroFineArt() {
                 <Image
                   key={src}
                   src={src}
-                  alt={plateLabels[index % plateLabels.length].title}
+                  alt={`${plateLabels[index % plateLabels.length].title} — Photographe de mariage à Rennes et en Bretagne`}
                   fill
                   loading={index === 0 ? "eager" : "lazy"}
                   sizes="(max-width: 768px) 75vw, 380px"
@@ -157,7 +157,7 @@ export function HeroFineArt() {
           <div className="relative aspect-[4/5] w-full overflow-hidden bg-panel">
             <Image
               src={heroCircleImages[tertiaryIndex]}
-              alt={tertiaryMeta.title}
+              alt={`${tertiaryMeta.title} — Photographe de mariage à Rennes et en Bretagne (${tertiaryMeta.tag})`}
               fill
               loading="eager"
               sizes="(max-width: 768px) 38vw, 190px"

@@ -13,6 +13,7 @@ import {
   homeServices,
   homeServicesIntro,
   homeWhyChoose,
+  serviceFaqs,
   testimonials,
 } from "@/lib/data";
 
@@ -137,22 +138,56 @@ export default function HomePage() {
 
       {/* 2. Intro / À propos */}
       <section id="intro" className="pad py-24 md:py-32">
-        <div className="wrap">
-          <Reveal>
-            <h2 className="display h2 max-w-4xl">{homeIntro.title}</h2>
-          </Reveal>
-          <Reveal delay={120}>
-            <div className="mt-10 max-w-xl space-y-4">
-              {homeIntro.paragraphs.map((paragraph) => (
-                <p key={paragraph.slice(0, 24)} className="text-sm leading-6 text-muted">
-                  {paragraph}
-                </p>
-              ))}
-              <div className="pt-4">
-                <MainButton href="/about" left="En savoir" right="plus" />
+        <div className="wrap grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
+          <div className="lg:col-span-7">
+            <Reveal>
+              <p className="text-xs tracking-[0.18em] text-[#d69a58]">{homeIntro.eyebrow}</p>
+              <h2 className="display h2 mt-4 max-w-4xl leading-[1.04]">{homeIntro.title}</h2>
+            </Reveal>
+            <Reveal delay={120}>
+              <div className="mt-8 max-w-2xl space-y-5">
+                {homeIntro.paragraphs.map((paragraph) => (
+                  <p key={paragraph.slice(0, 24)} className="text-sm leading-7 text-muted">
+                    {paragraph}
+                  </p>
+                ))}
+                <div className="flex flex-wrap items-center gap-8 pt-4">
+                  <MainButton href="/about" left="En savoir" right="plus" />
+                  <Link
+                    href="/contact"
+                    className="text-xs tracking-[0.16em] text-muted underline underline-offset-4 transition-colors hover:text-paper"
+                  >
+                    Vérifier ma disponibilité pour votre date →
+                  </Link>
+                </div>
               </div>
-            </div>
-          </Reveal>
+            </Reveal>
+          </div>
+
+          <div className="lg:col-span-5">
+            <Reveal delay={180}>
+              <div className="border border-white/15 bg-panel/35 p-3 md:p-4">
+                <div className="mb-3 flex items-center justify-between text-[0.68rem] tracking-[0.16em] text-muted">
+                  <span>PORTRAIT &amp; APPROCHE</span>
+                  <span>RENNES · BRETAGNE</span>
+                </div>
+                <div className="relative aspect-[4/5] w-full overflow-hidden bg-panel">
+                  <Image
+                    src={homeIntro.image}
+                    alt="Éric — L'Oeil de Monsieur R, photographe de mariage à Rennes et en Bretagne"
+                    fill
+                    className="gray-photo object-cover"
+                    sizes="(max-width: 1024px) 90vw, 38vw"
+                  />
+                  <span className="fineart-crop fineart-crop-tl">+</span>
+                  <span className="fineart-crop fineart-crop-br">+</span>
+                </div>
+                <p className="mt-3 text-[0.68rem] tracking-[0.14em] text-muted">
+                  {homeIntro.imageCaption}
+                </p>
+              </div>
+            </Reveal>
+          </div>
         </div>
       </section>
 
@@ -160,36 +195,44 @@ export default function HomePage() {
       <section className="pad py-24 md:py-32">
         <div className="wrap">
           <Reveal>
-            <h2 className="display h2">Mes Services</h2>
+            <p className="text-xs tracking-[0.18em] text-[#d69a58]">
+              PRESTATIONS MARIAGE — RENNES &amp; BRETAGNE
+            </p>
+            <h2 className="display h2 mt-3">Mes Services</h2>
           </Reveal>
           <Reveal delay={100}>
-            <p className="mt-6 max-w-xl text-sm leading-6 text-muted">{homeServicesIntro}</p>
+            <p className="mt-6 max-w-2xl text-sm leading-6 text-muted">{homeServicesIntro}</p>
           </Reveal>
 
           <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {homeServices.map((service, index) => (
               <Reveal key={service.title} delay={index * 100}>
-                <article className="service-card">
+                <Link href="/services" className="service-card group block">
                   <div className="relative aspect-[4/5] overflow-hidden">
                     <Image
                       src={service.image}
-                      alt={service.title}
+                      alt={`${service.title} — Photographe de mariage à Rennes et en Bretagne`}
                       fill
                       className="gray-photo object-cover"
                       sizes="(max-width: 640px) 88vw, (max-width: 1024px) 45vw, 22vw"
                     />
-                    <span className="absolute right-4 top-4 text-2xl">+</span>
+                    <span className="absolute right-4 top-4 text-2xl transition-transform duration-300 group-hover:rotate-90">
+                      +
+                    </span>
                   </div>
                   <h3 className="display mt-5 text-3xl md:text-4xl">{service.title}</h3>
-                  <p className="mt-3 text-sm text-muted">{service.description}</p>
-                </article>
+                  <p className="mt-3 text-sm leading-6 text-muted">{service.description}</p>
+                </Link>
               </Reveal>
             ))}
           </div>
 
           <Reveal>
-            <div className="mt-14">
-              <MainButton href="/services" left="Voir les" right="formules" />
+            <div className="mt-14 flex flex-wrap items-center justify-between gap-6 border-t border-white/10 pt-8">
+              <MainButton href="/services" left="Voir les" right="formules & tarifs" />
+              <p className="text-xs tracking-[0.16em] text-muted">
+                3 FORMULES SUR MESURE · À PARTIR DE <span className="text-paper">1 200 €</span>
+              </p>
             </div>
           </Reveal>
         </div>
@@ -315,7 +358,43 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 8. CTA final */}
+      {/* 8. Questions fréquentes & Zone d'intervention en Bretagne */}
+      <section className="pad py-24 md:py-32 border-t border-white/10">
+        <div className="wrap">
+          <div className="grid gap-12 lg:grid-cols-12">
+            <div className="lg:col-span-5">
+              <Reveal>
+                <div className="dash" />
+                <p className="text-xs tracking-[0.18em] text-[#d69a58]">
+                  QUESTIONS FRÉQUENTES — MARIAGE EN BRETAGNE
+                </p>
+                <h2 className="display h2 mt-3 leading-[1.04]">Preparez votre jour J</h2>
+                <p className="mt-6 max-w-md text-sm leading-6 text-muted">
+                  Basé à Rennes, j&apos;interviens dans toute l&apos;Ille-et-Vilaine (Vitré,
+                  Saint-Malo, Cancale, Fougères), le Morbihan (Vannes), le Finistère (Quimper), les
+                  Côtes-d&apos;Armor (Dinan) et la Loire-Atlantique (Nantes).
+                </p>
+                <div className="mt-8">
+                  <MainButton href="/contact" left="Poser une" right="question" />
+                </div>
+              </Reveal>
+            </div>
+
+            <div className="grid gap-8 sm:grid-cols-2 lg:col-span-7">
+              {serviceFaqs.slice(0, 4).map((faq, index) => (
+                <Reveal key={faq.q} delay={(index % 2) * 100}>
+                  <article className="border border-white/12 bg-panel/25 p-6">
+                    <h3 className="text-sm font-medium text-paper">{faq.q}</h3>
+                    <p className="mt-3 text-xs leading-6 text-muted">{faq.a}</p>
+                  </article>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 9. CTA final */}
       <CallToAction />
     </>
   );

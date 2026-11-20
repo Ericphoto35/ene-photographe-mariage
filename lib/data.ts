@@ -44,59 +44,62 @@ export const heroCircleImages = [
 ];
 
 export const homeIntro = {
-  title: "Capturer l'essence de vos moments précieux",
+  eyebrow: "ÉRIC — L'OEIL DE MONSIEUR R · BASÉ À RENNES (35)",
+  title: "Capturer l'essence de votre mariage a Rennes et en Bretagne",
+  image: "/images/Eric.webp",
+  imageCaption: "ÉRIC SORET — L'OEIL DE MONSIEUR R, PHOTOGRAPHE DE MARIAGE",
   paragraphs: [
-    "Bienvenue dans mon univers photographique où chaque image raconte une histoire unique. Spécialisé dans la photographie de mariage, je m'engage à immortaliser les émotions et les instants qui font de votre journée un moment inoubliable.",
-    "Mon approche combine un style documentaire discret et des portraits élégants pour créer un récit visuel authentique de votre célébration.",
+    "Je suis Éric, le regard derrière L'Oeil de Monsieur R. Photographe de mariage basé à Rennes, j'accompagne les couples en Ille-et-Vilaine (Rennes, Vitré, Saint-Malo, Cancale, Fougères) et dans toute la Bretagne — de Vannes à Quimper jusqu'aux portes de Nantes — pour raconter leur journée avec sincérité.",
+    "Mon approche mêle le photojournalisme documentaire pris sur le vif et des portraits de couple naturels et lumineux. Pas de poses figées : je me fonds parmi vos proches pour saisir les regards, les éclats de rire et les détails que vous aurez plaisir à revivre dans vingt ans, sur écran comme sur papier Fine Art.",
   ],
 };
 
 export const homeServicesIntro =
-  "Je propose une gamme complète de services pour capturer et préserver les moments les plus précieux de votre mariage.";
+  "Des préparatifs du matin jusqu'à l'ouverture de bal, je propose des prestations complètes et modulables (formules mariage à partir de 1 200 €) pour préserver chaque instant de votre union à Rennes, en Bretagne et partout en France.";
 
 export const homeServices = [
   {
     title: "Photographie de Mariage",
     description:
-      "Capturer chaque moment précieux de votre journée spéciale, des préparatifs jusqu'à la fin des festivités.",
+      "Reportage complet et discret de votre journée en Bretagne, des préparatifs jusqu'à la soirée, livré sur galerie privée haute définition.",
     image: `${SITE}/6679effd31234493053de684_Plan%20de%20travail%205-1.webp`,
   },
   {
     title: "Séance d'Engagement",
     description:
-      "Une séance photo avant le mariage pour immortaliser votre amour dans un cadre plus détendu.",
+      "Une séance couple avant le mariage à Rennes, Saint-Malo ou sur la côte bretonne pour apprivoiser l'objectif en toute complicité.",
     image: `${SITE}/6679ecae70514671a2d72fad_Plan%20de%20travail%201.webp`,
   },
   {
     title: "Albums Photo",
     description:
-      "Des albums photo de haute qualité, conçus sur mesure pour préserver vos souvenirs pour les générations à venir.",
+      "Des albums photo haut de gamme façonnés à la main, conçus sur mesure pour transmettre l'histoire de votre mariage de génération en génération.",
     image: `${SITE}/6679f01f3c972f40647b13c4_Plan%20de%20travail%205.2.webp`,
   },
   {
     title: "Tirages Fine Art",
     description:
-      "Des tirages d'art de qualité musée pour décorer votre intérieur avec vos plus belles photos de mariage.",
+      "Des tirages d'art de qualité musée sur papier coton pour sublimer vos plus beaux portraits de mariage.",
     image: "/images/87889333_3052041288163709_1545270873085181952_n.jpg",
   },
 ];
 
 export const homeWhyChoose = {
-  title: "Pourquoi Me Choisir",
+  title: "Pourquoi Choisir L'Oeil de Monsieur R",
   intro:
-    "Je m'engage à offrir une expérience exceptionnelle à chaque couple, avec une attention particulière aux détails et aux moments qui comptent.",
+    "Choisir son photographe de mariage à Rennes, c'est avant tout choisir une personne de confiance qui saura vous mettre à l'aise tout en restant invisible aux moments clés.",
   items: [
     {
-      title: "Style Unique",
-      text: "Une approche photographique qui mêle élégance intemporelle et spontanéité pour des images authentiques et émotionnelles.",
+      title: "Regard Documentaire",
+      text: "Une approche photographique qui mêle élégance éditoriale et spontanéité pour capturer les vraies émotions, sans jamais interrompre le fil de votre journée.",
     },
     {
-      title: "Passion & Dévouement",
-      text: "Un engagement total pour capturer l'essence de votre journée avec attention, discrétion et professionnalisme.",
+      title: "Ancrage en Bretagne",
+      text: "Habitué des lumières changeantes et des plus beaux domaines de Rennes, Vitré, Saint-Malo, Vannes et Nantes, je sais tirer parti de chaque lieu et de chaque météo.",
     },
     {
-      title: "Communication Fluide",
-      text: "Un accompagnement personnalisé avant, pendant et après votre mariage pour une expérience sereine et sans stress.",
+      title: "Accompagnement Serein",
+      text: "Conseils sur le timing photo du jour J, repérage, matériel professionnel doublé et livraison soignée sous 2 à 4 semaines pour une expérience sans aucun stress.",
     },
   ],
 };
@@ -113,22 +116,22 @@ export const ctaImages = [
 
 export const testimonials = [
   {
-    names: "Marie & Thomas",
-    date: "Mariés en Juin 2023",
+    names: "Kelly & Rudy",
+    date: "Mariés au Manoir du Pas Jahan (Août 2024)",
     quote:
-      "Monsieur R a su capturer l'essence même de notre journée. Chaque photo raconte une histoire et nous permet de revivre ces moments magiques. Un talent exceptionnel !",
+      "Éric est un passionné qui sait faire vivre les instants capturés, tout en mettant tout le monde à l'aise tout au long de la journée. Le reportage de notre mariage est tout simplement magique !",
   },
   {
-    names: "Sophie & Lucas",
-    date: "Mariés en Septembre 2022",
+    names: "Adeline & Kévin",
+    date: "Mariés à Noyal & au Trempe Sec à Vitré (Juin 2024)",
     quote:
-      "Nous sommes enchantés par les photos de notre mariage. Monsieur R a su se faire discret tout en capturant tous les moments importants. Le résultat est simplement magnifique !",
+      "De la mairie et l'église de Noyal jusqu'à la soirée au Trempe Sec, Éric a su se faire discret tout en saisissant chaque émotion et chaque sourire de nos proches. Des souvenirs incroyables !",
   },
   {
-    names: "Julie & Antoine",
-    date: "Mariés en Mai 2023",
+    names: "Charlotte & Thomas",
+    date: "Mariés au Haras du Reuzel près de Rennes",
     quote:
-      "Un grand merci pour ces souvenirs incroyables ! Votre professionnalisme et votre créativité ont fait toute la différence. Nous recommandons Monsieur R sans hésitation.",
+      "Très professionnel dès le premier contact, Éric nous a accompagnés avec bienveillance et un œil artistique remarquable. Nous ne regrettons pas notre choix et le recommandons les yeux fermés.",
   },
 ];
 

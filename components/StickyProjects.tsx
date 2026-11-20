@@ -32,7 +32,7 @@ export function StickyProjects() {
           <Link href={`/project/${project.slug}`} className="relative block h-full">
             <Image
               src={project.cover}
-              alt={project.name}
+              alt={`Reportage mariage ${project.name} — Photographe de mariage à Rennes et en Bretagne (${project.category})`}
               fill
               className="project-photo object-cover"
               sizes="100vw"
