@@ -299,34 +299,34 @@ export const formulas = [
 
 export const values = [
   {
-    title: "Style unique",
-    text: "Une approche photographique qui mêle élégance intemporelle et spontanéité pour des images authentiques et émotionnelles.",
+    title: "Style documentaire & Fine Art",
+    text: "Une approche photographique qui mêle élégance intemporelle, portraits lumineux et spontanéité prise sur le vif pour des images vraies et chargées d'émotion.",
   },
   {
-    title: "Passion & dévouement",
-    text: "Un engagement total pour capturer l'essence de votre journée avec attention, discrétion et professionnalisme.",
+    title: "Un seul interlocuteur : moi",
+    text: "Aucune sous-traitance : je vous accompagne personnellement du premier café à Rennes jusqu'au post-traitement artisanal de chaque photo et à la création de votre album.",
   },
   {
-    title: "Communication fluide",
-    text: "Un accompagnement personnalisé avant, pendant et après votre mariage pour une expérience sereine et sans stress.",
+    title: "Accompagnement & sérénité",
+    text: "Conseils sur le timing de votre journée en Bretagne, repérage des lieux et présence discrète mais bienveillante le jour J pour une expérience 100 % sans stress.",
   },
   {
-    title: "Détails soignés",
-    text: "Nous nous assurons de capturer tous les petits détails que vous avez soigneusement planifiés — des alliances aux décorations florales — pour préserver chaque aspect de votre célébration.",
+    title: "Sens du détail",
+    text: "Je m'assure de capturer tous les petits détails que vous avez soigneusement préparés — des alliances aux textures de la robe jusqu'à la décoration de table — pour préserver toute l'atmosphère de votre mariage.",
   },
 ];
 
 export const stats = [
-  { value: 50, label: "Mariages photographiés" },
-  { value: 100, label: "Couples heureux" },
+  { value: 40, label: "Mariages photographiés" },
+  { value: 40, label: "Couples heureux" },
   { value: 10, label: "Années d'expérience" },
 ];
 
 export const equipment = [
-  "Appareils photo professionnels full-frame",
-  "Objectifs lumineux de qualité supérieure",
-  "Équipement d'éclairage avancé",
-  "Systèmes de sauvegarde multiples sur site",
+  "Deux boîtiers professionnels plein format (Full-Frame) en simultané",
+  "Objectifs lumineux à grande ouverture pour sublimer la lumière naturelle sans flash intrusif",
+  "Double enregistrement instantané sur deux cartes mémoire par boîtier le jour J",
+  "Triple sauvegarde sécurisée de vos reportages après le mariage & galerie privée en ligne",
 ];
 
 export const aboutCollage = [
