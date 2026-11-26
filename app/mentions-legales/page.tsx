@@ -95,10 +95,10 @@ export default function MentionsLegalesPage() {
                   <li>
                     <span className="text-paper">Email :</span>{" "}
                     <a
-                      href="mailto:contact@enemariage.fr"
+                      href="mailto:contact@loeil-de-monsieur-r.fr"
                       className="text-paper underline underline-offset-4"
                     >
-                      contact@enemariage.fr
+                      contact@loeil-de-monsieur-r.fr
                     </a>
                   </li>
                   <li>
@@ -212,10 +212,10 @@ export default function MentionsLegalesPage() {
                   Vous disposez d&apos;un droit d&apos;accès, de rectification, d&apos;effacement,
                   de limitation, d&apos;opposition et de portabilité. Pour exercer ces droits :{" "}
                   <a
-                    href="mailto:contact@enemariage.fr"
+                    href="mailto:contact@loeil-de-monsieur-r.fr"
                     className="text-paper underline underline-offset-4"
                   >
-                    contact@enemariage.fr
+                    contact@loeil-de-monsieur-r.fr
                   </a>
                   . Vous pouvez également introduire une réclamation auprès de la{" "}
                   <a
@@ -268,10 +268,10 @@ export default function MentionsLegalesPage() {
                   Pour toute question relative à ces mentions légales ou à vos données
                   personnelles, contactez-nous via la page Contact ou à l&apos;adresse{" "}
                   <a
-                    href="mailto:contact@enemariage.fr"
+                    href="mailto:contact@loeil-de-monsieur-r.fr"
                     className="text-paper underline underline-offset-4"
                   >
-                    contact@enemariage.fr
+                    contact@loeil-de-monsieur-r.fr
                   </a>
                   .
                 </p>

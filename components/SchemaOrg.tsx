@@ -12,7 +12,7 @@ export function SchemaOrg() {
       image: "https://www.loeil-de-monsieur-r.fr/images/jg.jpg",
       url: "https://www.loeil-de-monsieur-r.fr",
       telephone: "+33633320795",
-      email: "contact@enemariage.fr",
+      email: "contact@loeil-de-monsieur-r.fr",
       address: {
         "@type": "PostalAddress",
         addressLocality: "Rennes",

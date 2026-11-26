@@ -5,7 +5,7 @@ export const site = {
   tagline: "photographe de mariage",
   footerLine:
     "Capturer vos moments précieux avec élégance et authenticité. Spécialiste en photographie de mariage.",
-  email: "contact@enemariage.fr",
+  email: "contact@loeil-de-monsieur-r.fr",
   phone: "+33 6 33 32 07 95",
   phoneHref: "tel:+33633320795",
   city: "Rennes, Bretagne",

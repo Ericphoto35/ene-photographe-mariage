@@ -6,6 +6,7 @@ import { FormEvent, useState } from "react";
 export function ContactForm() {
   const [status, setStatus] = useState<"idle" | "submitting" | "done" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
+  const [fallbackMailto, setFallbackMailto] = useState("");
 
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -23,6 +24,12 @@ export function ContactForm() {
       message: String(formData.get("message") ?? ""),
       consent: formData.get("consent") === "on",
     };
+
+    const subject = encodeURIComponent(`Demande de contact : ${payload.name} (${payload.eventType})`);
+    const body = encodeURIComponent(
+      `Nom : ${payload.name}\nEmail : ${payload.email}\nTéléphone : ${payload.phone}\nÉvénement : ${payload.eventType}\nDate : ${payload.eventDate}\nLieu : ${payload.eventLocation}\n\nMessage :\n${payload.message}`,
+    );
+    setFallbackMailto(`mailto:contact@loeil-de-monsieur-r.fr?subject=${subject}&body=${body}`);
 
     try {
       const response = await fetch("/api/contact", {
@@ -122,7 +129,20 @@ export function ContactForm() {
       </label>
 
       {status === "error" && errorMessage ? (
-        <p className="text-xs text-[#e57373]">{errorMessage}</p>
+        <div className="space-y-3 border border-[#e57373]/40 bg-panel/40 p-4">
+          <p className="text-xs text-[#e57373]">{errorMessage}</p>
+          {fallbackMailto ? (
+            <p className="text-xs text-muted">
+              Vous pouvez aussi{" "}
+              <a
+                href={fallbackMailto}
+                className="text-[#d69a58] underline underline-offset-4 hover:text-paper"
+              >
+                envoyer directement votre message pré-rempli à contact@loeil-de-monsieur-r.fr →
+              </a>
+            </p>
+          ) : null}
+        </div>
       ) : null}
 
       <button

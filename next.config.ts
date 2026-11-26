@@ -10,6 +10,20 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/a-propos",
+        destination: "/about",
+        permanent: true,
+      },
+      {
+        source: "/galerie",
+        destination: "/projects",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
