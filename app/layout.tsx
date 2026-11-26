@@ -13,7 +13,6 @@ const geistSans = Geist({
 const display = Oswald({
   variable: "--font-heading",
   subsets: ["latin"],
-  weight: ["500", "600", "700"],
 });
 
 export const metadata: Metadata = {
