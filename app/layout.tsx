@@ -26,6 +26,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.loeil-de-monsieur-r.fr",
   },
+  verification: {
+    other: {
+      "msvalidate.01": "397CD5C3A483D64A3E8A81F7D43BC31F",
+    },
+  },
   openGraph: {
     title: "L'Oeil de Monsieur R - Photographe de Mariage à Rennes | Bretagne",
     description:
